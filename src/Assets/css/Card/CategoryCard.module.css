@@ -1,0 +1,35 @@
+.CardCetegoryWrap {
+    width: 210px;
+    height: 215px;
+    left: 179px;
+    top: 900px;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgba(224, 241, 255, 0.914207);
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.CategorySliderIcon {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.CategorySliderIcon img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.CategorySliderTitle {
+    text-align: center;
+}
+
+.CategorySliderTitle a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #FF925E;
+}

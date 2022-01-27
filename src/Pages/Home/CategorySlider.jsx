@@ -3,7 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import SectionHeadingBtn from '../../Elements/Button/SectionHeadingBtn';
 import styles from '../../Assets/css/Home/Home.module.css';
 import Slider from "react-slick";
-
+import CategoryCard from '../../Elements/Card/CategoryCard';
+import one from '../../Assets/images/Category-Slider/1Amar-Skill-Icon1 1.png';
+import two from '../../Assets/images/Category-Slider/Amar-Skill-Icon2 1.png';
+import three from '../../Assets/images/Category-Slider/Amar-Skill-Icon3 1.png';
+import four from '../../Assets/images/Category-Slider/Amar-Skill-Icon4 1.png';
 
 const CategorySlider = () => {
     var settings = {
@@ -12,8 +16,7 @@ const CategorySlider = () => {
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        slidesToShow: 4,
-        dots: true,
+        slidesToShow: 5,
         responsive: [
           {
             breakpoint: 1024,
@@ -58,29 +61,59 @@ const CategorySlider = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Slider {...settings}>
-                                <div>
-                                    one
-                                </div>
-                                <div>
-                                    two
-                                </div>
-                                <div>
-                                    three
-                                </div>
-                                <div>
-                                    four
-                                </div>
-                                <div>
-                                    five
-                                </div>
-                                <div>
-                                    six
-                                </div>
-                                <div>
-                                    seven
-                                </div>
-                            </Slider>
+                            <div className={styles.CategorySliderWrap}>
+                                <Slider {...settings}>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={one}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={two}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={three}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={four}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={one}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={two}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                    <div>
+                                        <CategoryCard 
+                                        icon={four}
+                                        cat_link="#"
+                                        title="Web Developement"
+                                        />
+                                    </div>
+                                </Slider>
+                            </div>
                         </Row>
                     </Container>
                 </div>
