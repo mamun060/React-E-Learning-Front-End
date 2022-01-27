@@ -1,0 +1,109 @@
+.MobileMenuPopupMenu  img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: -74px;
+    margin-left: -30px;
+}
+.PopupMobileMenuIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #E0F1FF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.PopupMobileMenuIcon svg {
+    width: 22px;
+    height: 22px;
+    color: #000;
+    margin-left: 9px;
+    margin-top: 9px;
+}
+
+.NavButtonArea  {
+    align-items: left;
+}
+
+.NavButtonArea div {
+    margin-top: 30px;
+}
+
+.NavButtonArea  a{
+    text-decoration: none;
+}
+
+.NavButtonArea .LeftSignInButton a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #F59A26;
+    border: 2px solid #F59A26;
+    border-radius: 5px;
+    padding: 12px 42px;
+}
+
+.NavButtonArea .RightLogInButton a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #F59A26;
+    border-radius: 5px;
+    padding: 13px 48px;
+}
+
+
+/* Mobile header menu icon */
+.MobileHeaderMenuIcon {
+    padding-top: 10px;
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+}
+
+/* Mobile header logo styling */
+.MobileHeaderLogo img {
+    width: 100px;
+    height: 110px;
+    margin-top: -19px;
+    margin-left: -21px;
+}
+
+/* Mobile Header Searchbar stylign */
+.MobileHeaderSearchBar {
+    height: 40px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #F1F1F1;
+    box-sizing: border-box;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    background: #F1F1F1;
+    margin: 10px;
+}
+
+.MobileHeaderSearchBar input {
+    border: none;
+    width: 90%;
+    height: 40px;
+    color: #000;
+    padding-left: 10px;
+    background: #fff;
+}
+
+.MobileHeaderSearchBar input:focus {
+    outline: none;
+}
+
+.MobileHeaderSearchBar svg {
+    width: 20px;
+    height: 20px;
+    color: #F59A26;
+    margin-left: 8px;
+ 
+}

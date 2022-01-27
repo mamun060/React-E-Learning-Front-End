@@ -1,0 +1,98 @@
+.HeaderContainer {
+    height: 93px;
+    width: 100%;
+    max-width: 1440px;
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
+.LogoSytle img {
+    width: 140px;
+    height: 140px;
+    margin-top: -42px;
+}
+
+.NavCategory {
+    margin-top: 0px;
+}
+
+
+.NavSearch {
+    height: 40px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #F1F1F1;
+    box-sizing: border-box;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    background: #F1F1F1;
+}
+
+.NavSearch input {
+    border: none;
+    width: 90%;
+    height: 40px;
+    color: #000;
+    padding-left: 10px;
+    background: #fff;
+}
+
+.NavSearch input:focus {
+    outline: none;
+}
+
+.NavSearch svg {
+    width: 20px;
+    height: 20px;
+    color: #F59A26;
+    margin-left: 8px;
+ 
+}
+
+.NavButtonArea  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.NavButtonArea div {
+    list-style: none;
+    padding-right: 12px;
+}
+
+.NavButtonArea  a{
+    text-decoration: none;
+}
+
+.NavButtonArea .LeftSignInButton a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #F59A26;
+    border: 2px solid #F59A26;
+    border-radius: 5px;
+    padding: 7px 16px;
+}
+.NavButtonArea .RightLogInButton a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #fff;
+    background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%);
+    border-radius: 5px;
+    padding: 10px 22px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+    .NavButtonArea div {
+        padding-right: 15px!important;
+    }
+}

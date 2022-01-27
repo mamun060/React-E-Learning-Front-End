@@ -1,0 +1,208 @@
+.FooterContainer {
+    background-color: #002E6C;
+    color: #fff;
+}
+
+/* Footer top section styling */
+.FooterContainerTop {
+    padding: 50px 0px;
+}
+
+.FooterTopMenu ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: -28px;
+}
+
+
+.FooterTopMenu ul li {
+    list-style: none;
+}
+
+.FooterTopMenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.FooterTopMenu ul li a:hover {
+    color: #F59A26;
+    cursor: pointer;
+}
+
+.CertifcateButton {
+    text-align: right;
+}
+
+/* Main footer section */
+.FooterLogo {
+    text-align: left;
+}
+
+.FooterLogo img {
+    width: 170px;
+    height: 180px;
+    margin-left: -40px;
+    margin-top: -85px;
+    margin-bottom: -30px;
+}
+
+
+.FooterAboutContent p{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+.FooterWizardTitle {
+    width: 250px;
+}
+.FooterWizardTitle h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 37px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border-width: 198px;
+    border-bottom: 1px solid rgba(170, 184, 255, 0.5);
+    margin-left: 10px;
+}
+
+.UseFullLinkListing ul{
+    text-align: left;
+    margin-left: -20px;
+}
+
+.UseFullLinkListing ul li {
+    list-style: none;
+    padding-bottom: 6px;
+}
+
+.UseFullLinkListing ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.UseFullLinkListing ul li a:hover {
+    color: #F59A26;
+    cursor: pointer;
+}
+
+
+.FooterSocialIcon ul{
+    display: flex;
+    margin-left: -20px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.FooterSocialIcon ul li {
+    list-style: none;
+}
+
+.IconFacebook {
+    width: 30px;
+    height: 30px;
+    background-color: #1778F1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.IconLinkedin {
+    width: 30px;
+    height: 30px;
+    background-color: #005882;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.IconTwitter {
+    width: 30px;
+    height: 30px;
+    background-color: #1DA0F1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.IconInstagram {
+    width: 30px;
+    height: 30px;
+    background-color: #F81F55;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.FooterSocialIcon ul li a svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.FooterLocationArea p {
+    text-align: left; 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+/* Footer Bottom Section Styling */
+.PaymentIconImage {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.PaymentIconImage img {
+    width: 100%;
+    height: 44px;
+}
+
+.FooterCopyRightContent {
+    border-top: 2px solid rgba(237, 236, 236, 0.25);
+    padding-top: 12px;
+}
+
+.FooterCopyRightContent p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 667px){ 
+    .FooterContainer {
+        background-color: #002E6C;
+        color: #fff;
+        padding-left: 20px;
+    }
+    .PaymentIconImage img {
+        width: 90%;
+        height: 30px;
+        margin-left: -15px;
+    }
+}

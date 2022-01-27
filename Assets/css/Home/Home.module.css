@@ -1,0 +1,33 @@
+.HeroContainer {
+    background-image: url('../../images/Background-Banner/Hero\ BG.png');
+}
+.HeroLeftWrap {
+    padding: 100px 0px;
+}
+.HeroHeading h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 76px;
+    text-transform: capitalize;
+    color: #084496;
+    text-shadow: 0px -4px 4px rgba(248, 248, 248, 0.25), 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.HeroButton {
+    padding: 20px 0px;
+}
+.HeroBanner img {
+    width: 100%;
+}
+
+/* Category section style */
+.CategorySliderContainer {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+}
+.CategorySliderHeading {
+    text-align: center;
+    padding: 50px 0px;
+}
+

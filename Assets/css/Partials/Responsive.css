@@ -1,0 +1,17 @@
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) { 
+    .Mobile {
+        display: visible;
+    }
+    .Desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 768px){ 
+    .Mobile {
+        display: none;
+    }
+    .Desktop {
+        display: visible;
+    }
+}

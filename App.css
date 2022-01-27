@@ -1,0 +1,33 @@
+/* Select to modified style */
+.css-1s2u09g-control {
+  box-sizing: border-box;
+  border: 1.5px solid #F1F1F1!important;
+  box-sizing: border-box!important;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px!important;
+  border-radius: 5px!important;
+  background-color: #F1F1F1!important;
+}
+
+.css-tj5bde-Svg {
+  color: #084496!important;
+}
+
+/* Bootstrap style modified */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: 0px!important; 
+  padding-left: 0px!important; 
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Mobile Menu Left Popup style modified */
+.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: 250px!important;
+  border-right: 3px solid #F59A26!important;
+  background-color: #ecf0f1!important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

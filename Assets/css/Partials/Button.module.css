@@ -1,0 +1,48 @@
+.ButtonWrap a {  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #F59A26;
+    border-radius: 5px;
+    padding: 10px 22px;
+    text-decoration: none;
+}
+
+.CertificateButtonWrap a {  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #F59A26;
+    border-radius: 5px;
+    padding: 10px 22px;
+    text-decoration: none;
+}
+
+.SectionHeadingWrap {
+    padding: 30px  0px;
+}
+
+.SectionHeadingWrap a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 22px;
+    text-decoration: none;
+    background-color: #0D3D80;
+    box-shadow: 4px 4px 4px #F59A26, inset 4px 4px 4px #1754A9, inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
