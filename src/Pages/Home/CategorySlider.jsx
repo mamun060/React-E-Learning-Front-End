@@ -8,6 +8,9 @@ import one from '../../Assets/images/Category-Slider/1Amar-Skill-Icon1 1.png';
 import two from '../../Assets/images/Category-Slider/Amar-Skill-Icon2 1.png';
 import three from '../../Assets/images/Category-Slider/Amar-Skill-Icon3 1.png';
 import four from '../../Assets/images/Category-Slider/Amar-Skill-Icon4 1.png';
+import BigCourseCard from './../../Elements/Card/BigCourseCard';
+import SmallCourseCard from '../../Elements/Card/SmallCourseCard';
+
 
 const CategorySlider = () => {
     var settings = {
@@ -50,6 +53,7 @@ const CategorySlider = () => {
             <Container fluid={true}>
                 <div className={styles.CategorySliderContainer}>
                     <Container>
+                        {/** Category Heading Section Start */}
                         <Row>
                             <Col md={12}>
                                 <div className={styles.CategorySliderHeading}>
@@ -60,6 +64,9 @@ const CategorySlider = () => {
                                 </div>
                             </Col>
                         </Row>
+                        {/** Category Heading Section End */}
+
+                        {/** Category Slider Section Start */}
                         <Row>
                             <div className={styles.CategorySliderWrap}>
                                 <Slider {...settings}>
@@ -115,6 +122,36 @@ const CategorySlider = () => {
                                 </Slider>
                             </div>
                         </Row>
+                        {/** Category Slider Section End */}
+
+                        {/** Category Course Section Start */}
+                        <div className={styles.CategoryCourseWrappingBG}>
+                            <Row>
+                                <Col md={6}>
+                                    <BigCourseCard />
+                                </Col>
+                                <Col md={6}>
+                                    <Row>
+                                        <Col md={6}>
+                                             <SmallCourseCard />
+                                        </Col>
+                                        <Col md={6}>
+                                            <SmallCourseCard />
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col md={6}>
+                                             <SmallCourseCard />
+                                        </Col>
+                                        <Col md={6}>
+                                            <SmallCourseCard />
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </div>
+                        {/** Category Course Section End */}
+
                     </Container>
                 </div>
             </Container>

@@ -43,9 +43,15 @@
   height: 40px!important;
   border-radius: 50%;
 }
+
 .slick-prev {
   left: -38px!important;
 }
+
 .slick-next {
   right: -31px!important;
+}
+
+.slick-list {
+  margin: 0px 28px!important;
 }

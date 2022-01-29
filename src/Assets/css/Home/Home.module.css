@@ -38,3 +38,8 @@
     border-radius: 10px;
     margin: 50px 0px;
 }
+
+/* Category course section styling */
+.CategoryCourseWrappingBG {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+}

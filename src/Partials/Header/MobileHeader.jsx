@@ -16,14 +16,15 @@ const MobileHeader = () => {
                                <MobileMenuPopupBtn />
                             </div>
                         </Col>
-                        <Col md={2} xs={2}>
-                            <div className={styles.MobileHeaderLogo}>
-                                <img src={logo} alt="Amar Skill" />
-                            </div>
-                        </Col>
-                        <Col md={8} xs={8}>
+                      
+                        <Col md={7} xs={7}>
                             <div className={styles.MobileHeaderSearchBar}>
                                 <input type="text" /><VscSearch />
+                            </div>
+                        </Col>
+                        <Col md={3} xs={3}>
+                            <div className={styles.MobileHeaderLogo}>
+                                <img src={logo} alt="Amar Skill" />
                             </div>
                         </Col>
                     </Row>

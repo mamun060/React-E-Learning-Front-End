@@ -5,6 +5,7 @@ import CategorySlider from './CategorySlider';
 import HeroSection from './HeroSection';
 import MobileHeader from './../../Partials/Header/MobileHeader';
 import '../../Assets/css/Partials/Responsive.css';
+import PopularCourseSlider from './PopularCourseSlider';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       
         <HeroSection />
         <CategorySlider />
+        <PopularCourseSlider />
 
 
         <Footer />

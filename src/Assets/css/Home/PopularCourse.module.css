@@ -1,0 +1,17 @@
+.PopularCourseContainerWrap {
+    padding: 50px 0px;
+}
+.PopularCourseContainer {
+    padding: 10px 0px 60px;
+    background-image: url('../../images/Background-Banner/Group\ 2.png');
+}
+
+.PopularCourseHeading {
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+
+.PopularCourseSlide {
+    margin: 0px 10px;
+}

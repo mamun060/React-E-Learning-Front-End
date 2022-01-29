@@ -1,0 +1,90 @@
+.SmallCourseCardContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.BigCardThumnail {
+    text-align: center;
+}
+
+.SmallCardThumnail img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.CourseCardInfoWrap {
+    padding: 10px 30px 0px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.CourseTecherInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.InstractorName h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #F59A26;
+}
+
+.InstructorSocailIcon {
+    padding-left: 5px!important;
+}
+
+.InstructorSocailIcon a {
+    padding: 0px 5px;
+    color: #142370;
+}
+
+.InstructorSocailIcon a svg {
+    width: 20px;
+    height: 20px;
+    color: #142370;
+}
+
+.SmallCardCouseTitle h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #0D3D80;
+}
+
+.SmallCardBottomWrap {
+    border-top:  2px solid rgba(0, 0, 0, 0.1);
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PriceStyle p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #142370;
+    padding-top: 20px;
+}
+
+.BuyNowButtonWrap a {
+    background-color: #F59A26;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #fff!important;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
