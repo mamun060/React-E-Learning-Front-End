@@ -1,0 +1,20 @@
+/* Category section style */
+.CategorySliderContainer {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+}
+.CategorySliderHeading {
+    text-align: center;
+}
+
+.CategorySliderWrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2F9FF;
+    border-radius: 10px;
+    margin: 0px 0px 30px;
+}
+
+/* Category course section styling */
+.CategoryCourseWrappingBG {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+}

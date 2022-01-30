@@ -1,3 +1,4 @@
+/* Simple button styling */
 .ButtonWrap a {  
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -12,6 +13,7 @@
     text-decoration: none;
 }
 
+/* Certificate button styling */
 .CertificateButtonWrap a {  
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -26,6 +28,7 @@
     text-decoration: none;
 }
 
+/* Section heading styling */
 .SectionHeadingWrap {
     padding: 30px  0px;
 }
@@ -34,15 +37,36 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 18px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-    padding: 10px 22px;
+    padding: 10px 25px;
     text-decoration: none;
     background-color: #0D3D80;
     box-shadow: 4px 4px 4px #F59A26, inset 4px 4px 4px #1754A9, inset -4px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
 
+/* Top Instructor heading button styling */
+
+.TopInstructorHeading a span{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #F59A26;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.TopInstructorHeading a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #0D3D80;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-decoration: none;
+}

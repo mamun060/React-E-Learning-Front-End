@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
-import styles from '../../Assets/css/Home/Home.module.css';
+import styles from '../../Assets/css/Home/HeroSection.module.css';
+
 import Banner from '../../Assets/images/Background-Banner/12Amar-Skill-Vector 1.png';
 import Button from '../../Elements/Button/CustomButton';
 
@@ -12,7 +13,7 @@ const HeroSection = () => {
                 <div className={styles.HeroContainer}>
                     <Container>
                     <Row>
-                            <Col md={6} sm={12}>
+                        <Col md={6} sm={12}>
                             <div className={styles.HeroLeftWrap}>
                                 <div className={styles.HeroHeading}>
                                     <h2>

@@ -6,6 +6,8 @@ import HeroSection from './HeroSection';
 import MobileHeader from './../../Partials/Header/MobileHeader';
 import '../../Assets/css/Partials/Responsive.css';
 import PopularCourseSlider from './PopularCourseSlider';
+import TopInstructorSlider from './TopInstructorSlider';
+import OurAchivementSection from './OurAchivementSection';
 
 const Home = () => {
   return (
@@ -20,7 +22,8 @@ const Home = () => {
         <HeroSection />
         <CategorySlider />
         <PopularCourseSlider />
-
+        <TopInstructorSlider />
+        <OurAchivementSection />
 
         <Footer />
       </>

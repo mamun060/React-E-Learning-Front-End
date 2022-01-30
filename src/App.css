@@ -55,3 +55,8 @@
 .slick-list {
   margin: 0px 28px!important;
 }
+
+.slick-dots li button:before {
+  font-size: 12px!important;
+  color: #F59A26!important;
+}

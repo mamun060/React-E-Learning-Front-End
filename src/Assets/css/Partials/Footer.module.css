@@ -5,7 +5,10 @@
 
 /* Footer top section styling */
 .FooterContainerTop {
-    padding: 50px 0px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(181, 206, 255, 0.25);
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .FooterTopMenu ul {
@@ -42,10 +45,10 @@
 }
 
 .FooterLogo img {
-    width: 170px;
-    height: 180px;
+    width: 160px;
+    height: 170px;
     margin-left: -40px;
-    margin-top: -85px;
+    margin-top: -50px;
     margin-bottom: -30px;
 }
 
@@ -53,10 +56,10 @@
 .FooterAboutContent p{
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 300;
     color: #FFFFFF;
     width: 300px;
 }

@@ -39,7 +39,6 @@ const Footer = () => {
                         </Col>
 
                     </Row>
-
                 </div>
 
 

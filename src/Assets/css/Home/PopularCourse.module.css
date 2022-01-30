@@ -1,5 +1,5 @@
 .PopularCourseContainerWrap {
-    padding: 50px 0px;
+    padding: 20px 0px 30px;
 }
 .PopularCourseContainer {
     padding: 10px 0px 60px;
@@ -9,7 +9,6 @@
 .PopularCourseHeading {
     text-align: center;
     padding: 20px 0px;
-    
 }
 
 .PopularCourseSlide {

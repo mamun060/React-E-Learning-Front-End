@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SectionHeadingBtn from '../../Elements/Button/SectionHeadingBtn';
-import styles from '../../Assets/css/Home/Home.module.css';
+import styles from '../../Assets/css/Home/CategorySlider.module.css';
 import Slider from "react-slick";
 import CategoryCard from '../../Elements/Card/CategoryCard';
 import one from '../../Assets/images/Category-Slider/1Amar-Skill-Icon1 1.png';
@@ -15,7 +15,6 @@ import SmallCourseCard from '../../Elements/Card/SmallCourseCard';
 const CategorySlider = () => {
     var settings = {
         className:"center",
-        centerPadding:"60px",
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
@@ -24,8 +23,8 @@ const CategorySlider = () => {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 2,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
@@ -34,7 +33,7 @@ const CategorySlider = () => {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
@@ -42,7 +41,9 @@ const CategorySlider = () => {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
             }
           }
         ]

@@ -1,0 +1,24 @@
+.HeroContainer {
+    background-image: url('../../images/Background-Banner/Hero\ BG.png');
+}
+.HeroLeftWrap {
+    padding: 100px 0px;
+    margin-left: 26px;
+}
+.HeroHeading h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #084496;
+    text-shadow: 0px -4px 4px rgb(248 248 248 / 25%), 4px 4px 6px rgb(0 0 0 / 25%);
+}
+
+.HeroButton {
+    padding: 20px 0px;
+}
+.HeroBanner img {
+    width: 100%;
+}

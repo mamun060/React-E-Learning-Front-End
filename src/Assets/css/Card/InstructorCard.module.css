@@ -1,0 +1,78 @@
+.InstructorCardContainer {
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 30px 30px;
+    margin: 10px 5px;
+}
+
+.InstructorImage img {
+    width: 100%;
+    height: 280px;
+}
+
+.InstructorInfo {
+    text-align: center;
+}
+
+.InstructorInfo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #0D3D80;
+    padding: 10px 0px;
+}
+
+.InstructorInfo p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #FEAD46;
+}
+
+.InstructorSocialInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 30px;
+}
+
+.InstructorSocialIcon {
+    display: flex;
+}
+
+.InstructorSocial {
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #084496;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.InstructorSocial a {
+    text-decoration: none;
+}
+
+.InstructorSocial a svg {
+    color: #fff;
+    width: 20px;
+    height: 19px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.InstructorMoreInfo a {
+    background-color: #084496;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}

@@ -1,0 +1,94 @@
+.OurAchivementContainer {
+    margin: 30px 0px 50px;
+}
+.ourAchievementBackground{
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 34px;
+}
+
+.OurAchivementHeading {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.OurAchievement{
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #9B9A9A;
+    font-family: 'Roboto', sans-serif;
+}
+.userIcon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52pt;
+    color: #5FC2AA;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background: #E9F9F5;
+    box-shadow: 0px 4px 4px #C4C4C4;
+}
+.instructor{
+    text-align: left;
+    margin-left: 25px
+}
+.user h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 93px;
+    line-height: 109px;
+    text-transform: capitalize;
+    color: #0D3D80;
+    margin: 0;
+}
+.user h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #CBCBCB;
+    padding-right: 20px;
+}
+.instructorIcon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30pt;
+    color: #5FC2AA;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px #C4C4C4;
+    width: 100px;
+    height: 100px;
+    background: #E9F9F5;
+}
+.instructor{
+    text-align: left;
+    margin-left: 25px
+}
+.instructor h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-transform: capitalize;
+    color: #0D3D80;
+    margin: 0;
+}
+.instructor h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #CBCBCB;
+}
