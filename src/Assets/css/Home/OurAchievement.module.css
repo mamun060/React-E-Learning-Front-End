@@ -1,12 +1,15 @@
 .OurAchivementContainer {
-    margin: 30px 0px 50px;
+    margin: 50px 0px 100px;
 }
+
 .ourAchievementBackground{
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 40px 0px 50px 0px;
     background: #FFFFFF;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 34px;
+    border-radius: 20px;
+    z-index: 1000;
+    position: relative;
 }
 
 .OurAchivementHeading {
@@ -21,64 +24,82 @@
     color: #9B9A9A;
     font-family: 'Roboto', sans-serif;
 }
+
+.OurAchievementAlignment {
+    display: flex;
+}
+
 .userIcon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 52pt;
-    color: #5FC2AA;
     border-radius: 50%;
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     background: #E9F9F5;
     box-shadow: 0px 4px 4px #C4C4C4;
 }
-.instructor{
-    text-align: left;
-    margin-left: 25px
+
+.userIcon svg{
+    font-size: 52pt;
+    color: #5FC2AA;
 }
+
 .user h2{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 93px;
-    line-height: 109px;
+    font-weight: 600;
+    font-size: 42px;
     text-transform: capitalize;
     color: #0D3D80;
-    margin: 0;
+    padding-top: 10px;
+    margin: 0px;
 }
+
 .user h3{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 51px;
-    line-height: 60px;
+    font-weight: 600;
+    font-size: 32px;
     text-transform: capitalize;
     color: #CBCBCB;
-    padding-right: 20px;
 }
+
+.RightFirstRow  {
+    padding: 0px;
+}
+
+.RightSecondRow {
+    padding-top: 40px;
+}
+
+
 .instructorIcon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 30pt;
-    color: #5FC2AA;
     border-radius: 50%;
     box-shadow: 0px 4px 4px #C4C4C4;
     width: 100px;
     height: 100px;
-    background: #E9F9F5;
+    background-color: #E9F9F5;
 }
+
+.instructorIcon svg {
+    font-size: 30pt;
+    color: #5FC2AA;
+}
+
 .instructor{
     text-align: left;
     margin-left: 25px
 }
+
 .instructor h2{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 72px;
-    line-height: 84px;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 70px;
     text-transform: capitalize;
     color: #0D3D80;
     margin: 0;
@@ -86,9 +107,32 @@
 .instructor h3{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 30px;
+    font-weight: 600;
+    font-size: 24px;
     text-transform: capitalize;
     color: #CBCBCB;
+}
+
+/* Top Circle alignment*/
+.TopRightCircle {
+    width: 120px;
+    height: 120px;
+    background-color: #FFE6B9;
+    clip-path: circle(50% at 50% 50%);
+    margin-right: -88px;
+    margin-top: -55px;
+    z-index: 0;
+    position: absolute;
+    right: 138px;
+}
+
+.BottomLeftSqure {
+    width: 150px;
+    height: 150px;
+    background-color: #E0F1FF;
+    border-radius: 15px;
+    margin-top: -109px;
+    z-index: 0;
+    position: absolute;
+    left: 60px;
 }

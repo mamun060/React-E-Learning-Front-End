@@ -3,7 +3,7 @@
 }
 .HeroLeftWrap {
     padding: 100px 0px;
-    margin-left: 26px;
+    margin-left: 30px;
 }
 .HeroHeading h2 {
     font-family: 'Roboto', sans-serif;
@@ -21,4 +21,20 @@
 }
 .HeroBanner img {
     width: 100%;
+}
+
+/* Responsive style here */
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px){
+    .HeroHeading h2 {
+      font-size: 32px;
+      line-height: 35px;
+    }
+    .HeroLeftWrap {
+        padding: 50px 0px;
+        margin-left: 15px;
+    }
+    .HeroBanner img {
+        width: 100%;
+        margin-top: -50px;
+    }
 }

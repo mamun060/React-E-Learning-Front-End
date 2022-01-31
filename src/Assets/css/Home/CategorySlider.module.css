@@ -4,6 +4,7 @@
 }
 .CategorySliderHeading {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .CategorySliderWrap {
@@ -17,4 +18,28 @@
 /* Category course section styling */
 .CategoryCourseWrappingBG {
     background-image: url('../../images/Background-Banner/Curcle.png');
+}
+
+/* Load More button position */
+
+.LoadMoreButtonPosition {
+    padding: 40px 0px;
+    text-align: right;
+}
+
+/* Page Responsive isshu */
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+    .CategorySliderWrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F2F9FF;
+        border-radius: 10px;
+        margin: 0px 0px 30px;
+        padding-left: 50px!important;
+        padding-right: 50px!important;
+    }
+    .LoadMoreButtonPosition {
+        padding: 20px;
+    }
+
 }

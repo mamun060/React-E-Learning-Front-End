@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../Assets/css/Partials/Button.module.css';
+import styles from '../../Assets/css/Button/Button.module.css';
 
 const SectionHeadingBtn = ({name, link}) => {
     return (

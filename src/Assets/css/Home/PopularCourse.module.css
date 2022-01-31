@@ -2,15 +2,31 @@
     padding: 20px 0px 30px;
 }
 .PopularCourseContainer {
-    padding: 10px 0px 60px;
+    padding: 10px 0px 112px;
     background-image: url('../../images/Background-Banner/Group\ 2.png');
 }
 
 .PopularCourseHeading {
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0px 50px;
 }
 
 .PopularCourseSlide {
     margin: 0px 10px;
+}
+
+/* Responsive area styling here */
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px){
+    .PopularCourseContainerWrap {
+        padding-top: 20px!important;
+        padding-bottom: 20px!important;
+        padding-right: 40px!important;
+        padding-left: 40px!important;
+    }
+    .PopularCourseSlide {
+        margin: 0px 0px;
+    }
+    .PopularCourseContainer {
+        padding: 10px 0px 50px;
+    }
 }

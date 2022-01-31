@@ -10,6 +10,7 @@ import three from '../../Assets/images/Category-Slider/Amar-Skill-Icon3 1.png';
 import four from '../../Assets/images/Category-Slider/Amar-Skill-Icon4 1.png';
 import BigCourseCard from './../../Elements/Card/BigCourseCard';
 import SmallCourseCard from '../../Elements/Card/SmallCourseCard';
+import LoadMoreButton from './../../Elements/Button/LoadMoreButton';
 
 
 const CategorySlider = () => {
@@ -136,16 +137,27 @@ const CategorySlider = () => {
                                         <Col md={6}>
                                              <SmallCourseCard />
                                         </Col>
+
+                                        <Col md={6}>
+                                            <SmallCourseCard />
+                                        </Col>
+                                    
+                                        <Col md={6}>
+                                             <SmallCourseCard />
+                                        </Col>
+
                                         <Col md={6}>
                                             <SmallCourseCard />
                                         </Col>
                                     </Row>
                                     <Row>
-                                        <Col md={6}>
-                                             <SmallCourseCard />
-                                        </Col>
-                                        <Col md={6}>
-                                            <SmallCourseCard />
+                                        <Col>
+                                            <div className={styles.LoadMoreButtonPosition}>
+                                                <LoadMoreButton 
+                                                 btn_name="Load More"
+                                                 btn_link="#"
+                                                />
+                                            </div>
                                         </Col>
                                     </Row>
                                 </Col>

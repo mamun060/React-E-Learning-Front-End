@@ -1,14 +1,12 @@
 .TopInstructorSliderContainer {
-    background-image: url('../../images/Background-Banner/Group3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../../images/Background-Banner/top-instructor\ bg.png');
 }
 
 .TopInstructorWrap {
     background: #FAF9F9;
     border-radius: 52px;
-    padding: 20px 0px 40px;
-    margin-bottom: 30px;
+    padding: 20px 0px 0px;
+    margin-bottom: 20px;
 }
 
 .TopInstructorHeading {

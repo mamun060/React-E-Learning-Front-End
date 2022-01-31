@@ -8,7 +8,9 @@ const OurAchivementSection = () => {
     return (
         <div className={styles.OurAchivementContainer}>
            <Container>
-                <div className={styles.ourAchievementBackground}>
+              <div className={styles.TopRightCircle}></div>
+
+                 <div className={styles.ourAchievementBackground}>
                     <Row>
                         <Col>
                             <div className={styles.OurAchivementHeading}>
@@ -16,9 +18,9 @@ const OurAchivementSection = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row className='d-flex align-items-center'>
-                        <Col xs={12} sm={12} md={4}>
-                            <div class="mx-auto">
+                    <Row>
+                        <Col md={4} sm={12} xs={12}>
+                            <div>
                                 <div className={styles.userIcon}>
                                     <HiUserGroup/>
                                 </div>
@@ -28,10 +30,10 @@ const OurAchivementSection = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={12} sm={12} md={8}>
-                            <Row className='my-5'>
+                        <Col md={8} sm={12} xs={12}>
+                            <Row className={styles.RightFirstRow}>
                                 <Col xs={12} sm={12} md={6}>
-                                   <div className='d-flex'>
+                                   <div className={styles.OurAchievementAlignment}>
                                         <div className={styles.instructorIcon}>
                                             <FaChalkboardTeacher/>
                                         </div>
@@ -42,7 +44,7 @@ const OurAchivementSection = () => {
                                    </div>
                                 </Col>
                                 <Col xs={12} sm={12} md={6}>
-                                    <div className='d-flex'>
+                                    <div className={styles.OurAchievementAlignment}>
                                             <div className={styles.instructorIcon}>
                                                 <FaChalkboardTeacher/>
                                             </div>
@@ -54,9 +56,9 @@ const OurAchivementSection = () => {
                                 </Col>
                             </Row>
 
-                            <Row className='my-5'>
+                            <Row className={styles.RightSecondRow}>
                                 <Col xs={12} sm={12} md={6}>
-                                    <div className='d-flex'>
+                                    <div className={styles.OurAchievementAlignment}>
                                             <div className={styles.instructorIcon}>
                                                 <FaUserGraduate/>
                                             </div>
@@ -67,7 +69,7 @@ const OurAchivementSection = () => {
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12} md={6}>
-                                    <div className='d-flex'>
+                                    <div className={styles.OurAchievementAlignment}>
                                         <div className={styles.instructorIcon}>
                                             <FaChalkboardTeacher/>
                                         </div>
@@ -81,6 +83,8 @@ const OurAchivementSection = () => {
                         </Col>
                     </Row>
                 </div>
+                
+                <div className={styles.BottomLeftSqure}></div>
             </Container>
         </div>
     );

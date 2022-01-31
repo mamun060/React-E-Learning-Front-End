@@ -21,7 +21,6 @@
   margin-left: auto;
 }
 
-
 /* Mobile Menu Left Popup style modified */
 .offcanvas-start {
   top: 0;
@@ -33,7 +32,6 @@
 }
 
 /* Categrory slider section styling */
-
 .slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus {
   outline: none;
   background-color: #0D3D80!important;
@@ -42,6 +40,16 @@
   width: 40px!important;
   height: 40px!important;
   border-radius: 50%;
+}
+
+.slick-prev::before, .slick-next::before {
+  font-family: 'slick';
+  font-size: 18px!important;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
@@ -58,5 +66,43 @@
 
 .slick-dots li button:before {
   font-size: 12px!important;
-  color: #F59A26!important;
+  color: #084496!important;
+}
+
+.slide {
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.9);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+  margin: 20px 0px;
+}
+
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+  .slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus {
+    outline: none;
+    background-color: #0D3D80!important;
+    font-size: 14px!important;
+    padding: 5px;
+    width: 30px!important;
+    height: 30px!important;
+    border-radius: 50%;
+  }
+  .slick-prev::before, .slick-next::before {
+    font-family: 'slick';
+    font-size: 17px!important;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

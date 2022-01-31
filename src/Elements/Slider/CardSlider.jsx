@@ -1,55 +1,74 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import styles from '../../Assets/css/Sliders/Slider.module.css';
+import two from '../../Assets/images/Instructor/image 20.png'
+// import three from '../../Assets/images/Instructor/image 21.png'
 
+import InstructorCard from '../Card/InstructorCard';
+
+const sliders = [InstructorCard, InstructorCard, InstructorCard, InstructorCard];
 
 const CardSlider = ({SlideShape}) => {
-    var settings = {
-        className:"center",
-        centerPadding:"60px",
-        infinite: true,
-        speed: 500,
-        slidesToScroll: 1,
-        slidesToShow: 5,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-    };
+  const [imageIndex, setImageIndex] = useState(0);
+
+  const settings = {
+    infinite: true,
+    lazyLoad: true,
+    dots: true,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: 0,
+    beforeChange: (current, next) => setImageIndex(next),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+
+  };
+
     return (
         <>
             <div className={styles.CategorySliderWrap}>
                 <Slider {...settings}>
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
-                    <div>45646</div> 
+                  {sliders.map((slide, idx) => (
+                    <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+                        <InstructorCard 
+                          images={two}
+                          name="Nazmul Huda"
+                          title="Full-Stack Web Developer"
+                          company="ThemeShaper"
+                          fb="#"
+                          linkedin="#"
+                          youtube="#"
+                          more_name="More Info"
+                          more_link="#"
+                        />
+                    </div>
+                  ))}
                 </Slider>
             </div>
         </>

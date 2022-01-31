@@ -88,3 +88,13 @@
     font-size: 14px;
     text-transform: capitalize;
 }
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+    .SmallCourseCardContainer {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 10px 12px;
+    }
+    
+}
