@@ -15,11 +15,11 @@ import LoadMoreButton from './../../Elements/Button/LoadMoreButton';
 
 const CategorySlider = () => {
     var settings = {
-        className:"center",
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
         slidesToShow: 5,
+        dots: false,
         responsive: [
           {
             breakpoint: 1024,
@@ -27,7 +27,7 @@ const CategorySlider = () => {
               slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
-              dots: true
+              dots: false
             }
           },
           {
@@ -35,7 +35,8 @@ const CategorySlider = () => {
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
-              initialSlide: 2
+              initialSlide: 2,
+              dots: false
             }
           },
           {

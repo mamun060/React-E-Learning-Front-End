@@ -1,5 +1,6 @@
 .HeroContainer {
     background-image: url('../../images/Background-Banner/Hero\ BG.png');
+    background-size: contain;
 }
 .HeroLeftWrap {
     padding: 100px 0px;

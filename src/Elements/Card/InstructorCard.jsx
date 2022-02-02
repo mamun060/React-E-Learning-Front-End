@@ -5,7 +5,6 @@ import {FaFacebookF} from 'react-icons/fa';
 import {GrLinkedinOption} from 'react-icons/gr';
 import {BsYoutube} from 'react-icons/bs';
 
-
 const InstructorCard = ({images, name, title, company, fb, linkedin, youtube, more_name, more_link}) => {
     return (
         <>

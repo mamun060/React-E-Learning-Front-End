@@ -1,0 +1,44 @@
+.OtherHeroSectionWrap {
+    background-image: url('../../images/page-header/Page-hero.png');
+    background-size: cover;
+}
+
+.OtherHeroBgWrap {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0px;
+    position: relative;
+}
+
+.PageTitle {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.PageTitle h2 {
+    color: #2569c9;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.PageTitle span {
+    color: #F59A26;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.PageBreadCrubs {
+    text-align: center;
+}
+
+.PageBreadCrubs p {
+    font-size: 16px;
+}
+
+.PageBreadCrubs a {
+    text-decoration: none;
+    font-size: 16px;
+}

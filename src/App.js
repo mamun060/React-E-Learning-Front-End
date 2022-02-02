@@ -13,7 +13,7 @@ function App() {
         {
           routes.map((route,index) => {
             const {path, element, isPrivate} = route;
-            return ( isPrivate ? '' : <Route path={path} element={element} />);
+            return ( isPrivate ? '' : <Route key={index} path={path} element={element} />);
           })
         }
       </Routes> 

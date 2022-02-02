@@ -3,6 +3,7 @@ import styles from '../../Assets/css/Home/OurAchievement.module.css';
 import { HiUserGroup } from 'react-icons/hi';
 import { FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap';
+import CountUp from 'react-countup';
 
 const OurAchivementSection = () => {
     return (
@@ -20,36 +21,36 @@ const OurAchivementSection = () => {
                     </Row>
                     <Row>
                         <Col md={4} sm={12} xs={12}>
-                            <div>
+                            <div className={styles.BigUserCicleSection}>
                                 <div className={styles.userIcon}>
                                     <HiUserGroup/>
                                 </div>
                                 <div className={styles.user}>
-                                    <h2>243</h2>
+                                    <h2><CountUp start={0} end={262} /></h2>
                                     <h3>Users</h3>
                                 </div>
                             </div>
                         </Col>
                         <Col md={8} sm={12} xs={12}>
                             <Row className={styles.RightFirstRow}>
-                                <Col xs={12} sm={12} md={6}>
+                                <Col md={6} sm={12} xs={12}>
                                    <div className={styles.OurAchievementAlignment}>
                                         <div className={styles.instructorIcon}>
                                             <FaChalkboardTeacher/>
                                         </div>
                                         <div className={styles.instructor}>
-                                            <h2>08</h2>
+                                            <h2><CountUp start={0} end={10} /></h2>
                                             <h3>iNSTRUCTOR</h3>
                                         </div>
                                    </div>
                                 </Col>
-                                <Col xs={12} sm={12} md={6}>
+                                <Col md={6} sm={12} xs={12}>
                                     <div className={styles.OurAchievementAlignment}>
                                             <div className={styles.instructorIcon}>
                                                 <FaChalkboardTeacher/>
                                             </div>
                                             <div className={styles.instructor}>
-                                                <h2>06</h2>
+                                                <h2><CountUp start={0} end={20} /></h2>
                                                 <h3>COURSE </h3>
                                             </div>
                                     </div>
@@ -57,24 +58,24 @@ const OurAchivementSection = () => {
                             </Row>
 
                             <Row className={styles.RightSecondRow}>
-                                <Col xs={12} sm={12} md={6}>
+                                <Col md={6} sm={12} xs={12}>
                                     <div className={styles.OurAchievementAlignment}>
                                             <div className={styles.instructorIcon}>
                                                 <FaUserGraduate/>
                                             </div>
                                             <div className={styles.instructor}>
-                                                <h2>234</h2>
+                                                <h2><CountUp start={0} end={250} /></h2>
                                                 <h3>LEARNERS</h3>
                                             </div>
                                     </div>
                                 </Col>
-                                <Col xs={12} sm={12} md={6}>
+                                <Col md={6} sm={12} xs={12}>
                                     <div className={styles.OurAchievementAlignment}>
                                         <div className={styles.instructorIcon}>
                                             <FaChalkboardTeacher/>
                                         </div>
                                         <div className={styles.instructor}>
-                                            <h2>1012</h2>
+                                            <h2><CountUp start={0} end={1500} /></h2>
                                             <h3>ENROLMENT</h3>
                                         </div>
                                    </div>

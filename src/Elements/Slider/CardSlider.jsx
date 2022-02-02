@@ -55,7 +55,7 @@ const CardSlider = ({SlideShape}) => {
             <div className={styles.CategorySliderWrap}>
                 <Slider {...settings}>
                   {sliders.map((slide, idx) => (
-                    <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
+                    <div key={idx} className={idx === imageIndex ? "slide activeSlide" : "slide"}>
                         <InstructorCard 
                           images={two}
                           name="Nazmul Huda"

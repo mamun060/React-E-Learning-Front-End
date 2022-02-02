@@ -67,6 +67,7 @@
 .FooterWizardTitle {
     width: 250px;
 }
+
 .FooterWizardTitle h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -180,7 +181,7 @@
 }
 .PaymentIconImage img {
     width: 100%;
-    height: 44px;
+    height: auto;
 }
 
 .FooterCopyRightContent {
@@ -199,13 +200,80 @@
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 667px){ 
     .FooterContainer {
-        background-color: #002E6C;
-        color: #fff;
         padding-left: 20px;
     }
+
     .PaymentIconImage img {
         width: 90%;
-        height: 30px;
+        height: auto;
         margin-left: -15px;
     }
+
+    .FooterTopMenu {
+        display: none;
+    }
+
+    .CertifcateButton {
+        text-align: left;
+        border-bottom: 1px solid rgba(170, 184, 255, 0.5);
+        margin-right: 50px !important;
+        padding-bottom: 25px;
+    }
+    
+    .FooterContainerTop {
+        border: none!important;
+        padding: none!important;
+    }
+
+    .FooterAboutContent p{
+        font-size: 14px;
+        line-height: 25px;
+        width: auto;
+        padding-right: 20px;
+    }
+
+    /* Main footer responsive */
+    .FooterWizardTitle {
+        width: auto;
+    }
+    
+    .FooterWizardTitle h2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        border-width: 150px;
+        border-bottom: 1px solid rgba(170, 184, 255, 0.5);
+        margin-left: 0px!important;
+        margin-right: 30px;
+    }
+
+    .UseFullLinkListing ul{
+        text-align: left;
+        margin-left: -31px;
+    }
+
+    .UseFullLinkListing ul li a {
+        font-size: 14px;
+    }
+
+    .FooterSocialIcon ul{
+        margin-left: -32px;
+    }
+    .FooterLocationArea p {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .FooterCopyRightContent {
+        margin-right: 30px;
+    }
+
+    .FooterCopyRightContent p {
+        font-size: 12px;
+    }
+
 }

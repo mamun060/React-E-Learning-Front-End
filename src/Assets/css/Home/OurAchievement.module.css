@@ -136,3 +136,67 @@
     position: absolute;
     left: 60px;
 }
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px){
+    .ourAchievementBackground{
+        margin: 15px;
+    }
+
+    .BigUserCicleSection {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .user {
+        padding-left: 20px;
+    }
+    .OurAchievementAlignment {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .userIcon{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .userIcon svg{
+        font-size: 24pt;
+        color: #5FC2AA;
+    }
+
+    .user h2{
+        font-size: 24px;
+    }
+    
+    .user h3{
+        font-size: 18px;
+    }
+
+    .RightSecondRow {
+        padding-top: 0px;
+    }
+
+    .instructorIcon{
+        width: 80px;
+        height: 80px;
+        margin: 8px 0px;
+    }
+    
+    .instructorIcon svg {
+        font-size: 24pt;
+    }
+
+    .instructor h2{
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .instructor h3{
+        font-size: 18px;
+        margin-top: -10px;
+    }
+    
+    
+}
