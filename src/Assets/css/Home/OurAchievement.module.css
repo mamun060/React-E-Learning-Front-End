@@ -197,6 +197,28 @@
         font-size: 18px;
         margin-top: -10px;
     }
-    
+    .TopRightCircle {
+        width: 70px;
+        height: 70px;
+        background-color: #FFE6B9;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin-right: -88px;
+        margin-top: -20px;
+        z-index: 0;
+        position: absolute;
+        right: 93px;
+    }
+
+    .BottomLeftSqure {
+        width: 90px;
+        height: 90px;
+        background-color: #E0F1FF;
+        border-radius: 15px;
+        margin-top: -86px;
+        z-index: 0;
+        position: absolute;
+        left: 9px;
+    }
     
 }

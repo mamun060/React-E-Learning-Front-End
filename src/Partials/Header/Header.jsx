@@ -33,7 +33,7 @@ const Header = () => {
 
                         <Col md={4} sm={3}>
                             <div className={styles.NavSearch}>
-                                <input type="text" /><VscSearch />
+                                <input type="text" placeholder='Type here....' /><VscSearch />
                             </div>
                         </Col>
 

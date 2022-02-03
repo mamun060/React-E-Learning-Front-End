@@ -85,7 +85,7 @@
 
     .InstructorImage img {
         width: 100%;
-        height: 280px;
+        height: auto;
     }
 
     .InstructorInfo p {

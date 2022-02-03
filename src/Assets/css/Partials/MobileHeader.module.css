@@ -85,6 +85,7 @@
     border-radius: 5px;
     background: #F1F1F1;
     margin: 10px;
+    display: none;
 }
 
 .MobileHeaderSearchBar input {

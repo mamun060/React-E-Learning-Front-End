@@ -26,10 +26,10 @@
 .FooterTopMenu ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
-
 }
+
 .FooterTopMenu ul li a:hover {
     color: #F59A26;
     cursor: pointer;
@@ -105,6 +105,36 @@
     color: #F59A26;
     cursor: pointer;
 }
+
+.MobileFooterMenuLinks {
+    display: none;
+}
+
+.MobileFooterMenuLinks ul{
+    text-align: left;
+    margin-left: -20px;
+}
+
+.MobileFooterMenuLinks ul li {
+    list-style: none;
+    padding-bottom: 6px;
+}
+
+.MobileFooterMenuLinks ul li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.MobileFooterMenuLinks ul li a:hover {
+    color: #F59A26;
+    cursor: pointer;
+}
+
 
 
 .FooterSocialIcon ul{
@@ -199,6 +229,14 @@
 
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 667px){ 
+
+    .FooterContainerTop {
+        margin-bottom: 20px;
+        border-bottom: 2px solid rgba(181, 206, 255, 0.25);
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
     .FooterContainer {
         padding-left: 20px;
     }
@@ -213,11 +251,21 @@
         display: none;
     }
 
+    .FooterTopMenu ul {
+        display: inline;
+        padding-bottom: 50px;
+    }
+
+    .FooterTopMenu ul li a{
+        font-size: 12px;
+    }
+
     .CertifcateButton {
         text-align: left;
         border-bottom: 1px solid rgba(170, 184, 255, 0.5);
         margin-right: 50px !important;
         padding-bottom: 25px;
+        margin-top: 30px;
     }
     
     .FooterContainerTop {
@@ -226,7 +274,7 @@
     }
 
     .FooterAboutContent p{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 25px;
         width: auto;
         padding-right: 20px;
@@ -241,7 +289,7 @@
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 36px;
         text-transform: capitalize;
         color: #FFFFFF;
@@ -257,14 +305,28 @@
     }
 
     .UseFullLinkListing ul li a {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .MobileFooterMenuLinks {
+        display: inherit;
+        margin-top: -18px;
+    }
+
+    .MobileFooterMenuLinks ul{
+        text-align: left;
+        margin-left: -31px;
+    }
+
+    .MobileFooterMenuLinks ul li a {
+        font-size: 12px;
     }
 
     .FooterSocialIcon ul{
         margin-left: -32px;
     }
     .FooterLocationArea p {
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 0px;
     }
 

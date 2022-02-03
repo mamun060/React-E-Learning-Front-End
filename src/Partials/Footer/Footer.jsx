@@ -23,8 +23,7 @@ const Footer = () => {
                                     <li><a href="#">Contact Us</a></li>
                                     <li><a href="#">Terms and Conditions</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Refund Return Policy
-                                    </a></li>
+                                    <li><a href="#">Refund Return Policy</a></li>
                                 </ul>
                             </div>
                         </Col>
@@ -70,8 +69,19 @@ const Footer = () => {
                                     <li><a href="#">Create an Account</a></li>
                                 </ul>
                             </div>
+                            <div className={styles.MobileFooterMenuLinks}>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Refund Return Policy
+                                    </a></li>
+                                </ul>
+                            </div>
                         </Col>
 
+                
                         <Col md={4}>
                             <div className={styles.FooterWizardTitle}>
                                 <h2>Follow us</h2>

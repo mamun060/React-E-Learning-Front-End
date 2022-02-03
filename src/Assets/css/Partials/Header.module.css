@@ -85,7 +85,8 @@
     line-height: 21px;
     text-transform: capitalize;
     color: #fff;
-    background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%);
+    /* background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%); */
+    background: linear-gradient( 122.33deg, #ecc283 0%, #e8552d 102.08%);
     border-radius: 5px;
     padding: 10px 22px;
 }
