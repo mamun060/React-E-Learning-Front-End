@@ -31,47 +31,19 @@
     margin-bottom: -10px;
 }
 
-/* star rating style*/
-.RatingStarPosition {
-    display: flex;
-}
-
 .RatingTitleStyle p {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    text-transform: capitalize;
-    color: rgba(63, 68, 96, 0.65);
-    padding-left: 10px;
-    width: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(63, 68, 96, 0.65);
+  padding-left: 10px;
+  width: 100px;
+  margin-top: -2px;
 }
-
-.RatingStarStyle {
-    padding-left: 20px;
-    margin-top: -6px;
-    text-align: left;
-}
-
-/* Custom Rating start styling */
-
-.CustomRatingStyle svg {
-    width: 20px;
-    height: 20px;
-    color: #F49926;
-}
-
-.CustomRatingStyle span {
-    border-color: 1px solid #ffa500;
-}
-.CustomRatingStyle span svg {
-    width: 20px;
-    height: 20px;
-    color: #dfe6e9;
-}
-
-/* custom checkbox */
-input[type="radio"] {
+/* Top Instructor styling */
+.RatingInputStyle input[type="radio"] {
     height: 18px;
     width: 18px;
     margin: 0;
@@ -85,33 +57,32 @@ input[type="radio"] {
     margin-right: 10px;
   }
   
-  input[type="radio"]:checked {
+  .RatingInputStyle input[type="radio"]:checked {
     border: 2px solid #F49926;
     background: #F49926;
   }
   
-  input[type="radio"]:checked:before, input[type="radio"]:checked:after {
+  .RatingInputStyle input[type="radio"]:checked:before, input[type="radio"]:checked:after {
     content: "";
     position: absolute;
     height: 2px;
     background: #fff;
   }
     
-  input[type="radio"]:checked:before {
+  .RatingInputStyle input[type="radio"]:checked:before {
     width: 6px;
     top: 8px;
     left: 2px;
     transform: rotate(44deg);
   }
   
-  input[type="radio"]:checked:after {
+  .RatingInputStyle input[type="radio"]:checked:after {
     width: 10px;
     top: 6px;
     left: 4px;
     transform: rotate(-55deg);
   }
   
-  input[type="radio"]:focus {
+  .RatingInputStyle input[type="radio"]:focus {
     outline: none;
   }
-

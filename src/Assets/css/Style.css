@@ -1,0 +1,46 @@
+/* Multirange slider custom css styling */
+.multi-range-slider {
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.multi-range-slider .bar-left {
+    width: 25%;
+    background-color: #BCCBDB!important;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: none!important;
+    padding: 4px 0px;
+}
+
+.multi-range-slider .bar-right {
+    width: 25%;
+    background-color: #BCCBDB!important;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: none!important;
+    padding: 4px 0px;
+}
+
+.multi-range-slider .thumb::before {
+    content: '';
+    background-color: #F59A26!important;
+    position: absolute;
+    width: 15px!important;
+    height: 15px!important;
+    border: none!important;
+    box-shadow:none!important;
+    border-radius: 50%;
+    z-index: 1;
+    margin: -4px!important;
+}
+
+.multi-range-slider .bar-inner {
+    background-color: #BCCBDB!important;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    position: relative;
+    border: none!important;
+    justify-content: space-between;
+    box-shadow: none!important;
+}

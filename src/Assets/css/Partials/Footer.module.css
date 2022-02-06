@@ -241,6 +241,12 @@
         padding-left: 20px;
     }
 
+    .PaymentIconImage {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
     .PaymentIconImage img {
         width: 90%;
         height: auto;
