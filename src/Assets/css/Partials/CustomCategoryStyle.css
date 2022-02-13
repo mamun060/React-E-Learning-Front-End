@@ -14,9 +14,9 @@
     border: none;
     font-size: 1rem;
     font-size: 500;
-    padding: 10px 20px;
+    padding: 10px 8px;
     background: #F1F1F1;
-    color: #000;
+    color: rgb(117, 117, 117);
     box-shadow: inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }

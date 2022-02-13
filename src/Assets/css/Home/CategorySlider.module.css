@@ -2,6 +2,11 @@
 .CategorySliderContainer {
     background-image: url('../../images/Background-Banner/Curcle.png');
 }
+
+.mainWrapper{
+background-color: #f2f9ffd4;
+}
+
 .CategorySliderHeading {
     text-align: center;
     padding-bottom: 30px;
@@ -10,7 +15,7 @@
 .CategorySliderWrap {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #F2F9FF;
+    background-color: #f2f9ffd4;
     border-radius: 10px;
     margin: 0px 0px 30px;
 }
@@ -18,6 +23,9 @@
 /* Category course section styling */
 .CategoryCourseWrappingBG {
     background-image: url('../../images/Background-Banner/Curcle.png');
+    background-color: #f2f9ffbf;
+    /* background-color: #f2f9ffd4; */
+    padding: 20px 40px;
 }
 
 /* Load More button position */
@@ -40,6 +48,10 @@
     } */
     .LoadMoreButtonPosition {
         padding: 20px;
+    }
+
+    .CategoryCourseWrappingBG{
+        padding: 20px 20px;
     }
 
 }

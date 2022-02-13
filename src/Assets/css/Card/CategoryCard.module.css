@@ -1,17 +1,35 @@
 .CardCetegoryWrap {
-    width: 200px;
-    height: 150px;
+    margin: 10px 5px;
+    padding: 1.375rem 1.25rem 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.1875rem;
     background: #fff;
-    box-shadow: 4px 4px 4px rgba(224, 241, 255, 0.914207);
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    border-radius: 10px;
-    margin: 10px 7px;
-    margin-left: 10px;
+    border-radius: 0.9375rem;
+    border-radius: 0.9375rem;
+    border-top: 3px solid #0D3D80 !important;
+}
+
+
+.CardCetegoryWrap:hover,
+.active{
+    border-top: 3px solid #F59A26 !important;
 }
 
 .CategorySliderIcon {
     text-align: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .CategorySliderIcon img {
@@ -22,16 +40,16 @@
 
 .CategorySliderTitle {
     text-align: center;
-    margin-top: -10px;
+    margin-top: -30px;
 }
 
 .CategorySliderTitle a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    color: #FF925E;
+    color: rgb(110, 105, 105);
+    font-weight: bold;
 }
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {

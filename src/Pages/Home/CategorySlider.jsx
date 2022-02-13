@@ -70,56 +70,50 @@ const CategorySlider = () => {
                         {/** Category Heading Section End */}
 
                         {/** Category Slider Section Start */}
-                        <Row>
-                            <div className={styles.CategorySliderWrap}>
+                        <Row className={styles.mainWrapper}>
+                            <div className={styles.CategorySliderWrap + ' categorySliderWrapper'}>
                                 <Slider {...settings}>
                                     <div>
                                         <CategoryCard 
                                         icon={one}
                                         cat_link="#"
-                                        title="Web Developement"
+                                        title="ডিজিটাল মার্কেটিং"
+                                        active="active"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={two}
                                         cat_link="#"
-                                        title="Web Developement"
+                                        title="ওয়েব ডিজাইন"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={three}
                                         cat_link="#"
-                                        title="Web Developement"
+                                        title="ওয়েব ডেভেলপমেন্ট"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={four}
                                         cat_link="#"
-                                        title="Web Developement"
+                                        title="গ্রাফিক্স ডিজাইন"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={one}
                                         cat_link="#"
-                                        title="Web Developement"
+                                        title="এসইও"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={two}
                                         cat_link="#"
-                                        title="Web Developement"
-                                        />
-                                    </div>
-                                    <div>
-                                        <CategoryCard 
-                                        icon={four}
-                                        cat_link="#"
-                                        title="Web Developement"
+                                        title="কন্টেন্ট রাইটিং"
                                         />
                                     </div>
                                 </Slider>
@@ -128,42 +122,44 @@ const CategorySlider = () => {
                         {/** Category Slider Section End */}
 
                         {/** Category Course Section Start */}
-                        <div className={styles.CategoryCourseWrappingBG}>
-                            <Row>
-                                <Col md={6}>
-                                    <BigCourseCard />
-                                </Col>
-                                <Col md={6}>
-                                    <Row>
-                                        <Col md={6}>
-                                             <SmallCourseCard />
-                                        </Col>
+                        <Row className={styles.mainWrapper}>
+                            <div className={styles.CategoryCourseWrappingBG}>
+                                <Row>
+                                    <Col md={6}>
+                                        <BigCourseCard />
+                                    </Col>
+                                    <Col md={6}>
+                                        <Row>
+                                            <Col md={6}>
+                                                <SmallCourseCard />
+                                            </Col>
 
-                                        <Col md={6}>
-                                            <SmallCourseCard />
-                                        </Col>
-                                    
-                                        <Col md={6}>
-                                             <SmallCourseCard />
-                                        </Col>
+                                            <Col md={6}>
+                                                <SmallCourseCard />
+                                            </Col>
 
-                                        <Col md={6}>
-                                            <SmallCourseCard />
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <div className={styles.LoadMoreButtonPosition}>
-                                                <LoadMoreButton 
-                                                 btn_name="Load More"
-                                                 btn_link="#"
-                                                />
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </div>
+                                            <Col md={6}>
+                                                <SmallCourseCard />
+                                            </Col>
+
+                                            <Col md={6}>
+                                                <SmallCourseCard />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <div className={styles.LoadMoreButtonPosition}>
+                                                    <LoadMoreButton
+                                                        btn_name="Load More"
+                                                        btn_link="#"
+                                                    />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Row>
                         {/** Category Course Section End */}
 
                     </Container>

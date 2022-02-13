@@ -56,51 +56,45 @@ const PopularCourseSlider = () => {
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row className={styles.mainWrapper}>
                             <div className={styles.CategorySliderWrap}>
                                 <Slider {...settings}>
 
-                                    <div>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard'/>
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard'/>
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard' />
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard'/>
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard'/>
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard' />
                                         </div>
-                                    </div>
-
-                                    <div>
+                                    </>
+                                    <>
                                         <div className={styles.PopularCourseSlide}>
-                                            <SmallCourseCard />
+                                            <SmallCourseCard className='containerSlidePopolarCard' />
                                         </div>
-                                    </div>
+                                    </>
 
                                 </Slider>
                             </div>

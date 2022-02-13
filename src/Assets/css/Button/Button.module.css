@@ -6,12 +6,15 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: capitalize;
-    color: #fff;
+    color: #fff !important;
     /* background-color: #ff9507; */
-    background-color: #084496;
+    /* background-color: #084496; */
     border-radius: 5px;
     padding: 15px 50px;
     text-decoration: none;
+    background: linear-gradient( 122.33deg ,#ffa42f 0%, #327fecbf 102.08%) !important;
+    border: 1px solid #a2a1a5;
+    
 }
 
 /* Certificate button styling */
@@ -22,8 +25,9 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: capitalize;
-    color: #000;
-    background-color: #F59A26;
+    color: #fff !important;
+    /* background-color: #F59A26; */
+    background: linear-gradient( 122.33deg ,#f7b155 0%, #beddfabf 102.08%) !important;
     border-radius: 5px;
     padding: 10px 22px;
     text-decoration: none;
@@ -45,8 +49,22 @@
     padding: 10px 25px;
     text-decoration: none;
     background-color: #0D3D80;
-    box-shadow: 4px 4px 4px #F59A26, inset 4px 4px 4px #1754A9, inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 8px #f5b561, inset 4px 4px 4px #1754A9, inset -4px -4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.SectionHeadingWrap a::before{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: -15px;
+    width: 100px;
+    height: 100%;
+    background-color: #0D3D80;
+    clip-path: polygon(25% 0%, 100% 0%, 78% 45%, 0 47%);
+    z-index: -1;
 }
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px){
@@ -138,3 +156,4 @@
     text-transform: capitalize;
     color: #FFFFFF;
 }
+

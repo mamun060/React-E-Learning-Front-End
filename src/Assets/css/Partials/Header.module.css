@@ -14,7 +14,7 @@
 
 .NavCategory {
     margin-top: 0px;
-    width: 160px;
+    /* width: 160px; */
     height: 40px;
     background-color: #F1F1F1;
     box-shadow: inset -2px -1px 4px rgba(0, 0, 0, 0.15);
@@ -52,8 +52,12 @@
     padding: 0px 5px;
 }
 
+/* .courseText{
+    font-size: calc(100% + 18px) !important;
+} */
+
 .NavSearch {
-    height: 40px;
+    /* height: 40px;
     width: auto;
     display: flex;
     align-items: center;
@@ -61,16 +65,36 @@
     box-sizing: border-box;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 5px;
+    background: #F1F1F1; */
+
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #F1F1F1;
+    box-sizing: border-box;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    border-radius: 5px;
     background: #F1F1F1;
+    max-height: 45px;
+    /* padding: 0.875rem !important; */
 }
 
 .NavSearch input {
+    width: calc(100% - 3.125rem);
+    height: 100%;
+    background: transparent;
+    padding: 0.84375rem 0.875rem 0.84375rem 0rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    font-family: "Hind Siliguri";
+    font-style: normal;
+    /* font-size: 0.875rem; */
+    font-weight: 500;
+    line-height: 1.25;
+    outline: none !important;
     border: none;
-    width: 90%;
-    height: 40px;
-    color: #000;
-    padding-left: 10px;
-    background: #fff;
+    padding-left: 20px;
 }
 
 .NavSearch input:focus {
@@ -100,7 +124,7 @@
     text-decoration: none;
 }
 
-.NavButtonArea .LeftSignInButton a {
+/* .NavButtonArea .LeftSignInButton a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -111,9 +135,37 @@
     border-radius: 5px;
     padding: 12px 40px;
     background-color: #0f3a77;
+} */
+
+
+.NavButtonArea .LeftSignInButton a {
+    font-family: "Hind Siliguri";
+    font-style: normal;
+    font-size: 1.125rem;
+    /* font-weight: 500; */
+    font-weight: bold;
+    line-height: 1.25;
+    color: #F59A26;
+    border: solid 0.125rem #F59A26;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
 }
 
-.NavButtonArea .RightLogInButton a{
+/* 0f3a77 */
+
+.NavButtonArea .LeftSignInButton:hover a{
+    /* background: linear-gradient(122.33deg,#F59A26 0%, #084496 102.08%); */
+    background: linear-gradient(122.33deg,#ffa42f 0%, #669be3bf 102.08%);
+    color: white;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+
+
+/* .NavButtonArea .RightLogInButton a{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -121,11 +173,71 @@
     line-height: 21px;
     text-transform: capitalize;
     color: #fff;
-    /* background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%); */
     background: linear-gradient( 122.33deg, #ff9900 0%, #ff6940 102.08%);
     border-radius: 5px;
     padding: 12px 40px;
+} */
+
+.NavButtonArea .RightLogInButton a{
+    /* background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%); */
+    font-family: "Hind Siliguri";
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /* background: linear-gradient(122.33deg,#F59A26 0%, #F83600 102.08%); */
+     background: linear-gradient(122.33deg,#ffa42f 0%, #327fecbf 102.08%);
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+    border: solid 0.125rem transparent;
 }
+
+.NavButtonArea .RightLogInButton:hover a{
+    color: #F59A26;
+    border-color: #F59A26;
+    background: transparent;
+}
+
+.categoryToggle {
+    background: #F3F3F3;
+    padding: 0.75rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    color: #000 !important;
+}
+
+.categoryToggle .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem !important;
+}
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) { 
     .NavButtonArea div {

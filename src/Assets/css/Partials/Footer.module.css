@@ -28,13 +28,7 @@
     color: #fff;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-}
-
-.FooterTopMenu ul li .ActiveClass{
-    text-decoration: none;
-    color: #F59A26;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .FooterTopMenu ul li a:hover {

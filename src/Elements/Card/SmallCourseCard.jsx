@@ -4,10 +4,10 @@ import styles from '../../Assets/css/Card/SmallCourseCard.module.css';
 import BigThumnail from '../../Assets/images/Course-Card/SmallCourseThumnail.jpg';
 import { BsHeartFill, BsShareFill, BsCart3} from 'react-icons/bs';
 
-const SmallCourseCard = () => {
+const SmallCourseCard = ({ className }) => {
     return (
         <>
-               <div className={styles.SmallCourseCardContainer}>
+            <div className={styles.SmallCourseCardContainer + ` ${className ?? ''} py-2`}>
 
                     <div className={styles.SmallCardThumnail}>
                         <img src={BigThumnail} alt="Amar Skill" />

@@ -1,7 +1,9 @@
 .BigCourseCardContainer {
     background-color: #fff;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 0px 0px 10px 10px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    filter: drop-shadow(0px 4px 12px rgba(126, 123, 123, 0.25));
+    /* border-radius: 0px 0px 10px 10px; */
+    border-radius: 20px;
 }
 
 .BigCardThumnail {
@@ -11,10 +13,11 @@
 .BigCardThumnail img {
     width: 100%;
     height: auto;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .CourseCardInfoWrap {
-    padding: 45px 20px;
+    padding: 50px 20px;
     background-color: #FFFFFF;
     border-radius: 30px;
 }
@@ -28,8 +31,8 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
     text-transform: capitalize;
     color: #142370;
 }
@@ -44,8 +47,8 @@
 }
 
 .InstructorSocailIcon a svg {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     color: #F59A26;
     transition: 0.5s ease-out;
 }
@@ -59,19 +62,20 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 43px;
+    font-size: 25px;
     text-transform: capitalize;
     color: #0D3D80;
+    margin-bottom: 30px;
 }
 
 .BigCardBottomWrap {
     border-top:  2px solid rgba(0, 0, 0, 0.1);
-    /* margin: 20px 0px; */
+    margin: 18px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-bottom: 10px;
 }
 
 .PriceStyle p {
@@ -79,13 +83,13 @@
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
-    line-height: 20px;
+    line-height: 30px;
     text-transform: capitalize;
     color: #142370;
 }
 
 .BuyNowButtonWrap a {
-    background-color: #F59A26;
+    /* background-color: #F59A26;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #fff!important;
@@ -94,47 +98,92 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    text-transform: capitalize; */
+
+    background-color: #F59A26;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 25%), inset -2px -1px 4px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    color: #fff!important;
+    padding: 15px 34px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
     text-transform: capitalize;
 }
+
+
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
     .BigCourseCardContainer {
         background-color: #fff;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 0px 0px 10px 10px;
-        margin: 10px 15px;
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+        border-radius: 20px !important;
+        margin: 10px 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
+
     .InstractorName h2 {
-        font-size: 18px;
-        line-height: 25px;
+        color: #F59A26;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .InstructorSocailIcon a svg {
-        width: 20px;
-        height: 20px;
-        color: #F59A26;
+        width: 15px;
+        height: 15px;
+        color: #142370;
     }
     
     .InstructorSocailIcon {
         padding-top: 0px!important;
     }
 
+    /* .BigCardCouseTitle h4 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 25px;
+        text-transform: capitalize;
+        color: #0D3D80;
+    } */
+
+
     .BigCardCouseTitle h4 {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 13px;
         text-transform: capitalize;
         color: #0D3D80;
+        margin-bottom: 5px !important;
+    }
+
+    .CourseCardInfoWrap{
+        padding: 20px 20px;
+    }
+
+    .BigCardBottomWrap {
+        padding-top: 0px !important;
+        margin: 5px 0px;
     }
 
     .BuyNowButtonWrap a {
+        background-color: #F59A26;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        color: #fff !important;
         padding: 5px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
     }
 
     .PriceStyle p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 25px;
         margin-top: 8px;
     }

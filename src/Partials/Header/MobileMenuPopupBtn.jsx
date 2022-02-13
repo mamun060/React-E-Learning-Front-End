@@ -16,7 +16,7 @@ const MobileMenuPopupBtn = () => {
                 <BsBorderWidth />
             </div>
 
-            <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas show={show} onHide={handleClose} className={styles.dialogDrawer}>
                 <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                     <div className={styles.MobileMenuPopupMenu}>
@@ -28,10 +28,10 @@ const MobileMenuPopupBtn = () => {
                    
                     <div className={styles.NavButtonArea}>
                         <div className={styles.LeftSignInButton}>
-                            <a href="#">Sign In</a>
+                            <a href="#">একাউন্ট তৈরি করুন</a>
                         </div>
                         <div className={styles.RightLogInButton}>
-                            <a href='#'>Log In</a>
+                            <a href='#'>লগইন করুন</a>
                         </div>
                     </div>
                     

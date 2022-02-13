@@ -1,11 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../../Assets/css/Card/CategoryCard.module.css';
 
-const CategoryCard = ({icon, title, cat_link }) => {
+const CategoryCard = ({ icon, title, cat_link, active }) => {
+
+    let activeClass = null;
+    if (/active/im.test(active)){
+        activeClass = styles['active'] ?? '';
+    }
+
     return (
         <>
-            <div className={styles.CardCetegoryWrap}>
+            <div className={`${styles.CardCetegoryWrap} ${activeClass}`}>
                 <div className={styles.CategorySliderIcon}>
                     <img src={icon} alt="" />
                 </div>

@@ -3,6 +3,7 @@
     height: 140px;
     margin-bottom: -74px;
     margin-left: -30px;
+    margin-top: -10px;
 }
 .PopupMobileMenuIcon {
     width: 40px;
@@ -43,6 +44,13 @@
     border: 2px solid #F59A26;
     border-radius: 5px;
     padding: 12px 42px;
+    /* width: 90% !important; */
+}
+
+.NavButtonArea .LeftSignInButton:hover a{
+    background: linear-gradient(122.33deg,#ffa42f 0%, #669be3bf 102.08%);
+    color: white;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
 }
 
 .NavButtonArea .RightLogInButton a{
@@ -56,6 +64,12 @@
     background-color: #F59A26;
     border-radius: 5px;
     padding: 13px 48px;
+    /* width: 90 !important */
+}
+
+.NavButtonArea .RightLogInButton:hover a{
+    background: linear-gradient(122.33deg,#ffa42f 0%, #669be3bf 102.08%);
+    color: white;
 }
 
 
@@ -108,4 +122,46 @@
     color: #F59A26;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+.dialogDrawer {
+    width: 320px!important;
+}
+
+@media screen and (max-width:320px) {
+    .dialogDrawer {
+        width: 280px!important;
+    }  
+
+    .NavButtonArea .LeftSignInButton a,
+    .NavButtonArea .RightLogInButton a{
+        /* width: 120px !important; */
+        font-size: 16px !important;
+        width: 100% !important;
+        display: block;
+        padding-left: 10px !important;
+        font-weight: bold;
+    }
+
+    .NavButtonArea .RightLogInButton{
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:768px) {
+    .dialogDrawer {
+        width: 320px!important;
+    }  
+
+    .NavButtonArea .LeftSignInButton a,
+    .NavButtonArea .RightLogInButton a{
+        width: 100% !important;
+        display: block;
+        padding-left: 10px !important;
+        font-weight: bold;
+    }
+
+    .NavButtonArea .RightLogInButton{
+        margin-top: 10px !important;
+    }
 }

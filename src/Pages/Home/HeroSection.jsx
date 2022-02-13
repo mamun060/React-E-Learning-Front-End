@@ -17,17 +17,20 @@ const HeroSection = () => {
                             <div className={styles.HeroLeftWrap}>
                                 <div className={styles.HeroHeading}>
                                     <h2>
-                                        Best E-larning <br />
-                                        Platform <br />
-                                        In Bangladesh
-                                        </h2>
-                                    </div>
-                                    <div className={styles.HeroButton}>
-                                        <Button 
-                                        name="See More"
-                                        link="#" 
-                                        />
-                                    </div>
+                                    Best E-learning Platform <br />
+                                    In Bangladesh
+                                    </h2>
+
+                                    <h4>
+                                        ইন্ডাস্ট্রির সেরা এক্সপার্টের কাছ থেকে ঘরে বসেই শিখুন আইটি, কর্পোরেট কালচার, বিজনেস, ফ্রিল্যান্সিংসহ এমন অসংখ্য ক্যারিয়ার ওরিয়েন্টেড স্কিল।
+                                    </h4>
+                                </div>
+                                <div className={styles.HeroButton + ' mt-4'}>
+                                    <Button 
+                                    name="See More"
+                                    link="#" 
+                                    />
+                                </div>
                             </div>
                             </Col>
                             <Col md={6} sm={12}>

@@ -7,7 +7,7 @@ import logo from '../../Assets/images/logo/Amar-Skill.png';
 
 const MobileHeader = () => {
     return (
-        <div>
+        <>
             <Container>
                <div className={styles.MobileHeaderContainer}>
                    <Row>
@@ -30,7 +30,7 @@ const MobileHeader = () => {
                     </Row>
                </div>
             </Container>
-        </div>
+        </>
     );
 };
 

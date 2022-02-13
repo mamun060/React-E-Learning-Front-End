@@ -104,6 +104,12 @@
   color: #212529!important;
 }
 
+
+.containerSlidePopolarCard {
+    box-shadow: rgba(186, 186, 190, 0.2) 10px 10px 29px 0px !important;
+    margin-bottom: 0px !important;
+}
+
 /* React accordion style end */
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
@@ -133,12 +139,21 @@
     opacity: 1;
     margin: 0px 0px;
   }
-  .slick-arrow.slick-prev {
-    margin-left: 29px;
-  }
+
   .slick-arrow.slick-next {
     margin-right: 23px;
   }
+
+
+  .slick-arrow.slick-prev {
+      margin-left: 32px;
+      z-index: 1;
+  }
+
+  .categorySliderWrapper{
+    /* margin-left: 6px !important; */
+  }
+
 }
 
 

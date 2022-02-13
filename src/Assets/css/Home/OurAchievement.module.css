@@ -1,7 +1,7 @@
 .OurAchivementContainer {
     margin: 50px 0px 100px;
 }
-
+ 
 .ourAchievementBackground{
     text-align: center;
     padding: 40px 0px 50px 0px;
@@ -18,7 +18,7 @@
 }
 
 .OurAchievement{
-    font-weight: normal;
+    font-weight: bold;
     font-size: 28px;
     text-transform: uppercase;
     color: #9B9A9A;
@@ -48,7 +48,7 @@
 .user h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     text-transform: capitalize;
     color: #0D3D80;
     padding-top: 10px;
@@ -98,7 +98,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 35px;
     line-height: 19px;
     text-transform: capitalize;
     color: #0D3D80;
@@ -152,6 +152,12 @@
     .user {
         padding-left: 20px;
     }
+
+    .OurAchievement,
+    .user h2{
+        font-size: 20px;
+    }
+
     .OurAchievementAlignment {
         display: flex;
         justify-content: flex-start;
@@ -173,7 +179,7 @@
     }
     
     .user h3{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .RightSecondRow {

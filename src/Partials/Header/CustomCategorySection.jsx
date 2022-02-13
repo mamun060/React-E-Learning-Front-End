@@ -6,6 +6,7 @@ import CategoryCloseOutsideClick from './CategoryCloseOutsideClick';
 import "../../Assets/css/Partials/CustomCategoryStyle.css";
 import {MdKeyboardArrowDown} from 'react-icons/md';
 
+
 const CustomCategorySection = () => {
     let [isOpen, setIsOpen] = useState(false);
 

@@ -3,9 +3,16 @@
 }
 .PopularCourseContainer {
     padding: 10px 0px 112px;
-    background-image: url('../../images/Background-Banner/Group\ 2.png');
+    background-image: url('../../images/Background-Banner/Group 2.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.mainWrapper{
+    background-color: #dbedffcc;
+    /* background-color: #f2f9ffd4; */
+    padding: 20px 0px;
+    /* background-color: rgb(100 100 111 / 20%); */
 }
 
 .PopularCourseHeading {
@@ -16,6 +23,7 @@
 .PopularCourseSlide {
     margin: 0px 10px;
 }
+
 
 /* Responsive area styling here */
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px){

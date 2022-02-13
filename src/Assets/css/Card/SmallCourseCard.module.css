@@ -2,6 +2,7 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
 }
 
 .BigCardThumnail {
@@ -16,10 +17,11 @@
 }
 
 .CourseCardInfoWrap {
-    padding: 10px 8px 0px;
+    padding: 10px 20px 0px;
     background-color: #FFFFFF;
     border-radius: 30px;
 }
+
 
 .CourseTecherInfo {
     display: flex;
@@ -29,7 +31,7 @@
 .InstractorName h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     text-transform: capitalize;
@@ -55,7 +57,7 @@
 .SmallCardCouseTitle h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 14px;
     text-transform: capitalize;
     color: #0D3D80;
@@ -73,7 +75,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
     color: #142370;
     padding-top: 20px;
@@ -84,10 +86,10 @@
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #fff!important;
-    padding: 5px 10px;
+    padding: 8px 15px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 12px;
     text-transform: capitalize;
 }
@@ -107,9 +109,11 @@
 
     .CourseCardInfoWrap {
         padding: 10px;
+        padding: 20px 20px;
         background-color: #FFFFFF;
         border-radius: 30px;
     }
+
 
     .InstructorSocailIcon {
         padding-left: 2px!important;
@@ -120,7 +124,7 @@
     }
 
     .PriceStyle p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .BuyNowButtonWrap a {

@@ -27,7 +27,7 @@
 .InstructorInfo h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 22px;
     text-transform: capitalize;
     color: #0D3D80;
@@ -37,7 +37,7 @@
 .InstructorInfo p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 5px;
     text-transform: capitalize;
@@ -66,6 +66,8 @@
 
 .InstructorSocial a {
     text-decoration: none;
+    vertical-align: middle !important;
+    text-align: center !important;
 }
 
 .InstructorSocial a svg {
@@ -84,7 +86,7 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: capitalize;
-    padding: 3px 5px;
+    padding: 5px 10px;
 }
 
 

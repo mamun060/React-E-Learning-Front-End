@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import About from "../Pages/About/About";
 import CourseDetails from "../Pages/CourseInformation/CourseDetails";
 import Home from "../Pages/Home/Home";
