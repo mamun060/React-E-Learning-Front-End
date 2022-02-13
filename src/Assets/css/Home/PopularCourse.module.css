@@ -4,6 +4,8 @@
 .PopularCourseContainer {
     padding: 10px 0px 112px;
     background-image: url('../../images/Background-Banner/Group\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .PopularCourseHeading {

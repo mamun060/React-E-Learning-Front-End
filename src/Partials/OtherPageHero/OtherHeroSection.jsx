@@ -5,17 +5,17 @@ import {MdKeyboardArrowRight} from 'react-icons/md';
 import { Container } from 'react-bootstrap';
 
 
-const OtherHeroSection = () => {
+const OtherHeroSection = ({firstTitle, secondTitle, BackPageName, CurrentPageName}) => {
     return (
         <>
            <Container fluid={true}>
                 <div className={styles.OtherHeroSectionWrap}>
                     <div className={styles.OtherHeroBgWrap}>
                             <div className={styles.PageTitle}>
-                                <h2><span>All</span> Course</h2>
+                                <h2><span>{firstTitle}</span> {secondTitle}</h2>
                             </div>
                             <div className={styles.PageBreadCrubs}>
-                                <p><a href="#">Home</a> <MdKeyboardArrowRight />Course</p>
+                                <p><a href="#">{BackPageName}</a> <MdKeyboardArrowRight />{CurrentPageName}</p>
                             </div>
                     </div>
                 </div>  

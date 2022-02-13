@@ -48,7 +48,7 @@
 .user h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 42px;
+    font-size: 24px;
     text-transform: capitalize;
     color: #0D3D80;
     padding-top: 10px;
@@ -58,9 +58,9 @@
 .user h3{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
     color: #CBCBCB;
 }
 
@@ -98,19 +98,20 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 42px;
-    line-height: 70px;
+    font-size: 24px;
+    line-height: 19px;
     text-transform: capitalize;
     color: #0D3D80;
-    margin: 0;
+    margin-top: 30px;
 }
+
 .instructor h3{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 16px;
     text-transform: capitalize;
-    color: #CBCBCB;
+    color: #676666;
 }
 
 /* Top Circle alignment*/
@@ -203,8 +204,8 @@
         background-color: #FFE6B9;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        margin-right: -88px;
-        margin-top: -20px;
+        margin-right: -100px;
+        margin-top: -27px;
         z-index: 0;
         position: absolute;
         right: 93px;
@@ -218,7 +219,7 @@
         margin-top: -86px;
         z-index: 0;
         position: absolute;
-        left: 9px;
+        left: 0px;
     }
     
 }

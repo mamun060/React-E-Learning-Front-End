@@ -21,7 +21,11 @@ const TopInstructorSlider = () => {
                           </Row>
 
                           <Row>
-                            <CardSlider />
+                             <Col md={1}></Col>
+                             <Col md={10} sm={12} xm={12}>
+                                <CardSlider />
+                             </Col>
+                             <Col md={1}></Col>
                           </Row>
                       </div>
                   </Container>

@@ -4,6 +4,7 @@ import './App.css';
 import './Assets/css/Partials/Responsive.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import "video-react/dist/video-react.css";
 import routes from './Routes/Route';
 
 function App() {

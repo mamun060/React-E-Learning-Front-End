@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import Slider from "react-slick";
 import styles from '../../Assets/css/Sliders/Slider.module.css';
-import two from '../../Assets/images/Instructor/image 20.png'
-// import three from '../../Assets/images/Instructor/image 21.png'
+import three from '../../Assets/images/Instructor/image 19.png';
 
 import InstructorCard from '../Card/InstructorCard';
 
-const sliders = [InstructorCard, InstructorCard, InstructorCard, InstructorCard];
+const sliders = [InstructorCard, InstructorCard, InstructorCard, InstructorCard , InstructorCard, InstructorCard];
 
 const CardSlider = ({SlideShape}) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -15,7 +14,7 @@ const CardSlider = ({SlideShape}) => {
     infinite: true,
     lazyLoad: true,
     dots: true,
-    arrows: false,
+    arrows: true,
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
@@ -57,7 +56,7 @@ const CardSlider = ({SlideShape}) => {
                   {sliders.map((slide, idx) => (
                     <div key={idx} className={idx === imageIndex ? "slide activeSlide" : "slide"}>
                         <InstructorCard 
-                          images={two}
+                          images={three}
                           name="Nazmul Huda"
                           title="Full-Stack Web Developer"
                           company="ThemeShaper"

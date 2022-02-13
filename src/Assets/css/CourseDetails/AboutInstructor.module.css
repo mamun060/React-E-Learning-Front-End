@@ -1,0 +1,57 @@
+.AboutInstructorContainer {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 2px;
+}
+
+.InstructorDetailsWrap {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+.InstructorImages img {
+    background: #C4C4C4;
+    border-radius: 10px;
+}
+
+.InstructorNameInfo {
+    padding-left: 40px;
+}
+
+.InstructorNameInfo h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #084496;
+    border-bottom: 3px solid #EDEDED;
+    padding-bottom: 12px;
+}
+
+.InstructorNameInfo h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #F59A26;
+}
+
+.InstructorTitleInfo {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.InstructorTitleInfo p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    color: #5F5F5F;
+}

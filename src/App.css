@@ -80,16 +80,31 @@
 
 .slide {
   transform: scale(0.9);
-  transition: transform 300ms;
-  opacity: 0.5;
+  /* transition: transform 300ms; */
+  transition: 0.5s ease-out;
+  opacity: 0.6;
 }
 
 .activeSlide {
   transform: scale(1);
   opacity: 1;
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
 }
 
+
+/* React Bootstrap accordion style over ride */
+.accordion-button::after {
+  width: 15px!important;
+  height: 15px!important;
+  background-size: 12px!important;
+}
+
+.accordion-button {
+  font-size: 13px!important;
+  color: #212529!important;
+}
+
+/* React accordion style end */
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
   .slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus {
@@ -124,4 +139,38 @@
   .slick-arrow.slick-next {
     margin-right: 23px;
   }
+}
+
+
+
+/* Bootstrap tabs style modified */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff!important;
+  background-color: #084496!important;
+  border-color: #dee2e6 #dee2e6 #fff!important;
+  padding: 10px 65px!important;
+  border-radius: 10px 10px 0px 0px!important;
+  font-size: 16px!important;
+}
+
+.nav-tabs .nav-link {
+  color: #fff!important;
+  background-color: #CBCBCB!important;
+  border-color: #dee2e6 #dee2e6 #fff!important;
+  padding: 10px 65px!important;
+  border-radius: 10px 10px 0px 0px!important;
+  font-size: 16px!important;
+}
+
+.nav-tabs {
+  border-bottom: none!important;
+}
+/* React bootstrap modification */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
+{
+  width: 100%;
+  padding-right: 0px!important; 
+  padding-left: 0px!important; 
+  margin-right: auto;
+  margin-left: auto;
 }

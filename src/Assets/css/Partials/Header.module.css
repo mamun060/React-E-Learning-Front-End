@@ -4,18 +4,53 @@
     max-width: 1440px;
     background-color: #fff;
     padding: 20px 0px;
+    margin-top: 10px;
 }
 
 .LogoSytle img {
-    width: 140px;
-    height: 140px;
-    margin-top: -42px;
+    width: 67px;
+    height: 40px;
 }
 
 .NavCategory {
     margin-top: 0px;
+    width: 160px;
+    height: 40px;
+    background-color: #F1F1F1;
+    box-shadow: inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.CustomSeletCat  {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #084496;
+    border: none;
+    background-color: #F1F1F1;
+}
+
+.CustomSeletCat:focus {
+    outline: none;
+}
+
+.CustomSeletCat option {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #084496;
+    border: none;
+    padding: 0px 5px;
+}
 
 .NavSearch {
     height: 40px;
@@ -72,11 +107,12 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: capitalize;
-    color: #F59A26;
-    border: 2px solid #F59A26;
+    color: #ffffff;
     border-radius: 5px;
-    padding: 7px 16px;
+    padding: 12px 40px;
+    background-color: #0f3a77;
 }
+
 .NavButtonArea .RightLogInButton a{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -86,9 +122,9 @@
     text-transform: capitalize;
     color: #fff;
     /* background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%); */
-    background: linear-gradient( 122.33deg, #ecc283 0%, #e8552d 102.08%);
+    background: linear-gradient( 122.33deg, #ff9900 0%, #ff6940 102.08%);
     border-radius: 5px;
-    padding: 10px 22px;
+    padding: 12px 40px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) { 

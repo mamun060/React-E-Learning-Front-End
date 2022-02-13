@@ -1,0 +1,83 @@
+.CourseOverviewContainer {
+    padding: 0px 20px;
+}
+
+.CourseOverviewHeadingWrap {
+    background: #2158A1;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.CourseOverviewHeadingWrap h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px rgb(0 0 0 / 25%);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.CourseOverviewSectionList {
+    background: #FFFFFF;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 20px;
+    margin-top: -8px;
+}
+
+.OverviewListParent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D7D7D7;
+    padding: 6px 0px;
+}
+
+.OverviewListParentLastDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.IconWithTitle h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #323232;
+}
+
+.IconWithTitle h4 svg{
+    padding-right: 5px;
+    color: #323232;
+    width: 20px;
+    height: 20px;
+}
+
+.CourseOverDash {
+    width: 20px;
+    height: 1px;
+    background-color: #A6A5A5;
+}
+
+.ContentUnderTitle {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.ContentUnderTitle p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #7E7E7E;
+    text-align: right;
+}
+

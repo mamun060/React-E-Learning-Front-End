@@ -1,0 +1,72 @@
+.Button-Container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Btn-Sub-Container {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.main-button-wrap button {
+    border: none;
+    font-size: 1rem;
+    font-size: 500;
+    padding: 10px 20px;
+    background: #F1F1F1;
+    color: #000;
+    box-shadow: inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.main-button-wrap button:focus {
+    outline: none;
+}
+
+.react-sping-ani-wrap {
+    margin-top: 10px;
+}
+
+.DropDown-Btn-Wrap {
+    background-color: #E0F1FF;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    border-radius: 30px;
+    padding: 20px 10px;
+    border-top: 3px solid #FF9209;
+}
+
+.DropDown-Btn-Wrap button {
+    border: none;
+    background-color: #E0F1FF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.DropDown-Btn-Wrap:before {
+    content: '';
+    position: absolute;
+    top: -0.75rem;
+    left: 2rem;
+    border: solid 0.75rem #FF9209;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.DropDown-sub-Wrap {
+    padding: 5px;
+}
+
+.single-button-style {
+    display: flex;
+    align-items: center;
+    color: #FF9209;
+    padding: 5px 0px;
+}
+
+.single-button-style:hover {
+    color: #d35400;
+}

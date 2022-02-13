@@ -7,9 +7,10 @@
 .PopupMobileMenuIcon {
     width: 40px;
     height: 40px;
-    background-color: #084496;
+    background-color: #426fabf0;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
+    margin-top: 8px;
 }
 .PopupMobileMenuIcon svg {
     width: 22px;
@@ -69,8 +70,8 @@
 .MobileHeaderLogo img {
     width: 100px;
     height: 110px;
-    margin-top: -19px;
-    margin-left: -32px;
+    margin-top: -8px;
+    margin-left: -24px;
 }
 
 /* Mobile Header Searchbar stylign */

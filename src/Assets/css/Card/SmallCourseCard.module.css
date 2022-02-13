@@ -11,6 +11,8 @@
 .SmallCardThumnail img {
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    height: auto;
+    max-height: 200px;
 }
 
 .CourseCardInfoWrap {
@@ -28,7 +30,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 20px;
     text-transform: capitalize;
     color: #F59A26;
@@ -53,8 +55,8 @@
 .SmallCardCouseTitle h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     text-transform: capitalize;
     color: #0D3D80;
 }
@@ -71,7 +73,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize;
     color: #142370;
     padding-top: 20px;
@@ -85,8 +87,8 @@
     padding: 5px 10px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 12px;
     text-transform: capitalize;
 }
 

@@ -1,11 +1,12 @@
 .CardCetegoryWrap {
-    width: 195px;
+    width: 200px;
     height: 150px;
     background: #fff;
     box-shadow: 4px 4px 4px rgba(224, 241, 255, 0.914207);
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     border-radius: 10px;
-    /* margin: 10px 7px; */
-    margin-left: 20px;
+    margin: 10px 7px;
+    margin-left: 10px;
 }
 
 .CategorySliderIcon {

@@ -1,0 +1,37 @@
+.VideoSideSectionWrap {
+    padding: 20px 0px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.VideoPlayerWrap {
+    padding: 20px 0px;
+}
+
+.VideoInfoWrap {
+    padding: 10px 0px;
+}
+
+.VideoInfoWrap h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.VideoInfoWrap p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #282828;
+}
+
+.VideoInfoWrap a {
+    text-decoration: none;
+
+}

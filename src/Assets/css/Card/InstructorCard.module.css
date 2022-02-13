@@ -1,13 +1,23 @@
 .InstructorCardContainer {
     background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+/* .InstructorCardContainer {
+    background-color: #FFFFFF;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 30px 30px;
     margin: 10px;
-}
+} */
 
 .InstructorImage img {
     width: 100%;
-    height: 320px;
+    max-height: 300px;
+    height: auto;
+    padding: 0px 10px;
 }
 
 .InstructorInfo {
@@ -17,8 +27,8 @@
 .InstructorInfo h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 22px;
     text-transform: capitalize;
     color: #0D3D80;
     padding: 10px 0px;
@@ -27,9 +37,9 @@
 .InstructorInfo p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 5px;
     text-transform: capitalize;
     color: #FEAD46;
 }
@@ -38,7 +48,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10px 30px;
+    padding: 0px 5px 10px;
 }
 
 .InstructorSocialIcon {
@@ -47,10 +57,10 @@
 
 .InstructorSocial {
     padding-right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: #084496;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
 }
 
@@ -60,10 +70,10 @@
 
 .InstructorSocial a svg {
     color: #fff;
-    width: 20px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
     margin-left: 5px;
-    margin-top: 2px;
+    margin-top: -2px;
 }
 
 .InstructorMoreInfo a {
@@ -74,7 +84,7 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: capitalize;
-    padding: 5px 10px;
+    padding: 3px 5px;
 }
 
 

@@ -14,7 +14,7 @@
 }
 
 .CourseCardInfoWrap {
-    padding: 25px 20px;
+    padding: 45px 20px;
     background-color: #FFFFFF;
     border-radius: 30px;
 }
@@ -28,14 +28,14 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 28px;
+    line-height: 30px;
     text-transform: capitalize;
     color: #142370;
 }
 
 .InstructorSocailIcon {
-    padding-top: 10px!important;
+    padding-top: 0px!important;
 }
 
 .InstructorSocailIcon a {
@@ -44,16 +44,22 @@
 }
 
 .InstructorSocailIcon a svg {
-    width: 35px;
-    height: 35px;
+    width: 24px;
+    height: 24px;
     color: #F59A26;
+    transition: 0.5s ease-out;
+}
+
+.InstructorSocailIcon a svg:hover {
+    color: #142370;
+    cursor: pointer;
 }
 
 .BigCardCouseTitle h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 43px;
     text-transform: capitalize;
     color: #0D3D80;
@@ -61,7 +67,7 @@
 
 .BigCardBottomWrap {
     border-top:  2px solid rgba(0, 0, 0, 0.1);
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,9 +77,9 @@
 .PriceStyle p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 50px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 20px;
     text-transform: capitalize;
     color: #142370;
 }
@@ -83,11 +89,11 @@
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #fff!important;
-    padding: 5px 30px;
+    padding: 8px 25px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize;
 }
 

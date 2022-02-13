@@ -15,7 +15,12 @@ const AllCourse = () => {
             <div className="Mobile">
                 <MobileHeader />
             </div>
-            <OtherHeroSection />
+            <OtherHeroSection 
+               firstTitle="ALL"
+               secondTitle="COURSE"
+               BackPageName="HOME"
+               CurrentPageName="ALL COURSE"
+            />
             
             <CourseListSection />
 
