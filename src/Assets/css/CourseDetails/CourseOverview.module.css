@@ -11,7 +11,7 @@
 .CourseOverviewHeadingWrap h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 22px;
     line-height: 29px;
     text-transform: uppercase;
@@ -34,7 +34,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #D7D7D7;
-    padding: 6px 0px;
+    padding: 5px 0px;
+    position: relative;
 }
 
 .OverviewListParentLastDiv {
@@ -42,10 +43,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 0px;
+    position: relative;
 }
 
 .IconWithTitle h4 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -53,9 +56,9 @@
     color: #323232;
 }
 
-.IconWithTitle h4 svg{
+.IconWithTitle h4 svg {
     padding-right: 5px;
-    color: #323232;
+    color: #7E7E7E;
     width: 20px;
     height: 20px;
 }
@@ -63,7 +66,10 @@
 .CourseOverDash {
     width: 20px;
     height: 1px;
-    background-color: #A6A5A5;
+    background-color: #7E7E7E;
+    position: absolute;
+    transform: translate(30%, -5%);
+    left: 50%;
 }
 
 .ContentUnderTitle {
@@ -72,7 +78,8 @@
 }
 
 .ContentUnderTitle p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -80,4 +87,3 @@
     color: #7E7E7E;
     text-align: right;
 }
-

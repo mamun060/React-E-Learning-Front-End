@@ -14,9 +14,9 @@
     border: none;
     font-size: 1rem;
     font-size: 500;
-    padding: 10px 8px;
+    padding: 10px 20px;
     background: #F1F1F1;
-    color: rgb(117, 117, 117);
+    color: #000;
     box-shadow: inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
@@ -30,30 +30,53 @@
 }
 
 .DropDown-Btn-Wrap {
-    background-color: #E0F1FF;
+    background-color: #fff;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
     border-radius: 30px;
     padding: 20px 10px;
-    border-top: 3px solid #FF9209;
+    border-top: 3px solid #094496;
+    border-bottom: 3px solid #FF9209;
+    min-width: 250px;
+    max-width: 300px;
+    position: relative;
 }
 
 .DropDown-Btn-Wrap button {
     border: none;
-    background-color: #E0F1FF;
-    font-size: 1rem;
-    font-weight: 500;
+    background-color: transparent !important;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
+
 .DropDown-Btn-Wrap:before {
     content: '';
     position: absolute;
-    top: -0.75rem;
-    left: 2rem;
-    border: solid 0.75rem #FF9209;
+    top: -0.6rem;
+    left: 1.9rem;
+    border: solid 0.5rem #094496;
     border-right-color: transparent;
     border-bottom-color: transparent;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    z-index: -1;
+}
+
+.DropDown-Btn-Wrap:after {
+    content: '';
+    position: absolute;
+    top: 1.9rem;
+    left: 0.4rem;
+    border: solid 0.3rem #094496;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(135deg);
+}
+.courseCategoryMenuTitle{
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #577bad;
+    color: #FF9209;
+    font-size: 1.1em;
 }
 
 .DropDown-sub-Wrap {
@@ -63,10 +86,15 @@
 .single-button-style {
     display: flex;
     align-items: center;
-    color: #FF9209;
+    color: #094496;
     padding: 5px 0px;
+    padding-left: 10px;
 }
 
 .single-button-style:hover {
-    color: #d35400;
+    color: #FF9209;
+}
+
+.categoryToggle .icon{
+    margin-right: -14px !important;
 }

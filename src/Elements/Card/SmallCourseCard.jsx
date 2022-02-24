@@ -7,7 +7,7 @@ import { BsHeartFill, BsShareFill, BsCart3} from 'react-icons/bs';
 const SmallCourseCard = ({ className }) => {
     return (
         <>
-            <div className={styles.SmallCourseCardContainer + ` ${className ?? ''} py-2`}>
+            <div className={styles.SmallCourseCardContainer + ` ${className ?? ''} pb-2`}>
 
                     <div className={styles.SmallCardThumnail}>
                         <img src={BigThumnail} alt="Amar Skill" />
@@ -30,12 +30,12 @@ const SmallCourseCard = ({ className }) => {
                             <h4>React Master course Zero to Hero</h4>
                         </div>
 
-                        <div className={styles.SmallCardBottomWrap}>
+                        <div className={styles.SmallCardBottomWrap +' cardBottomWrapper'}>
                             <div className={styles.PriceStyle}>
-                                <p>Tk.2000.00</p>
+                                <p className='coursePrice'>Tk.2000.00</p>
                             </div>
                             <div className={styles.BuyNowButtonWrap}>
-                                <a>Buy Now</a>
+                                <a className='courseBigBuyNow'>Buy Now</a>
                             </div>
                         </div>
                     </div>

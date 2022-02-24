@@ -1,11 +1,11 @@
 .VideoSideSectionWrap {
-    padding: 20px 0px;
     background-color: #fff;
     border-radius: 20px;
 }
 
 .VideoPlayerWrap {
-    padding: 20px 0px;
+    padding: 40px 0px;
+    padding-bottom: 20px !important;
 }
 
 .VideoInfoWrap {
@@ -13,7 +13,8 @@
 }
 
 .VideoInfoWrap h2 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -21,17 +22,94 @@
     color: #000000;
 }
 
-.VideoInfoWrap p {
-    font-family: 'Roboto', sans-serif;
+.VideoInfoWrap h5 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
+    font-weight: bold;
     text-transform: capitalize;
-    color: #282828;
+    color: rgb(116, 110, 110);
 }
 
 .VideoInfoWrap a {
     text-decoration: none;
+    color: #2158A1;
 
+}
+
+.controlsWrapper {
+    width: 100%;
+}
+
+.controlsWrapper .innerWrapper {
+    display: flex;
+    justify-content: end;
+    padding: 0px 0px;
+    margin-top: 10px !important;
+}
+
+.controlsWrapper .innerWrapper button {
+    min-width: 50px;
+    max-width: 120px !important;
+    height: auto;
+    background-color: #fff;
+    margin: 5px 5px;
+    color: #F59A26;
+    border: 1px solid rgb(143, 134, 134);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.controlsWrapper .innerWrapper button:hover,
+.controlsWrapper .innerWrapper button:active {
+    background-color: #F59A26 !important;
+    color: #fff !important;
+    border-color: #F59A26;
+}
+
+.controlsWrapper .innerWrapper button svg,
+.controlsWrapper .enrollment svg {
+    font-size: 28px;
+}
+
+.controlsWrapper .enrollment {
+    font-size: 16px;
+    color: #F59A26;
+    float: left;
+    vertical-align: middle !important;
+    padding: 5px 0px;
+}
+
+.controlsWrapper .enrollment #totalEnrollment {
+    color: #000;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .VideoSideSectionWrap {
+        padding: 0px 20px;
+    }
+
+    .controlsWrapper .enrollment #enrollmentTitle,
+    .controlsWrapper .innerWrapper button span {
+        display: none !important;
+    }
+
+    .controlsWrapper .innerWrapper button {
+        border: none !important;
+        padding: 0px 0px;
+        margin: 0px 5px;
+        background-color: #858585;
+    }
+
+    .controlsWrapper .innerWrapper button svg {
+        color: #fff;
+    }
+
+    .controlsWrapper .innerWrapper {
+        margin-top: 10px !important;
+    }
 }

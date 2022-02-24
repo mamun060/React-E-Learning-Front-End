@@ -1,14 +1,18 @@
-import React, {useState} from 'react';
+import React, { useState , useEffect} from 'react';
 import Slider from "react-slick";
 import styles from '../../Assets/css/Sliders/Slider.module.css';
 import three from '../../Assets/images/Instructor/image 19.png';
 
 import InstructorCard from '../Card/InstructorCard';
 
-const sliders = [InstructorCard, InstructorCard, InstructorCard, InstructorCard , InstructorCard, InstructorCard];
-
 const CardSlider = ({SlideShape}) => {
+
   const [imageIndex, setImageIndex] = useState(0);
+  const [sliders, setSliders] = useState([]);
+
+  useEffect(()=>{
+    setSliders([1, 2, 3, 4 , 5, 6]);
+  },[])
 
   const settings = {
     infinite: true,
@@ -57,7 +61,7 @@ const CardSlider = ({SlideShape}) => {
                     <div key={idx} className={idx === imageIndex ? "slide activeSlide" : "slide"}>
                         <InstructorCard 
                           images={three}
-                          name="Nazmul Huda"
+                          name="Md Alauddin"
                           title="Full-Stack Web Developer"
                           company="ThemeShaper"
                           fb="#"

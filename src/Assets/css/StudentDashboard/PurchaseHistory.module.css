@@ -1,0 +1,37 @@
+.PurchaseHistoryWrap Table {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.PurchaseHistoryWrap table tr th {
+    min-width: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.PurchaseHistoryWrap table tr td {
+    font-size: 14px;
+    font-weight: 500;
+    height: 35px !important;
+    top: middle;
+}
+
+.CustomViewButton {
+    text-align: left;
+    margin: 5px 0px !important;
+}
+
+.CustomViewButton a{
+    text-align: center;
+    background-color: #084496;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.CustomViewButton a:hover{
+    background-color: #F59A26 !important;
+    cursor: pointer !important;
+}

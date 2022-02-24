@@ -12,7 +12,7 @@ import TagSearchFilter from '../../Elements/FilterCard/TagSearchFilter';
 const CourseListSection = () => {
     
     return (
-        <div>
+        <>
             <Container className={styles.CourseListContainer}>
                 <Row>
                     <Col xl={3} md={3}>
@@ -25,52 +25,51 @@ const CourseListSection = () => {
                     <Col xl={9} md={9}>
                         <div className={styles.AllCourseRightWrap}>
                             <Row>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12}  className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12}  className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12}  className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-                                <Col md={4} sm={6} xs={12}>
+                                <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
                                         <SmallCourseCard />
                                     </div>
                                 </Col>
-
                             </Row>
                             <Row>
                                 <Col>
@@ -86,7 +85,7 @@ const CourseListSection = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </>
     );
 };
 

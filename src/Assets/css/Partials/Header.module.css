@@ -1,3 +1,9 @@
+.strickyHeader{
+    position: sticky;
+    top: 10px !important;
+    background-color: red;
+}
+
 .HeaderContainer {
     height: 93px;
     width: 100%;
@@ -8,8 +14,10 @@
 }
 
 .LogoSytle img {
-    width: 67px;
-    height: 40px;
+    /* max-width: 67px; */
+    width: calc(1vw + 3.1em);
+    height: 45px;
+    cursor: pointer;
 }
 
 .NavCategory {
@@ -52,23 +60,9 @@
     padding: 0px 5px;
 }
 
-/* .courseText{
-    font-size: calc(100% + 18px) !important;
-} */
-
 .NavSearch {
-    /* height: 40px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    border: 1.5px solid #F1F1F1;
-    box-sizing: border-box;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    border-radius: 5px;
-    background: #F1F1F1; */
-
-    height: 100%;
-    width: auto;
+    width: calc(22.9vw + 0.9em);
+    height: calc(1vw + 2em);
     display: flex;
     align-items: center;
     border: 1.5px solid #F1F1F1;
@@ -76,24 +70,22 @@
     box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
     border-radius: 5px;
     background: #F1F1F1;
-    max-height: 45px;
-    /* padding: 0.875rem !important; */
+    padding-right: 10px;
 }
 
 .NavSearch input {
-    width: calc(100% - 3.125rem);
+    width: calc(20vw + 0.9em);
     height: 100%;
     background: transparent;
-    padding: 0.84375rem 0.875rem 0.84375rem 0rem;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
-    font-family: "Hind Siliguri";
+    /* font-family: "Hind Siliguri"; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
-    /* font-size: 0.875rem; */
     font-weight: 500;
-    line-height: 1.25;
     outline: none !important;
     border: none;
+    padding: 0.70rem 0rem;
     padding-left: 20px;
 }
 
@@ -105,7 +97,7 @@
     width: 20px;
     height: 20px;
     color: #F59A26;
-    margin-left: 8px;
+    /* margin-left: 10px; */
 }
 
 .NavButtonArea  {
@@ -139,9 +131,11 @@
 
 
 .NavButtonArea .LeftSignInButton a {
-    font-family: "Hind Siliguri";
+    /* font-family: "Hind Siliguri"; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
-    font-size: 1.125rem;
+    font-size: calc(1.2vw + .09em);
+    /* font-size: 1.125rem; */
     /* font-weight: 500; */
     font-weight: bold;
     line-height: 1.25;
@@ -153,6 +147,7 @@
     text-align: center;
     -webkit-transition: all 350ms ease-in;
     transition: all 350ms ease-in;
+    /* height: 45px !important; */
 }
 
 /* 0f3a77 */
@@ -180,9 +175,11 @@
 
 .NavButtonArea .RightLogInButton a{
     /* background: linear-gradient(181.41deg, #F59A26 94.34%, rgba(184, 107, 9, 0) 98.8%); */
-    font-family: "Hind Siliguri";
+    /* font-family: "Hind Siliguri"; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
-    font-size: 1.125rem;
+    /* font-size: 1.125rem; */
+    font-size: calc(1.2vw + .09em);
     font-weight: bold;
     line-height: 1.25;
     padding: 0.625rem 1.5625rem;
@@ -192,10 +189,11 @@
     border: none;
     cursor: pointer;
     /* background: linear-gradient(122.33deg,#F59A26 0%, #F83600 102.08%); */
-     background: linear-gradient(122.33deg,#ffa42f 0%, #327fecbf 102.08%);
+    background: linear-gradient(122.33deg,#ffa42f 0%, #327fecbf 102.08%);
     -webkit-transition: all 350ms ease-in;
     transition: all 350ms ease-in;
     border: solid 0.125rem transparent;
+
 }
 
 .NavButtonArea .RightLogInButton:hover a{
@@ -206,7 +204,7 @@
 
 .categoryToggle {
     background: #F3F3F3;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

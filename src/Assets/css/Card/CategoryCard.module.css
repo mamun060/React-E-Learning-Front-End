@@ -1,5 +1,5 @@
 .CardCetegoryWrap {
-    margin: 10px 5px;
+    margin: 10px calc(0.3vw + 0.1px);
     padding: 1.375rem 1.25rem 1.25rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -45,13 +45,18 @@
 
 .CategorySliderTitle a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
-    font-size: 18px;
+    font-size: calc(1vw + 3px);
     color: rgb(110, 105, 105);
     font-weight: bold;
 }
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+
+    .CategorySliderTitle a {
+        font-size: calc(1vw + 16px);
+    }
 
 }

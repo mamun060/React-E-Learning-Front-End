@@ -1,16 +1,18 @@
-import React from 'react';
+import React , { useEffect, useState} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import VideoPlayerSection from './../../Elements/CourseDetailsElements/VideoPlayerSection';
 import CourseContent from './../../Elements/CourseDetailsElements/CourseContent';
-import SmallCourseCard from './../../Elements/Card/SmallCourseCard';
 import styles from '../../Assets/css/CourseDetails/CourseDetailsPage.module.css';
 import CourseInformation from '../../Elements/CourseDetailsElements/CourseInformation';
 import CourseOverview from '../../Elements/CourseDetailsElements/CourseOverview';
+import RecommendCourseSlider from './RecommendCourseSlider';
+
 
 const CourseDetailsBody = () => {
+
     return (
         <>
-            <Container>
+            <Container id="vcon">
                 <Row>
                     <Col md={8}>
                         <VideoPlayerSection />
@@ -32,26 +34,17 @@ const CourseDetailsBody = () => {
                 </div>
                 
                 <div className={styles.StudentLikeBottomSection}>
-                    <Row>
+                    <Row className='px-3'>
                         <div className={styles.BottomSectionHeadingWrap}>
-                            <h2>Student Also <span>Like This Courses</span></h2>
-                            <p>here is The Few Recommended Course That Also Help You to Improve Your Skill</p>
+                            <h2>Student Also <span>Like These Courses</span></h2>
+                            <p>There are some Recommended Courses That Also Help You to Improve Your Skill</p>
                         </div>
                     </Row>
 
                    <div className={styles.BottomSectionBG}>
-                    <Row>
-                            <Col md={3}>
-                                <SmallCourseCard />
-                            </Col>
-                            <Col md={3}>
-                                <SmallCourseCard />
-                            </Col>
-                            <Col md={3}>
-                                <SmallCourseCard />
-                            </Col>
-                            <Col md={3}>
-                                <SmallCourseCard />
+                        <Row>
+                            <Col md={12}>
+                                <RecommendCourseSlider />
                             </Col>
                         </Row>
                    </div>

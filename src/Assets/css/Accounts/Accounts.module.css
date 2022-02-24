@@ -1,0 +1,254 @@
+
+.accountBackground{
+    overflow: hidden; 
+    height: 100vh !important;
+    width: 100vw !important;
+    position: relative;
+    /* background-image: url(../../images/Accounts/accountsBg.png); */
+    /* background-size: contain; */
+    background: linear-gradient(rgb(60 0 0 / 0%),rgb(0 0 20 / 15%)),url(../../images/Accounts/accountsBg.png);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat; 
+        
+}
+.bottomBg{
+    background-image: url(../../images/Accounts/Group-245.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    width:50vw !important;
+    height: 50vh !important;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed !important;
+    overflow: hidden; 
+}
+
+.accountLogo{
+    background-image: url(../../images/Accounts/download.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    width: 40vw;
+    height: 40vh;
+    overflow: hidden; 
+    z-index: 1;
+    /* bottom: 0; */
+    left: 0;
+    position: relative !important;
+}
+
+.innerWrapper{
+    width: 135px;
+    height: 100px;
+    position:absolute;
+    top: 20%;
+    left: 0;
+    transform: translateX(50%);
+    /* background-color: red; */
+    z-index: 1000;
+}
+
+.innerWrapper a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.formDivRegister{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000 !important;
+}
+
+.formDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-57%);
+    z-index: 1000 !important;
+}
+.loginInfo{
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    /* border: 1px solid #F59A26; */
+    box-sizing: border-box;
+    box-shadow: 2px 2px 24px #f3ebdd, 2px 2px 24px #f8f1e3;
+    border-radius: 10px;
+    padding: 20px 30px;
+    z-index: 1;
+}
+.loginTitle{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #466c9fdb;
+    text-align: center;
+}
+.loginTitle p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #084496;
+}
+.inputField{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin: 10px 0px;
+    border: 1.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.inputField input{
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 4px;
+}
+.inputField input:focus{
+    outline: none;
+}
+.inputField:hover{
+    border: 1.5px solid #F59A26;
+}
+.inputField svg{
+    margin: 0px 5px;
+    font-size: 24px;
+    color: #ACB4BC;
+}
+.inputField input::placeholder,
+-webkit::placeholder{
+    color: #ACB4BC;
+}
+.inputButton button{
+    background: #F59A26;
+    border-radius: 5px;
+    border: none;
+}
+.inputField input,
+.inputButton button{
+    width: 100%;
+} 
+.inputElement{
+    box-sizing: border-box;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+} 
+
+.inputElement:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #e9ecef !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+.passForgetArea{
+    margin: 10px 0px 40px 0px;
+}
+.firebaseArea{
+    margin: 10px 0px;
+}
+.signUpArea{
+    margin: 10px 0px;  
+}
+.forgetLink{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 155, 28, 0.58);
+}
+.inputEmail{
+    border: 1.5px solid #C4C4C4;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+}
+.firebaseText{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ACB4BC;
+    position: relative;
+}
+.firebaseText::before{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color:#E2E2E2;
+}
+.firebaseText::after{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color:#E2E2E2;
+}
+.firebaseLogin{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 20px;
+}
+.firebaseLogin button {
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ACB4BC;
+    cursor: pointer;
+    padding: 6px 20px;
+}
+.googleFirebaseLogin svg{
+    font-size: 26px;
+}
+.facebookFirebaseLogin svg{
+    font-size: 26px;
+}
+.signUpArea{
+    text-align: center;
+}
+
+.ifAccount{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ACB4BC;
+}
+.ifAccount a{
+    color:#F59A26;
+}
+
+
+@media screen and (max-width:768px) {
+    .formDiv{
+        transform: translate(-50%,-50%);
+    }
+
+    .signUpArea h5{
+        font-size: .8em;
+    }
+
+    .firebaseText::before,
+    .firebaseText::after{
+        width: calc(1vw + 40px);
+    }
+}

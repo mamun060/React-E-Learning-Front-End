@@ -11,6 +11,7 @@
     align-items: center;
     padding: 20px 0px;
 }
+
 .InstructorImages img {
     background: #C4C4C4;
     border-radius: 10px;
@@ -22,10 +23,11 @@
 
 .InstructorNameInfo h2 {
     font-family: 'Roboto', sans-serif;
+    font-family: var(--google-font-family, 'Roboto, sans-serif');
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: calc(1vw + 24px);
+    line-height: .8;
     text-transform: capitalize;
     color: #084496;
     border-bottom: 3px solid #EDEDED;
@@ -33,11 +35,12 @@
 }
 
 .InstructorNameInfo h4 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif');
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: calc(1vw + 16px);
+    line-height: 0.8;
     text-transform: capitalize;
     color: #F59A26;
 }
@@ -48,10 +51,26 @@
 }
 
 .InstructorTitleInfo p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif');
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 31px;
+    font-size: 1em;
+    /* line-height: 31px; */
     color: #5F5F5F;
+}
+
+
+@media screen and (max-width: 768px) {
+    .InstructorNameInfo {
+        padding-left: 10px;
+    }
+
+    .InstructorNameInfo h2 {
+        font-size: 24px;
+    }
+
+    .InstructorNameInfo h4 {
+        font-size: 18px;
+    }
 }

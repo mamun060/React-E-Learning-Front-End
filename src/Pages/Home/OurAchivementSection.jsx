@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from '../../Assets/css/Home/OurAchievement.module.css';
 import { HiUserGroup } from 'react-icons/hi';
-import { FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa';
+import { GiTeacher } from 'react-icons/gi';
+import { MdOutlineFeaturedPlayList} from 'react-icons/md';
+import { FaUserGraduate,FaChalkboardTeacher } from 'react-icons/fa';
 import { Col, Container, Row } from 'react-bootstrap';
 import CountUp from 'react-countup';
 
@@ -15,11 +17,11 @@ const OurAchivementSection = () => {
                     <Row>
                         <Col>
                             <div className={styles.OurAchivementHeading}>
-                                <h2 className={styles.OurAchievement}> Our Achievement</h2>
+                                <h2 className={styles.OurAchievement}> Our <span style={{ color:'#F59A26' }}>Achievement</span></h2>
                             </div>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='achievementRow'>
                         <Col md={4} sm={12} xs={12}>
                             <div className={styles.BigUserCicleSection}>
                                 <div className={styles.userIcon}>
@@ -36,7 +38,7 @@ const OurAchivementSection = () => {
                                 <Col md={6} sm={12} xs={12}>
                                    <div className={styles.OurAchievementAlignment}>
                                         <div className={styles.instructorIcon}>
-                                            <FaChalkboardTeacher/>
+                                            <GiTeacher/>
                                         </div>
                                         <div className={styles.instructor}>
                                             <h2><CountUp start={0} end={10} /></h2>
@@ -47,7 +49,7 @@ const OurAchivementSection = () => {
                                 <Col md={6} sm={12} xs={12}>
                                     <div className={styles.OurAchievementAlignment}>
                                             <div className={styles.instructorIcon}>
-                                                <FaChalkboardTeacher/>
+                                                <MdOutlineFeaturedPlayList/>
                                             </div>
                                             <div className={styles.instructor}>
                                                 <h2><CountUp start={0} end={20} /></h2>

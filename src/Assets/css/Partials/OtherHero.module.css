@@ -32,6 +32,7 @@
 
 .PageBreadCrubs {
     text-align: center;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .PageBreadCrubs p {
@@ -41,4 +42,40 @@
 .PageBreadCrubs a {
     text-decoration: none;
     font-size: 16px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .PageTitle h2 {
+        font-size: 22px !important;
+    }
+    
+    .PageTitle span {
+        font-size: 22px !important;
+    }
+
+    .PageBreadCrubs p {
+        font-size: 14px !important;
+    }
+    
+    .PageBreadCrubs a {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 61.93rem) {
+    .PageTitle h2 {
+        font-size: 28px;
+    }
+    
+    .PageTitle span {
+        font-size: 28px;
+    }
+
+    .PageBreadCrubs p {
+        font-size: 16px;
+    }
+    
+    .PageBreadCrubs a {
+        font-size: 16px;
+    }
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import MobileMenuPopupBtn from './MobileMenuPopupBtn';
 import styles from '../../Assets/css/Partials/MobileHeader.module.css';
-import { VscSearch } from 'react-icons/vsc';
-import logo from '../../Assets/images/logo/Amar-Skill.png';
+// import { VscSearch } from 'react-icons/vsc';
+import logo from '../../Assets/images/logo/1Amar-Skill.png';
+import MobileSearchIcon from './MobileSearchIcon';
 
 const MobileHeader = () => {
     return (
@@ -12,16 +13,20 @@ const MobileHeader = () => {
                <div className={styles.MobileHeaderContainer}>
                    <Row>
                         <Col md={2} xs={2}>
-                            <div className={styles.MobileHeaderMenuIcon}>
+                            <div className={styles.MobileHeaderMenuIcon +' MobileHeaderMenuIconGlob'}>
                                <MobileMenuPopupBtn />
                             </div>
                         </Col>
                       
                         <Col md={7} xs={7}>
-                            <div className={styles.MobileHeaderSearchBar}>
+                            {/* <div className={styles.MobileHeaderSearchBar}>
                                 <input type="text" /><VscSearch />
+                            </div> */}
+                            <div className={styles.MobileSearchIConDiv}>
+                             <MobileSearchIcon />
                             </div>
                         </Col>
+
                         <Col md={3} xs={3}>
                             <div className={styles.MobileHeaderLogo}>
                                 <img src={logo} alt="Amar Skill" />

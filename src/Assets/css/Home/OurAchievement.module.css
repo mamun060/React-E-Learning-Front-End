@@ -6,7 +6,8 @@
     text-align: center;
     padding: 40px 0px 50px 0px;
     background: #FFFFFF;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25); */
+    box-shadow: 5px 5px 12px #dfecf3;
     border-radius: 20px;
     z-index: 1000;
     position: relative;
@@ -21,7 +22,8 @@
     font-weight: bold;
     font-size: 28px;
     text-transform: uppercase;
-    color: #9B9A9A;
+    color: #435f85;
+    /* color: #9B9A9A; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -56,12 +58,13 @@
 }
 
 .user h3{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
-    color: #CBCBCB;
+    color: #676666;
 }
 
 .RightFirstRow  {
@@ -106,7 +109,8 @@
 }
 
 .instructor h3{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+     font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -146,8 +150,8 @@
     .BigUserCicleSection {
         display: flex;
         justify-content: flex-start;
-        padding-left: 20px;
-        padding-bottom: 20px;
+        padding-left:30px;
+        padding-bottom: 10px;
     }
     .user {
         padding-left: 20px;
@@ -180,6 +184,7 @@
     
     .user h3{
         font-size: 16px;
+        margin-top: 5px;
     }
 
     .RightSecondRow {
@@ -198,11 +203,12 @@
 
     .instructor h2{
         font-size: 24px;
-        line-height: 60px;
+        /* margin-top: 25px; */
+        /* line-height: 60px; */
     }
     .instructor h3{
         font-size: 18px;
-        margin-top: -10px;
+        /* margin-top: -10px; */
     }
     .TopRightCircle {
         width: 70px;
@@ -210,11 +216,11 @@
         background-color: #FFE6B9;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        margin-right: -100px;
-        margin-top: -27px;
+        /* margin-right: -83px; */
+        margin-top: -23px;
         z-index: 0;
         position: absolute;
-        right: 93px;
+        right: 100px;
     }
 
     .BottomLeftSqure {
@@ -222,7 +228,7 @@
         height: 90px;
         background-color: #E0F1FF;
         border-radius: 15px;
-        margin-top: -86px;
+        margin-top: -90px;
         z-index: 0;
         position: absolute;
         left: 0px;

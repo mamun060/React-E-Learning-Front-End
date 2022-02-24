@@ -1,5 +1,6 @@
 .FooterContainer {
-    background-color: #002E6C;
+    background-color: #21427a;
+    /* background-color: #21427a; */
     color: #fff;
 }
 
@@ -21,13 +22,16 @@
 
 .FooterTopMenu ul li {
     list-style: none;
+
 }
 
-.FooterTopMenu ul li a{
+.FooterTopMenu ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    /* font-size: 14px; */
+    font-size: calc(1vw + .1em);
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family);
     font-weight: bold;
 }
 
@@ -54,15 +58,15 @@
 }
 
 
-.FooterAboutContent p{
+.FooterAboutContent p {
     text-align: left;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-size: 16px;
     line-height: 32px;
     text-transform: capitalize;
     font-weight: 300;
     color: #FFFFFF;
-    width: 300px;
 }
 
 .FooterWizardTitle {
@@ -70,7 +74,8 @@
 }
 
 .FooterWizardTitle h2 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -82,7 +87,7 @@
     margin-left: 10px;
 }
 
-.UseFullLinkListing ul{
+.UseFullLinkListing ul {
     text-align: left;
     margin-left: -20px;
 }
@@ -94,7 +99,8 @@
 
 .UseFullLinkListing ul li a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -111,7 +117,7 @@
     display: none;
 }
 
-.MobileFooterMenuLinks ul{
+.MobileFooterMenuLinks ul {
     text-align: left;
     margin-left: -20px;
 }
@@ -123,7 +129,8 @@
 
 .MobileFooterMenuLinks ul li a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -138,7 +145,7 @@
 
 
 
-.FooterSocialIcon ul{
+.FooterSocialIcon ul {
     display: flex;
     margin-left: -20px;
     padding-bottom: 15px;
@@ -147,6 +154,9 @@
 
 .FooterSocialIcon ul li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .IconFacebook {
@@ -175,6 +185,7 @@
     border-radius: 50%;
     margin-right: 10px;
 }
+
 .IconInstagram {
     width: 30px;
     height: 30px;
@@ -189,13 +200,13 @@
     height: 20px;
     color: #fff;
     text-align: center;
-    margin-left: 5px;
-    padding: 2px;
+    margin-top: -4px;
 }
 
 .FooterLocationArea p {
-    text-align: left; 
-    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -210,6 +221,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .PaymentIconImage img {
     width: 100%;
     height: auto;
@@ -222,14 +234,15 @@
 
 .FooterCopyRightContent p {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, "Roboto, sans-serif");
     font-size: 14px;
     text-transform: capitalize;
     color: #FFFFFF;
 }
 
 
-@media only screen and (min-device-width: 280px) and (max-device-width: 667px){ 
+@media only screen and (min-device-width: 280px) and (max-device-width: 667px) {
 
     .FooterContainerTop {
         margin-bottom: 20px;
@@ -251,7 +264,7 @@
     .PaymentIconImage img {
         width: 90%;
         height: auto;
-        margin-left: -15px;
+        margin-left: -33px;
     }
 
     .FooterTopMenu {
@@ -263,7 +276,7 @@
         padding-bottom: 50px;
     }
 
-    .FooterTopMenu ul li a{
+    .FooterTopMenu ul li a {
         font-size: 12px;
     }
 
@@ -274,13 +287,13 @@
         padding-bottom: 25px;
         margin-top: 30px;
     }
-    
+
     .FooterContainerTop {
-        border: none!important;
-        padding: none!important;
+        border: none !important;
+        padding: none !important;
     }
 
-    .FooterAboutContent p{
+    .FooterAboutContent p {
         font-size: 12px;
         line-height: 25px;
         width: auto;
@@ -291,9 +304,10 @@
     .FooterWizardTitle {
         width: auto;
     }
-    
+
     .FooterWizardTitle h2 {
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: var(--google-font-family, "Roboto, sans-serif");
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -302,11 +316,11 @@
         color: #FFFFFF;
         border-width: 150px;
         border-bottom: 1px solid rgba(170, 184, 255, 0.5);
-        margin-left: 0px!important;
+        margin-left: 0px !important;
         margin-right: 30px;
     }
 
-    .UseFullLinkListing ul{
+    .UseFullLinkListing ul {
         text-align: left;
         margin-left: -31px;
     }
@@ -320,7 +334,7 @@
         margin-top: -18px;
     }
 
-    .MobileFooterMenuLinks ul{
+    .MobileFooterMenuLinks ul {
         text-align: left;
         margin-left: -31px;
     }
@@ -329,9 +343,10 @@
         font-size: 12px;
     }
 
-    .FooterSocialIcon ul{
+    .FooterSocialIcon ul {
         margin-left: -32px;
     }
+
     .FooterLocationArea p {
         font-size: 12px;
         margin-left: 0px;

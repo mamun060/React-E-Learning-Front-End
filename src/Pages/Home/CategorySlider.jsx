@@ -8,9 +8,9 @@ import one from '../../Assets/images/Category-Slider/1Amar-Skill-Icon1 1.png';
 import two from '../../Assets/images/Category-Slider/Amar-Skill-Icon2 1.png';
 import three from '../../Assets/images/Category-Slider/Amar-Skill-Icon3 1.png';
 import four from '../../Assets/images/Category-Slider/Amar-Skill-Icon4 1.png';
-import BigCourseCard from './../../Elements/Card/BigCourseCard';
 import SmallCourseCard from '../../Elements/Card/SmallCourseCard';
-import LoadMoreButton from './../../Elements/Button/LoadMoreButton';
+
+// import LoadMoreButton from '../../Elements/Button/LoadMoreButton';
 
 
 const CategorySlider = () => {
@@ -77,7 +77,8 @@ const CategorySlider = () => {
                                         <CategoryCard 
                                         icon={one}
                                         cat_link="#"
-                                        title="ডিজিটাল মার্কেটিং"
+                                        title="Web design"
+                                        // title="ডিজিটাল মার্কেটিং"
                                         active="active"
                                         />
                                     </div>
@@ -85,35 +86,40 @@ const CategorySlider = () => {
                                         <CategoryCard 
                                         icon={two}
                                         cat_link="#"
-                                        title="ওয়েব ডিজাইন"
+                                        title="Web Development"
+                                        // title="ওয়েব ডিজাইন"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={three}
                                         cat_link="#"
-                                        title="ওয়েব ডেভেলপমেন্ট"
+                                        // title="ওয়েব ডেভেলপমেন্ট"
+                                        title="Digital Marketing"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={four}
                                         cat_link="#"
-                                        title="গ্রাফিক্স ডিজাইন"
+                                        title="Graphic Design"
+                                        // title="গ্রাফিক্স ডিজাইন"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={one}
                                         cat_link="#"
-                                        title="এসইও"
+                                        title="SEO"
+                                        // title="এসইও"
                                         />
                                     </div>
                                     <div>
                                         <CategoryCard 
                                         icon={two}
                                         cat_link="#"
-                                        title="কন্টেন্ট রাইটিং"
+                                        title="Content Writting"
+                                        // title="কন্টেন্ট রাইটিং"
                                         />
                                     </div>
                                 </Slider>
@@ -124,11 +130,59 @@ const CategorySlider = () => {
                         {/** Category Course Section Start */}
                         <Row className={styles.mainWrapper}>
                             <div className={styles.CategoryCourseWrappingBG}>
-                                <Row>
-                                    <Col md={6}>
-                                        <BigCourseCard />
+                                <div className={styles.cardWrapper}>
+
+                                    <div className={`${styles.singleItem} cardActive`}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+                                    <div className={styles.singleItem}>
+                                        <SmallCourseCard />
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    {/* <Col md={6} className={styles.first}>
+                                        <div className={styles.bigCard}>
+                                            <BigCourseCard />
+                                        </div>
                                     </Col>
+
+
                                     <Col md={6}>
+                                      
                                         <Row>
                                             <Col md={6}>
                                                 <SmallCourseCard />
@@ -157,7 +211,7 @@ const CategorySlider = () => {
                                             </Col>
                                         </Row>
                                     </Col>
-                                </Row>
+                                     */}
                             </div>
                         </Row>
                         {/** Category Course Section End */}

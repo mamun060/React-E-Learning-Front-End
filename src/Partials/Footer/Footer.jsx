@@ -70,6 +70,9 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div className={styles.MobileFooterMenuLinks}>
+                                <div className={styles.FooterWizardTitle}>
+                                    <h2>Our Menu</h2>
+                                </div>
                                 <ul>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Contact Us</a></li>

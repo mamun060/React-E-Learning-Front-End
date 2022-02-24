@@ -11,7 +11,8 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     background-color: #F59A26;
     padding: 12px 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -32,7 +33,8 @@
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     background-color: #F59A26;
     padding: 12px 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -43,3 +45,39 @@
     width: 16px;
     height: 16px;
 }
+
+@media screen and (max-width: 71.9375rem){
+    
+
+    .FilterButtonLeft,
+    .FilterButtonRight{
+        width: 100% !important;
+        padding-left: 0px;
+        margin: 5px 0px !important;
+    }
+
+    
+    .FilterButtonLeft a,
+    .FilterButtonRight a{
+        width: 100% !important;
+        display: block !important;
+    }
+
+    
+
+    .FiterButtonWrap {
+        flex-wrap: wrap;
+    }
+  
+}
+
+
+@media screen and (max-width: 61.9375rem){
+    .FilterButtonRight {
+        padding-left: 0px;
+    }
+    
+ 
+  
+  }
+  

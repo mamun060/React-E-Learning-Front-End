@@ -5,6 +5,7 @@ import { easeQuadIn, easeQuadOut } from "d3-ease";
 import CategoryCloseOutsideClick from './CategoryCloseOutsideClick';
 import "../../Assets/css/Partials/CustomCategoryStyle.css";
 import {MdKeyboardArrowDown} from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 
 const CustomCategorySection = () => {
@@ -25,16 +26,13 @@ const CustomCategorySection = () => {
     });
 
     return (
-    <div className="Button-Container">
-      <div ref={domNode} className="Btn-Sub-Container">
-        <div className="main-button-wrap">
-            <button
-              onClick={() => setIsOpen((isOpen) => !isOpen)}
-              type="button"
-            >
-                সকল কোর্স দেখুন &nbsp; <MdKeyboardArrowDown />
-            </button>
-        </div>
+    <div>
+      <div ref={domNode}>
+          <Link to={'#'} onClick={() => setIsOpen((isOpen) => !isOpen)} className={'categoryToggle drop bs-dropbutton'}>
+              <span className='text courseText'>Our courses</span>
+              {/* <span className='text courseText'>সকল কোর্স সমূহ</span> */}
+              <MdKeyboardArrowDown className='icon mx-2' />
+          </Link>
         {transitions.map(
           ({ item, key, props }) =>
             item && (
@@ -44,22 +42,34 @@ const CustomCategorySection = () => {
                 className="react-sping-ani-wrap"
               >
                 <div className="DropDown-Btn-Wrap">
-                  
                   <div className="DropDown-sub-Wrap">
+
+                    <h6 className='text courseCategoryMenuTitle pb-1'>Categories</h6>
+                    {/* <h6 className='text courseCategoryMenuTitle pb-1'>ক্যাটাগরি সমূহ</h6> */}
+
                     <button className="single-button-style">
-                      Web Development
+                     {/* ওয়েব ডিজাইন */}
+                     Web design
                     </button>
                     <button className="single-button-style">
-                      SEO
+                      {/* ডিজিটাল মার্কেটিং */}
+                      Digital Marketting 
                     </button>
                     <button className="single-button-style">
-                      Digital Marketing
+                      {/* ওয়েব ডেভেলপমেন্ট */}
+                      Web development 
                     </button>
                     <button className="single-button-style">
-                      Content Writing
+                      {/* গ্রাফিক্স ডিজাইন */}
+                      Graphic Design 
                     </button>
                     <button className="single-button-style">
-                      Programming
+                      {/* এসইও */}
+                      SEO 
+                    </button>
+                    <button className="single-button-style">
+                      {/* কন্টেন্ট রাইটিং */}
+                      Content Writting 
                     </button>
                   </div>
               

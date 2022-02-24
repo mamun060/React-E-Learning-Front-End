@@ -11,13 +11,13 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 45px;
+    font-size: calc(1vw + 18px);
+    line-height: 1.5rem;
     text-transform: uppercase;
     color: #F59A26;
 }
 
-.BottomSectionHeadingWrap h2 span{
+.BottomSectionHeadingWrap h2 span {
     color: #2158A1;
 }
 
@@ -35,4 +35,11 @@
     background-color: rgba(224, 241, 255, 0.69);
     border-radius: 20px;
     padding: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .BottomSectionBG {
+        padding: 20px 8px;
+    }
 }

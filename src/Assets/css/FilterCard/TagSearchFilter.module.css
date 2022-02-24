@@ -3,12 +3,24 @@
 }
 
 .LeftSearchFilterSection {
-    display: flex;
+   
 }
-
+.FitlerHeadingWrap {
+    margin-bottom: 30px;
+}
+.FitlerHeadingWrap p {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #074495;
+}
 .TagSearchFilter {
     height: 40px;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     border: 1.5px solid #F1F1F1;
@@ -16,7 +28,6 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 5px;
     background: #F1F1F1;
-    margin-left: 10px;
     margin-top: -10px;
 }
 
@@ -24,11 +35,14 @@
     border: none;
     width: 90%;
     height: 40px;
-    color: #000;
+    color: #adadad;
     padding-left: 10px;
     background: #fff;
 }
 
+.TagSearchFilter input::placeholder {
+    color: #adadad;
+}
 .TagSearchFilter input:focus {
     outline: none;
 }

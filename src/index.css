@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Radley&family=Redressed&family=Stardos+Stencil&display=swap');
+
+:root {
+  /* --google-font-family: 'Redressed', cursive; */
+  /* --google-font-family: 'Radley', serif; */
+  --google-font-family: 'Stardos Stencil', cursive;
+  --default-globalfont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  scrollbar-color: #F59A26 #142370;
+  scrollbar-width: thin;
+
+}
+
+body {
+  font-family: var(--google-font-family, var(--default-globalfont-family)) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--google-font-family, 'source-code-pro, Menlo, Monaco, Consolas, Courier New,monospace') !important;
+}
+
+/* whole website row customization */
+
+.row:not(.achievementRow) {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }

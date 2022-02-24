@@ -1,0 +1,177 @@
+.CourseElementWrapping {
+    /* padding: 5px;  */
+    margin: 10px 0px;
+    box-shadow: rgb(149 157 165 / 20%) 9px 8px 23px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: #fff !important;
+}
+
+.CourseTitle a {
+    font-size: 20px;
+    color: #2158A1;
+    font-weight: 500;
+}
+
+.CourseInstructor a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #F59A26;
+}
+
+.CourseContent {
+    font-size: 14px;
+    color: #4e4a4a;
+    font-weight: 500;
+
+}
+
+.CourseLightInfo {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin-top: 10px; */
+}
+
+.CourseLightInfo span {
+    color: #4e4a4a;
+    font-size: 14px;
+    padding: 0px 5px 5px 5px;
+    padding-left: 0px !important;
+}
+
+.CourseLightInfo span svg {
+    color: #F59A26;
+    font-size: 14px;
+}
+
+.CouseInformation h2 {
+    line-height: 1 !important;
+}
+
+.CouseInformation h2,
+.CouseInformation h4,
+.CouseInformation p {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.CouseInformation p {
+    padding-bottom: 5px;
+}
+
+.ElementButtonWrap {
+    display: flex;
+    align-items: center;
+}
+
+.ElementButtonWrap .CourseDatailsBtn {
+    background-color: #144D9B;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.ElementButtonWrap .LessionStartBtn {
+    background-color: #144D9B;
+    border-radius: 5px;
+}
+
+.ElementButtonWrap .CourseDatailsBtn:hover,
+.ElementButtonWrap .LessionStartBtn:hover {
+    background-color: #F59A26;
+}
+
+.CourseDatailsBtn a,
+.LessionStartBtn a {
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px !important;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 319px) {
+
+    .CourseThumbnail,
+    .CourseThumbnail img {
+        width: 100% !important;
+    }
+
+    .CourseElementWrapping {
+        width: 100% !important;
+        padding: 20px 10px !important;
+    }
+
+    .CourseTitle a {
+        font-size: 16px;
+    }
+
+    .CourseInstructor a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and(min-width: 320px) and (max-width: 669px) {
+    .CourseElementWrapping {
+        width: 100% !important;
+        padding: 20px 20px !important;
+    }
+
+    .CourseThumbnail {
+        width: 100% !important;
+    }
+
+    .CourseThumbnail img {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .CourseTitle a {
+        font-size: 16px;
+    }
+
+    .CourseInstructor a {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and(min-width: 670px) and (max-width: 991px) {
+
+    .CourseThumbnail img {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .CourseTitle a {
+        font-size: 18px;
+    }
+
+    .CourseInstructor a {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 61.9375rem) {
+
+    .CourseThumbnail {
+        width: 100%;
+    }
+
+    .CourseThumbnail img {
+        width: 100% !important;
+        min-height: 100px;
+    }
+
+    .CourseTitle a {
+        font-size: 18px;
+    }
+
+    .CourseInstructor a {
+        font-size: 14px;
+    }
+
+}

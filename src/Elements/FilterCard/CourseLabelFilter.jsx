@@ -7,7 +7,7 @@ const CourseLabelFilter = () => {
         <>
               <div className={styles.LeftMainFilterSection}>
                 <div className={styles.FitlerHeadingWrap}>
-                    <p>Label</p>
+                    <p>Level</p>
                     <p>
                         <IoIosArrowDown />
                     </p>
@@ -16,7 +16,7 @@ const CourseLabelFilter = () => {
                     <ul>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='level1' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -26,7 +26,7 @@ const CourseLabelFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='level2' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -36,7 +36,7 @@ const CourseLabelFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='level3' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -46,11 +46,11 @@ const CourseLabelFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='all' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
-                                    <p>All Labels</p>
+                                    <p>All Level</p>
                                 </div>
                             </div>
                         </li>

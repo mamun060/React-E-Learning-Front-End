@@ -1,20 +1,26 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+body {
+  overflow-x: hidden !important;
 }
 
 /* Select to modified style */
 .css-1s2u09g-control {
   box-sizing: border-box;
-  border: 1.5px solid #F1F1F1!important;
-  box-sizing: border-box!important;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px!important;
-  border-radius: 5px!important;
-  background-color: #F1F1F1!important;
+  border: 1.5px solid #F1F1F1 !important;
+  box-sizing: border-box !important;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+  border-radius: 5px !important;
+  background-color: #F1F1F1 !important;
 }
 
 .css-tj5bde-Svg {
-  color: #084496!important;
+  color: #084496 !important;
 }
 
 /* Bootstrap style modified */
@@ -30,26 +36,31 @@
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 250px!important;
-  border-right: 3px solid #F59A26!important;
-  background-color: #ecf0f1!important;
+  width: 250px !important;
+  border-right: 3px solid #F59A26 !important;
+  background-color: #ecf0f1 !important;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* Categrory slider section styling */
-.slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus {
+.slick-prev,
+.slick-prev:focus,
+.slick-next,
+.slick-next:focus {
   outline: none;
-  background-color: #0D3D80!important;
-  font-size: 14px!important;
+  background-color: #0D3D80 !important;
+  font-size: 14px !important;
   padding: 5px;
-  width: 40px!important;
-  height: 40px!important;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 50%;
 }
 
-.slick-prev::before, .slick-next::before {
-  font-family: 'slick';
-  font-size: 18px!important;
+.slick-prev::before,
+.slick-next::before {
+  font-family: var(--google-font-family, 'slick');
+  /* font-family: 'slick'; */
+  font-size: 18px !important;
   line-height: 1;
   opacity: .75;
   color: white;
@@ -58,20 +69,22 @@
 }
 
 .slick-prev {
-  left: -38px!important;
+  left: 5px !important;
+  z-index: 2;
 }
 
 .slick-next {
-  right: -31px!important;
+  right: 5px !important;
+  z-index: 2;
 }
 
 .slick-list {
-  margin: 0px 28px!important;
+  margin: 0px 28px !important;
 }
 
 .slick-dots li button:before {
-  font-size: 12px!important;
-  color: #084496!important;
+  font-size: 12px !important;
+  color: #084496 !important;
 }
 
 .slide {
@@ -94,64 +107,113 @@
 
 /* React Bootstrap accordion style over ride */
 .accordion-button::after {
-  width: 15px!important;
-  height: 15px!important;
-  background-size: 12px!important;
+  width: 15px !important;
+  height: 15px !important;
+  background-size: 12px !important;
 }
 
 .accordion-button {
-  font-size: 13px!important;
-  color: #212529!important;
+  font-size: 18px !important;
+  color: #212529 !important;
+}
+
+.containerSlidePopolarCard {
+  box-shadow: rgba(186, 186, 190, 0.2) 10px 10px 29px 0px !important;
+  margin-bottom: 0px !important;
 }
 
 
-.containerSlidePopolarCard {
-    box-shadow: rgba(186, 186, 190, 0.2) 10px 10px 29px 0px !important;
-    margin-bottom: 0px !important;
+.categoryToggle {
+  background: #F3F3F3;
+  padding: 0.65rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  text-decoration: none;
+  color: #696767 !important;
+  font-size: calc(1vw + .4em);
+
+}
+
+.categoryToggle .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.2rem !important;
+}
+
+
+.Desktop {
+  position: sticky !important;
+  background: #fff;
+  z-index: 2000;
+  top: -1px;
 }
 
 /* React accordion style end */
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
-  .slick-prev, .slick-prev:focus, .slick-next, .slick-next:focus {
+
+  .slick-prev,
+  .slick-prev:focus,
+  .slick-next,
+  .slick-next:focus {
     outline: none;
-    background-color: #0D3D80!important;
-    font-size: 14px!important;
+    background-color: #0D3D80 !important;
+    font-size: 14px !important;
     padding: 5px;
-    width: 30px!important;
-    height: 30px!important;
+    width: 30px !important;
+    height: 30px !important;
     border-radius: 50%;
   }
-  .slick-prev::before, .slick-next::before {
-    font-family: 'slick';
-    font-size: 17px!important;
+
+  .slick-prev::before,
+  .slick-next::before {
+    font-family: var(--google-font-family, 'slick');
+    /* font-family: 'slick'; */
+    font-size: 17px !important;
     line-height: 1;
     opacity: .75;
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   .slick-list {
-    margin: 0px 13px!important;
+    margin: 0px 13px !important;
   }
+
   .activeSlide {
     transform: scale(1);
     opacity: 1;
     margin: 0px 0px;
   }
 
-  .slick-arrow.slick-next {
-    margin-right: 23px;
-  }
+  /* .categorySliderWrapper{
+    margin-left: 6px !important;
+  } */
 
 
-  .slick-arrow.slick-prev {
-      margin-left: 32px;
-      z-index: 1;
-  }
-
-  .categorySliderWrapper{
-    /* margin-left: 6px !important; */
+  .accordion-button {
+    font-size: 15px !important;
+    color: #212529 !important;
   }
 
 }
@@ -159,33 +221,184 @@
 
 
 /* Bootstrap tabs style modified */
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: #fff!important;
-  background-color: #084496!important;
-  border-color: #dee2e6 #dee2e6 #fff!important;
-  padding: 10px 65px!important;
-  border-radius: 10px 10px 0px 0px!important;
-  font-size: 16px!important;
+  color: #fff !important;
+  background-color: #084496 !important;
+  border-color: #dee2e6 #dee2e6 #fff !important;
+  border-radius: 10px 10px 0px 0px !important;
 }
+
+
+.nav-tabs li.nav-item[role="presentation"],
+.nav-tabs li.nav-item[role="presentation"] button {
+  width: 33.28%;
+  /* width: 33.28%; */
+}
+
+
+.nav-tabs li.nav-item[role="presentation"] button {
+  width: 100%;
+  height: 50px;
+}
+
 
 .nav-tabs .nav-link {
-  color: #fff!important;
-  background-color: #CBCBCB!important;
-  border-color: #dee2e6 #dee2e6 #fff!important;
-  padding: 10px 65px!important;
-  border-radius: 10px 10px 0px 0px!important;
-  font-size: 16px!important;
+  color: #fff !important;
+  background-color: #8d9dab !important;
+  border: 1px solid #a9b1d6;
+  border-radius: 10px 10px 0px 0px !important;
+  font-size: calc(1vw + .2em) !important;
 }
 
-.nav-tabs {
-  border-bottom: none!important;
+.student-dashboard .nav-item .nav-link {
+  color: #21427a !important;
+  font-weight: 550;
+  background-color: #f2f3f7 !important;
+  border-radius: 0rem !important;
 }
+
+
+@media screen and (max-width: 768px) {
+  .nav-tabs .nav-link {
+    font-size: 14px !important;
+  }
+
+
+  .nav-tabs li.nav-item[role="presentation"] button {
+    height: 55px;
+  }
+}
+
+
+@media screen and (max-width: 61.9375rem) {}
+
+
 /* React bootstrap modification */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl 
-{
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   width: 100%;
-  padding-right: 0px!important; 
-  padding-left: 0px!important; 
+  padding-right: 0px !important;
+  padding-left: 0px !important;
   margin-right: auto;
   margin-left: auto;
+}
+
+.cardActive {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  height: auto !important;
+}
+
+.cardActive>div {
+  height: 100%;
+  max-height: 800px;
+}
+
+.cardActive img {
+  max-height: 300px !important;
+}
+
+.cardActive h2 {
+  margin-top: 25px;
+  font-size: 35px !important;
+  line-height: 2rem !important;
+}
+
+.cardActive a svg {
+  margin-top: 25px;
+  width: 25px !important;
+  height: 25px !important;
+  color: #142370;
+}
+
+.cardActive h4 {
+  font-size: 24px !important;
+  margin-bottom: 20px;
+
+}
+
+.cardActive .cardBottomWrapper {
+  margin-top: 120px !important;
+}
+
+.cardActive .coursePrice {
+  font-size: 24px !important;
+  margin-bottom: 20px;
+}
+
+.cardActive .courseBigBuyNow {
+  font-size: 24px !important;
+  margin-bottom: 0px;
+}
+
+.courseBigBuyNow {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 61.9375rem) {
+  .cardActive {
+    display: none !important;
+  }
+
+}
+
+
+/* Mobile Search Icon Offcanvas custom width & Height */
+.headerSearch.offcanvas.offcanvas-top {
+  width: 100%;
+  height: 95px;
+}
+
+.headerSearch .offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0rem 0rem !important;
+  padding-top: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  font-size: 14px;
+}
+
+.headerSearch .offcanvas-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0.6rem 0.8rem !important;
+}
+
+.headerSearch .offcanvas-header .btn-close {
+  padding: .6rem 1rem !important;
+}
+
+/* ============================================================ */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #142370;
+  /* background: #fff; */
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F59A26;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cf7d12;
+}
+
+
+.video-react .video-react-poster {
+  background-color: #639cebd0 !important;
+}
+
+.video-react .video-react-big-play-button {
+  background-color: #f59a2d !important;
 }

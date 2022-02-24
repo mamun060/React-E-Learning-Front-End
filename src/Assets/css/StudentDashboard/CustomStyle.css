@@ -1,0 +1,15 @@
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.nav-pills .nav-link:hover {
+  text-decoration: none;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #F59A26!important;
+    background-color: #fff!important;
+}

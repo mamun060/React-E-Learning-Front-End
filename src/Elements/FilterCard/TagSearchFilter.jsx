@@ -10,8 +10,9 @@ return (
                 <div className={styles.FitlerHeadingWrap}>
                     <p>Tags</p>
                 </div>
+
                 <div className={styles.TagSearchFilter}>
-                    <input type="text" />
+                    <input type="text" placeholder='Enter Tags'/>
                     <VscSearch />
                 </div>
 

@@ -23,7 +23,7 @@ const StarRating = () => {
                                 <div className={styles.RatingTitleStyle}>
                                     <p>Five Star</p>
                                 </div>
-                                <div>
+                                <div className={styles.dash}>
                                     -
                                 </div>
                                 <div className={styles.RatingStarStyle}>
@@ -45,11 +45,11 @@ const StarRating = () => {
                                 <div className={styles.RatingTitleStyle}>
                                     <p>Four Star</p>
                                 </div>
-                                <div>
+                                <div className={styles.dash}>
                                     -
                                 </div>
                                 <div className={styles.RatingStarStyle}>
-                                <div className={styles.CustomRatingStyle}>
+                                    <div className={styles.CustomRatingStyle}>
                                         <VscStarFull />
                                         <VscStarFull />
                                         <VscStarFull />
@@ -69,7 +69,7 @@ const StarRating = () => {
                                 <div className={styles.RatingTitleStyle}>
                                     <p>Three Star</p>
                                 </div>
-                                <div>
+                                <div className={styles.dash}>
                                     -
                                 </div>
                                 <div className={styles.RatingStarStyle}>
@@ -93,7 +93,7 @@ const StarRating = () => {
                                 <div className={styles.RatingTitleStyle}>
                                     <p>Two Star</p>
                                 </div>
-                                <div>
+                                <div className={styles.dash}>
                                     -
                                 </div>
                                 <div className={styles.RatingStarStyle}>
@@ -117,7 +117,7 @@ const StarRating = () => {
                                 <div className={styles.RatingTitleStyle}>
                                     <p>One Star</p>
                                 </div>
-                                <div>
+                                <div className={styles.dash}>
                                     -
                                 </div>
                                 <div className={styles.RatingStarStyle}>

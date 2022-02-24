@@ -1,0 +1,104 @@
+.SuccessReviewCardWrap {
+    margin: 10px 0px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-left: 5px solid #c8d4e8;
+    border-radius: 10px;
+    padding-top: 0px;
+}
+
+.StudentReviewCardTop {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 10px;
+}
+
+.StudentImgStyle {
+    margin-right: 20px;
+}
+
+.StudentImgStyle img {
+    margin: 0 !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 160px !important;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.ReviewContents p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e4a4a;
+}
+
+.ReviewContents p svg{
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.05);
+}
+
+.ReviewContents p a{
+    color: #F49B27;
+    cursor: pointer;
+}
+
+.ReviewContents p a:hover{
+    color: #2569C9;
+}
+
+.StudentReviewBottomSection {
+    background-color: #FBAC47;
+    text-align: left;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.StudentReviewBottomSection h2 {
+    text-align: left;
+    color: #f7f7f7;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 1.2rem;    
+}
+.StudentReviewBottomSection h4 {
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .SuccessReviewCardWrap {
+        margin: 10px 10px;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 0px;
+    }
+
+    .StudentReviewCardTop {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+    }
+    
+    .StudentImgStyle {
+        margin-right: 0px !important;
+    }
+    
+    .StudentImgStyle img {
+        margin: 0!important;
+        width: 100%!important;
+        object-fit: cover!important;
+        height: 180px!important;
+    }
+    .ReviewContents p {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}

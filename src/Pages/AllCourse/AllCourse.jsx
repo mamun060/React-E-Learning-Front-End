@@ -9,7 +9,7 @@ import CourseListSection from './CourseListSection';
 const AllCourse = () => {
     return (
         <>
-              <div className="Desktop">
+            <div className="Desktop">
                 <Header />
             </div>
             <div className="Mobile">

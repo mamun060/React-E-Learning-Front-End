@@ -27,6 +27,13 @@ background-color: #f2f9ffd4;
     /* background-color: #f2f9ffd4; */
     padding: 20px 40px;
 }
+.cardWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2em;
+}
+
 
 /* Load More button position */
 
@@ -53,5 +60,23 @@ background-color: #f2f9ffd4;
     .CategoryCourseWrappingBG{
         padding: 20px 20px;
     }
+   
+}
 
+@media screen and (max-width: 768px){
+    .cardWrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 1.2em;
+    }
+}
+
+@media screen and (max-width: 61.9375rem){
+    .cardWrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2em;
+    }
 }

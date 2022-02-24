@@ -1,0 +1,74 @@
+.TabBodyContainer {
+    padding: 50px 0px;
+}
+
+.TabBodyLeftSectionWrap {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+.UserInfoTitle {
+    background-color: #084496;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.UserInfoTitle h4 {
+    font-size: 16px;
+    color: #fff;
+    padding-top: 7px;
+}
+
+.TabBodyrRightSectionWrap {
+    background-color: #fff;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    border-radius: 10px;
+    padding: 0px 0px !important;
+}
+
+.TabBodyrRightSectionWrap>div {
+    margin: 0px 0px;
+    padding: 20px 20px !important;
+    background-color: #faf8f8 !important;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 520px) {
+    .TabBodyrRightSectionWrap {
+        padding: 20px 10px !important;
+    }
+
+    .TabBodyLeftSectionWrap {
+        padding: 0px 10px !important;
+    }
+
+    .TabBodyrRightSectionWrap>div {
+        margin: 5px 0px;
+        padding: 0px 0px !important;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 521px) and (max-width: 61.93rem) {
+    .TabBodyLeftSectionWrap {
+        margin: 5px 0px;
+    }
+
+    .TabBodyrRightSectionWrap {
+        padding: 0px 0px !important;
+    }
+
+    .TabBodyrRightSectionWrap>div {
+        margin: 5px 0px;
+        padding: 20px 20px !important;
+        background-color: #faf8f8 !important;
+        border-radius: 10px;
+    }
+}

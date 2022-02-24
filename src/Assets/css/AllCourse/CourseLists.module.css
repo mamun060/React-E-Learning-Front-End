@@ -16,6 +16,11 @@
     padding: 20px 0px;
 }
 
+.colMargin{
+    margin-bottom: .5em;
+}
+
+
 /* Left section styling */
 
 
@@ -26,9 +31,36 @@
     padding-left: 20px;
 }
 
+
 @media only screen and (min-device-width: 280px) and (max-device-width: 667px){
     .AllCourseRightWrap {
         border: none!important;
         padding-left: 0px;
     }
+
+    .colMargin{
+        margin-bottom: .2em !important;
+    }
+
+    .CourseListContainer {
+        padding-left: 1.3em !important;
+        padding-right: 1.3em !important;
+    }
+
 }
+
+@media screen and (max-width: 768px){
+    .AllCourseRightWrap .colMargin{
+        width: 100% !important;
+        /* background-color: red !important; */
+    }
+}
+
+@media screen and (max-width: 61.9375rem){
+    .AllCourseRightWrap .colMargin{
+        width: calc(1vw + 48%);
+        /* background-color: red !important; */
+    }
+}
+
+/* //AllCourseRightWrap */

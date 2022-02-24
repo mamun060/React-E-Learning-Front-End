@@ -16,7 +16,7 @@ const TopInstructorFilter = () => {
                     <ul>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='topInstructor1' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -26,7 +26,7 @@ const TopInstructorFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='topInstructor2' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -36,7 +36,7 @@ const TopInstructorFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='topInstructor3' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -46,7 +46,7 @@ const TopInstructorFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='topInstructor4' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>
@@ -56,7 +56,7 @@ const TopInstructorFilter = () => {
                         </li>
                         <li className={styles.CourseFilterRatingLI}>
                             <div className={styles.RatingInputStyle}>
-                                <input name='topInstructor' type="radio" value="1" />
+                                <input name='topInstructor5' type="radio" value="1" />
                             </div>
                             <div>
                                 <div className={styles.RatingTitleStyle}>

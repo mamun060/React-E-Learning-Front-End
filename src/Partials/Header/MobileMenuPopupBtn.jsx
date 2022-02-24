@@ -11,13 +11,13 @@ const MobileMenuPopupBtn = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
-        <div>
+        <>
             <div onClick={handleShow}  className={styles.PopupMobileMenuIcon}>
                 <BsBorderWidth />
             </div>
 
             <Offcanvas show={show} onHide={handleClose} className={styles.dialogDrawer}>
-                <Offcanvas.Header closeButton>
+                <Offcanvas.Header closeButton style={{zIndex:'1001'}}>
                 <Offcanvas.Title>
                     <div className={styles.MobileMenuPopupMenu}>
                         <img src={logo} alt="Amar Skill" />
@@ -28,16 +28,17 @@ const MobileMenuPopupBtn = () => {
                    
                     <div className={styles.NavButtonArea}>
                         <div className={styles.LeftSignInButton}>
-                            <a href="#">একাউন্ট তৈরি করুন</a>
+                            <a href="#">Create An Account</a>
+                            {/* <a href="#">একাউন্ট তৈরি করুন</a> */}
                         </div>
                         <div className={styles.RightLogInButton}>
-                            <a href='#'>লগইন করুন</a>
+                            <a href='#'>Log in</a>
                         </div>
                     </div>
                     
                 </Offcanvas.Body>
             </Offcanvas>
-        </div>
+        </>
     );
 };
 

@@ -1,17 +1,50 @@
-@media only screen and (min-device-width: 240px) and (max-device-width: 767px) { 
+/* @media only screen and (min-device-width: 240px) and (max-device-width: 991px) { 
     .Mobile {
         display: visible;
     }
     .Desktop {
         display: none;
     }
+} */
+
+/* @media only screen and (min-device-width: 62rem) and (max-device-width: 90.5rem){ 
+    .Mobile {
+        display: none;
+    }
+    .Desktop {
+        display: visible;
+    }
+} */
+
+@media screen and (max-width: 61.9375rem){
+    .Mobile {
+        display: visible;
+        position: sticky;
+        width: 100vw;
+        background: #fff;
+        z-index: 1001;
+        top: 0px;
+        height: 80px;
+        padding-top: 15px !important;
+    }
+
+    .MobileHeaderMenuIconGlob{
+        padding-top: 14px !important;
+    }
+
+    .Desktop {
+        display: none;
+    }
+  
 }
 
-@media only screen and (min-device-width: 768px){ 
+@media screen and (min-width: 62rem){
     .Mobile {
         display: none;
     }
     .Desktop {
         display: visible;
     }
-}
+  
+  }
+

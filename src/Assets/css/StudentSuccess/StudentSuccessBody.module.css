@@ -1,0 +1,10 @@
+.StudentSuccessBodyWrap {
+    padding: 20px 0px;
+}
+
+.PaginationSectionWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}

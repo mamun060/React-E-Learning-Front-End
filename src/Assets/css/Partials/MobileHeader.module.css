@@ -1,17 +1,24 @@
+.MobileHeaderContainer {
+    padding: 0px 10px ;
+}
+
 .MobileMenuPopupMenu  img{
-    width: 140px;
+    /* width: 140px; */
+    width: 165px;
     height: 140px;
     margin-bottom: -74px;
     margin-left: -30px;
     margin-top: -10px;
+    cursor: pointer;
 }
+
 .PopupMobileMenuIcon {
     width: 40px;
     height: 40px;
     background-color: #426fabf0;
     border-radius: 50%;
     box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 .PopupMobileMenuIcon svg {
     width: 22px;
@@ -19,6 +26,7 @@
     color: #fff;
     margin-left: 9px;
     margin-top: 9px;
+    cursor: pointer;
 }
 
 .NavButtonArea  {
@@ -34,7 +42,8 @@
 }
 
 .NavButtonArea .LeftSignInButton a {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -54,7 +63,8 @@
 }
 
 .NavButtonArea .RightLogInButton a{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"Roboto, sans-serif");
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -82,10 +92,12 @@
 
 /* Mobile header logo styling */
 .MobileHeaderLogo img {
-    width: 100px;
-    height: 110px;
-    margin-top: -8px;
-    margin-left: -24px;
+    width: 48px;
+    height: 40px;
+    margin-top: 10px;
+    /* margin-left: -24px; */
+    padding-top: 8px;
+    cursor: pointer;
 }
 
 /* Mobile Header Searchbar stylign */
@@ -116,6 +128,7 @@
     outline: none;
 }
 
+
 .MobileHeaderSearchBar svg {
     width: 20px;
     height: 20px;
@@ -128,14 +141,13 @@
     width: 320px!important;
 }
 
-@media screen and (max-width:320px) {
+/* @media screen and (max-width:320px) {
     .dialogDrawer {
         width: 280px!important;
     }  
 
     .NavButtonArea .LeftSignInButton a,
     .NavButtonArea .RightLogInButton a{
-        /* width: 120px !important; */
         font-size: 16px !important;
         width: 100% !important;
         display: block;
@@ -146,15 +158,56 @@
     .NavButtonArea .RightLogInButton{
         margin-top: 10px !important;
     }
+} */
+
+
+/* New Mobile Search Icon styling */
+.MobileSearchIConDiv {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 65px;
 }
 
-@media screen and (min-width:321px) and (max-width:768px) {
+/* New Search Icon component style */
+.mobileSearchIconBar {
+    cursor: pointer;
+    font-size: 24px;
+}
+.CustomInputSearch {
+    width: 100%;
+    border: 1px solid #f2b73fc4;
+    display: flex;
+    align-items: center !important;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+
+.CustomInputSearch input {
+    width: 98%;
+    border: none;
+    padding: 5px 10px;
+    height: 100%;
+}
+
+.CustomInputSearch input::placeholder {
+    font-size: 0.8em;
+    color: #a1a09e;
+}
+
+.CustomInputSearch input:focus {
+    outline: none;
+}
+
+@media screen and (min-width:280px) and (max-width:768px) {
     .dialogDrawer {
-        width: 320px!important;
+        width: 300px!important;
     }  
 
     .NavButtonArea .LeftSignInButton a,
     .NavButtonArea .RightLogInButton a{
+        font-size: 16px !important;
         width: 100% !important;
         display: block;
         padding-left: 10px !important;
@@ -164,4 +217,44 @@
     .NavButtonArea .RightLogInButton{
         margin-top: 10px !important;
     }
+
+    
+
+    /* margin-right: -87px; */
 }
+
+
+@media screen and (max-width: 61.9375rem){
+    .NavButtonArea .LeftSignInButton a,
+    .NavButtonArea .RightLogInButton a{
+        font-size: 16px !important;
+        width: 100% !important;
+        display: block;
+        padding-left: 10px !important;
+        font-weight: bold;
+    }
+
+    .MobileHeaderLogo img {
+        margin-left: 95px;
+    }
+
+    .mobileSearchIconBar {
+        margin-right: -87px;
+        z-index: 10;
+    }
+  
+}
+
+
+@media screen and (max-width: 768px){
+    .MobileHeaderLogo img {
+        margin-left: 0px;
+    }
+
+    .mobileSearchIconBar {
+        margin-right: 0px;
+    }
+}
+
+
+

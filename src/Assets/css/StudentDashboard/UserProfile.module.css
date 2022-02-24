@@ -1,0 +1,59 @@
+.UserProfileWrap {
+    padding: 20px 0px;
+}
+
+.UserProfileImage img{
+    /* max-width: 150px;
+    max-height: 180px; */
+    border-radius: 5px;
+}
+
+.userInformationInfo {
+    text-align: left;
+}
+
+.userInformationInfo ul {
+    padding-left: 0rem;
+    padding-top: 16px;
+}
+
+.userInformationInfo li{
+    list-style: none;
+}
+
+
+.userInformationInfo span{
+    font-size: 16px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    color: #4e4a4a;
+}
+
+.UserAboutSeciton .UserTitle {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4e4a4a;
+}
+.UserAboutSeciton .UserSubTitle {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F59A26;
+}
+.UserAboutSeciton .userInfoContent {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4e4a4a;
+}
+
+
+@media screen and (max-width: 768px){
+    .UserAboutSeciton .UserTitle {
+      padding-top: 10px;
+    }
+    .userInformationInfo ul {
+        padding-top: 0px;
+    }
+}

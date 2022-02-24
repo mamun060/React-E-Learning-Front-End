@@ -5,19 +5,82 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Amar Skill The best E-learning App"/>
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>AmarSkill</title>
+
   </head>
   <body>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
     <div id="root"></div>
 
+<!-- 
+    <script>
+      window.addEventListener('DOMContentLoaded ',function(){
+        setTimeout(()=>{
+          document.querySelector('#player .ytp-title-enable-channel-logo .ytp-title-text').classList.add('d-none')
+        },677)
+      })
+    </script> -->
+    
+    <!-- <script src="https://cdn.plyr.io/3.6.3/demo.js"></script> -->
+
+    <!-- <script>
+
+      const DOMEvent = document.addEventListener;
+      const vcon = document.getElementById('vcon');
+      window.addEventListener('DOMContentLoaded',function(){
+    
+      DOMEvent('keydown', function(event) {
+        let
+        access = false,
+        myobj  = document.getElementById("body");
+        if (event.keyCode == 123) {
+          myobj.remove();
+          access = throwMsg();
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+          access = throwMsg();
+        } else if (event.ctrlKey && event.keyCode == 85) {
+          access = throwMsg();
+        }
+        event.preventDefault();
+        return access;
+    }, false);
+
+    if (DOMEvent) {
+      DOMEvent('contextmenu', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }, false);
+    } else {
+      document.attachEvent('oncontextmenu', function(e) {
+        window.event.returnValue = false;
+        return false;
+      });
+    }
+
+      // eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|20|length|if|try|constructor|||else|catch||5000|setTimeout'.split('|'),0,{}))
+
+    })
+      
+     
+
+    function throwMsg(msg="Our CSP does not allow the attempted function, if you accidentally hit a key kindly reload:)"){
+      alert(msg)
+      return false;
+    }
+
+
+    </script>  -->
+
+    <!-- <script src="https://cdn.plyr.io/3.6.3/demo.js"></script> -->
+
+    <!-- <script id="playerScript"></script> -->
+    <script defer src="./yt-plyrio.js"></script>
   </body>
 </html>

@@ -1,0 +1,143 @@
+.WishlistCardContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* margin-bottom: 20px; */
+}
+
+.BigCardThumnail {
+    text-align: center;
+}
+
+.SmallCardThumnail img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: auto;
+    max-height: 200px;
+}
+
+.CourseCardInfoWrap {
+    padding: 10px 20px 0px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+
+.CourseTecherInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.InstractorName h2 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #F59A26;
+}
+
+.InstructorSocailIcon {
+    display: flex;
+    padding-left: 5px!important;
+}
+
+.InstructorSocailIcon a {
+    padding: 0px 5px;
+    color: #142370;
+}
+
+.InstructorSocailIcon a svg {
+    width: 15px;
+    height: 15px;
+    color: #142370;
+}
+
+.SmallCardCouseTitle h4 {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #0D3D80;
+}
+
+.SmallCardBottomWrap {
+    border-top:  2px solid rgba(0, 0, 0, 0.1);
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PriceStyle p {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #142370;
+    padding-top: 20px;
+}
+
+.HeaderRemoveIcon a {
+    color: #F59A26;
+    padding: 8px 15px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+    .SmallCourseCardContainer {
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: 5px;
+    }
+
+    .InstractorName h2 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .CourseCardInfoWrap {
+        padding: 10px;
+        padding: 20px 20px;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+    }
+
+
+    .InstructorSocailIcon {
+        padding-left: 2px!important;
+    }
+
+    .SmallCardCouseTitle h4 {
+        font-size: 13px;
+    }
+
+    .PriceStyle p {
+        font-size: 14px;
+    }
+
+    .HeaderRemoveIcon a {
+        color: #F59A26;
+        padding: 8px 15px;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: var(--google-font-family,"'Roboto', sans-serif");
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-top: 5px;
+    }
+
+}

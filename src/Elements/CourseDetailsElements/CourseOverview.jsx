@@ -37,7 +37,7 @@ const CourseOverview = () => {
 
                     <div className={styles.OverviewListParent}>
                           <div className={styles.IconWithTitle}>
-                            <h4><BsReception4 /> Label</h4>
+                            <h4><BsReception4 /> Level</h4>
                           </div>
                           <div className={styles.CourseOverDash}></div>
                           <div className={styles.ContentUnderTitle}>
@@ -51,7 +51,7 @@ const CourseOverview = () => {
                           </div>
                           <div className={styles.CourseOverDash}></div>
                           <div className={styles.ContentUnderTitle}>
-                              <p>1 week</p>
+                              <p>01:50:00</p>
                           </div>
                     </div>
 

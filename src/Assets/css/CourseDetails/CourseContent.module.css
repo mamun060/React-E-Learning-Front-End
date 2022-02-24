@@ -5,45 +5,55 @@
 }
 
 
-.ContentButtonArea  {
+.ContentButtonArea {
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    padding-top: 7px;
+    width: 100%;
+    justify-content: space-between;
 }
 
+.ContentButtonArea .addTocardButton,
+.ContentButtonArea .buyNowButton {
+    flex: 1 1;
+    margin: 0px 0px;
+}
 
-.ContentButtonArea  a{
+.ContentButtonArea a {
     text-decoration: none;
 }
 
-.ContentButtonArea .LeftSignInButton a {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+.ContentButtonArea .addTocardButton a {
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     text-transform: capitalize;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
     color: #fff;
-    padding: 10px 35px;
     background-color: #2158A1;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    margin-right: 10px;
+    width: 96%;
+    height: 48px;
+    display: block;
+    line-height: 48px;
+    text-align: center;
 }
 
-.ContentButtonArea .RightLogInButton a{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+.ContentButtonArea .buyNowButton a {
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     text-transform: capitalize;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
     color: #fff;
-    padding: 10px 45px;
     background-color: #F59A26;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+    width: 96%;
+    height: 48px;
+    line-height: 48px;
+    display: block;
     border-radius: 5px;
+    text-align: center;
+    margin-left: 5px;
 }
 
 .CourseContentLessionWrap {
@@ -57,6 +67,7 @@
     height: 430px;
     overflow-y: scroll;
 }
+
 .CourseLessionHeading {
     background-color: #2158A1;
     color: #fff;
@@ -67,7 +78,7 @@
 .CourseLessionHeading h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 22px;
     line-height: 29px;
     text-transform: uppercase;
@@ -75,8 +86,69 @@
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
     padding: 10px 0px;
 }
- 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 991px){
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {}
+
+
+@media screen and (max-width: 768px) {
+    .CourseContentContainer {
+        padding: 40px 20px;
+    }
+
+}
+
+@media screen and (max-width: 61.9375rem) {
+    .ContentButtonArea {
+        flex-direction: column;
+    }
+
+    .ContentButtonArea .addTocardButton a,
+    .ContentButtonArea .buyNowButton a {
+        margin: 5px 0px !important;
+        width: 100% !important;
+    }
+}
+
+.CouseListShowWrap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion {
+    display: flex;
+}
+
+.accordionLeft {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.accordionLeft img {
+    width: 55px !important;
+    max-width: 55px !important;
+}
+
+.lessonsTitle h5 {
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: #6A6A6A;
+}
+
+.spanAlign {
+    margin: 0;
+    padding: 0;
+}
+
+.spanAlign span {
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #848484;
 }

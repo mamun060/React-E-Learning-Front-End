@@ -1,0 +1,68 @@
+/* Category section style */
+.CategorySliderContainer {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+}
+
+.mainWrapper{
+background-color: #f2f9ffd4;
+}
+
+.CategorySliderHeading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.CategorySliderWrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f9ffd4;
+    border-radius: 10px;
+    margin: 0px 0px 30px;
+}
+
+/* Category course section styling */
+.CategoryCourseWrappingBG {
+    background-image: url('../../images/Background-Banner/Curcle.png');
+    background-color: #f2f9ffbf;
+    /* background-color: #f2f9ffd4; */
+    padding: 20px 40px;
+}
+
+/* Load More button position */
+
+.LoadMoreButtonPosition {
+    padding: 40px 0px;
+    text-align: right;
+}
+
+/* Page Responsive isshu */
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
+    /* .CategorySliderWrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F2F9FF;
+        border-radius: 10px;
+        margin: 0px 0px 30px;
+        padding-left: 28px!important;
+        padding-right: 20px!important;
+    } */
+    .LoadMoreButtonPosition {
+        padding: 20px;
+    }
+
+    .CategoryCourseWrappingBG{
+        padding: 20px 20px;
+    }
+   
+}
+
+
+/* @media screen and (max-width: 61.9375rem){
+    .first{
+        display: none;
+    }
+    .secnd{
+     display: block;
+
+}
+} */

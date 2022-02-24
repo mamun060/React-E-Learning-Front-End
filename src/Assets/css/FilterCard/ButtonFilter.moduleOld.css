@@ -1,0 +1,52 @@
+.FiterButtonWrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.FilterButtonLeft a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F59A26;
+    padding: 12px 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.FilterButtonLeft a svg{
+    width: 16px;
+    height: 26px;
+}
+
+.FilterButtonRight {
+    padding-left: 30px;
+}
+
+.FilterButtonRight a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F59A26;
+    padding: 12px 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.FilterButtonRight a svg{
+    width: 16px;
+    height: 16px;
+}
+@media screen and (max-width: 61.9375rem){
+    .cardActive{
+      /* display: none !important; */
+    }
+  
+  }
+  

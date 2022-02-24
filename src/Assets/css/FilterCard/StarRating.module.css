@@ -10,7 +10,8 @@
 }
 
 .FitlerHeadingWrap p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -83,7 +84,8 @@
 }
 
 .RatingTitleStyle p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif') !important;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -113,4 +115,42 @@
     width: 20px;
     height: 20px;
     color: #dfe6e9;
+}
+
+
+@media screen and (max-width: 61.9375rem){
+
+  
+}
+
+
+
+@media screen and (max-width: 71.9375rem){
+    
+    .CourseFilterRatingLI {
+        margin-top: 2px;
+        margin-bottom: 1px;
+    }
+
+    .RatingTitleStyle,
+    .dash{
+        display: none;
+    }
+
+    .RatingStarStyle {
+        padding-left: 0px;
+    }
+  
+}
+
+
+@media screen and (max-width: 768px){
+    .RatingTitleStyle,
+    .dash{
+        display: block;
+    }
+
+    .RatingStarStyle {
+        padding-left: 20px;
+    }
 }

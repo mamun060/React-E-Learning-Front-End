@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../../Assets/css/Partials/OtherHero.module.css';
 import {MdKeyboardArrowRight} from 'react-icons/md';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const OtherHeroSection = ({firstTitle, secondTitle, BackPageName, CurrentPageName}) => {
@@ -12,10 +13,10 @@ const OtherHeroSection = ({firstTitle, secondTitle, BackPageName, CurrentPageNam
                 <div className={styles.OtherHeroSectionWrap}>
                     <div className={styles.OtherHeroBgWrap}>
                             <div className={styles.PageTitle}>
-                                <h2><span>{firstTitle}</span> {secondTitle}</h2>
+                                <h2><span>{firstTitle?.toUpperCase() ?? ''}</span> {secondTitle?.toUpperCase() ?? ''}</h2>
                             </div>
                             <div className={styles.PageBreadCrubs}>
-                                <p><a href="#">{BackPageName}</a> <MdKeyboardArrowRight />{CurrentPageName}</p>
+                                <p><Link to="">{BackPageName?.toUpperCase() ?? ''}</Link> <MdKeyboardArrowRight />{CurrentPageName?.toUpperCase() ?? ''}</p>
                             </div>
                     </div>
                 </div>  

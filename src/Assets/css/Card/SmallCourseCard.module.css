@@ -2,7 +2,7 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .BigCardThumnail {
@@ -29,7 +29,8 @@
 }
 
 .InstractorName h2 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -55,7 +56,8 @@
 }
 
 .SmallCardCouseTitle h4 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -72,7 +74,8 @@
 }
 
 .PriceStyle p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -87,7 +90,8 @@
     border-radius: 5px;
     color: #fff!important;
     padding: 8px 15px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family,"'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -133,7 +137,8 @@
         border-radius: 5px;
         color: #fff !important;
         padding: 5px 10px;
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: var(--google-font-family,"'Roboto', sans-serif");
         font-style: normal;
         font-weight: 500;
         font-size: 14px;

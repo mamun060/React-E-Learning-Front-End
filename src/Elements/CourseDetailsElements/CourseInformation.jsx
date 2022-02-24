@@ -3,10 +3,11 @@ import { Tab, Tabs } from 'react-bootstrap';
 import styles from '../../Assets/css/CourseDetails/CourseInformation.module.css';
 import AboutInstructor from './AboutInstructor';
 import AboutCourseInformation from './AboutCourseInformation';
+import CourseReview from './CourseReview';
 
 
 const CourseInformation = () => {
-    return (
+    return ( 
         <>
             <div className={styles.CourseInformationSectionWrap}>
                 <Tabs
@@ -21,7 +22,15 @@ const CourseInformation = () => {
                         <AboutCourseInformation />
                     </Tab>
                     <Tab eventKey="Course_review" title="Course Review">
-                        <AboutInstructor />
+                        <div className={styles.CourseReviewSection}>
+                            <CourseReview />
+                            <CourseReview />
+                            <CourseReview />
+                            <CourseReview />
+                            <CourseReview />
+                            <CourseReview />
+                            <CourseReview />
+                        </div>
                     </Tab>
                 </Tabs>
             </div>

@@ -1,0 +1,45 @@
+.CourseReviewWrap {
+    background-color: #fff;
+    padding: 0px 10px;
+}
+
+.CourseReviseInfoWrap {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.CourseReviseInfoWrap img {
+    min-width: 80px;
+    min-height: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.ReviewerTitle {
+    padding-left: 10px;
+}
+
+.ReviewerTitle h2{
+    font-size: 18px;
+    color: #084496;
+}
+
+.ReviewerTitle H4 {
+    font-size: 16px;
+    color: #F59A26;
+    line-height: 0.5;
+}
+
+.CourseReviewContent p {
+    font-size: 14px;
+    color: #5F5F5F;
+    font-weight: 400;
+}
+
+.CourseReviewVote p {
+    font-size: 12px;
+    color: #5F5F5F;
+    font-weight: 400;
+}

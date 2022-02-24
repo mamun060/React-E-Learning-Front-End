@@ -10,12 +10,13 @@
     text-align: left;
 }
 
-.CourseInfoContents p{
-    font-family: 'Roboto', sans-serif;
+.CourseInfoContents p {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: var(--google-font-family, 'Roboto, sans-serif');
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 25px;
+    /* line-height: 25px; */
     color: #5F5F5F;
 }
 
@@ -36,6 +37,7 @@
 .CourseContentSeeMore a svg {
     margin-top: -2px;
 }
+
 .CourseContentSeeMore a:hover {
     color: #F59A26;
 }

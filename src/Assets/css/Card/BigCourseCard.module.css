@@ -70,11 +70,12 @@
 
 .BigCardBottomWrap {
     border-top:  2px solid rgba(0, 0, 0, 0.1);
-    margin: 18px 0px;
+    /* margin: 18px 0px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    /* padding-top: 40px; */
+    padding-top: calc(1vw + 20px);
     margin-bottom: 10px;
 }
 
