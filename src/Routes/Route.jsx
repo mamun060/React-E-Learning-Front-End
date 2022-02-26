@@ -1,7 +1,10 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 import About from "../Pages/About/About";
 import Login from "../Pages/Accounts/Login/Login";
 import Registration from "../Pages/Accounts/Registration/Registration";
+import Cart from "../Pages/Cart/Cart";
+import DefaultCart from "../Pages/Cart/DefaultCart";
 import CourseDetails from "../Pages/CourseInformation/CourseDetails";
 import Home from "../Pages/Home/Home";
 import Dashboard from "../Pages/StudentDashboard/Dashboard";
@@ -45,8 +48,18 @@ const routes = [
         isPrivate: false
     },
     {
-        path: 'success',
+        path: 'successreview',
         element: <SuccessReview />,
+        isPrivate: false
+    },
+    {
+        path: 'cart',
+        element: <Cart />,
+        isPrivate: false
+    },
+    {
+        path: 'your-cart',
+        element: <DefaultCart />,
         isPrivate: false
     }
 ];

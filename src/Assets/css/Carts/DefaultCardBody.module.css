@@ -1,0 +1,168 @@
+.DefaultCartBodyWrap {
+    padding: 50px 0px;
+}
+
+.DeCartLeft {
+    /* display: grid;
+    grid-template-columns: 20% 70% 10%; */
+    background-color: #fff;
+    box-shadow: 0.3125rem 0.3125rem 2.5rem rgb(0 0 0 / 6%);
+    padding: 30px 8px;
+    border-radius: 5px;
+}
+
+.CoursThumnailSide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.CoursThumnailSide img {
+    max-width: 120px;
+    max-height: 85px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.CartCourseInfo {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.CartCourseInfo h2 {
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(58, 58, 58);
+    letter-spacing: 0.4px;
+}
+
+.CartCourseInfo h2 a{
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+
+.CartCourseInfo h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #F5A947;
+}
+
+.CartRemovePrice {
+    text-align: right;
+}
+
+.CartRemovePrice a svg {
+    font-size: 16px;
+    color: #C9302C;
+    margin-bottom: 35px;
+}
+
+.CartRemovePrice p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+
+.DeCartRight {
+    background-color: #fff;
+    box-shadow: 0.3125rem 0.3125rem 2.5rem rgb(0 0 0 / 6%);
+    padding: 30px 15px;
+    border-radius: 5px;
+}
+
+.DeCartContentTitle h2 {
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(58, 58, 58);
+    letter-spacing: 0.4px;
+}
+
+.DeCartRigitPrice ,
+.DeCartRigitCoursePrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DeCartRigitPrice ,
+.DeCartRigitCoursePrice p{
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #575757;
+    margin-bottom: 0;
+}
+
+.DeCartRigitPrice {
+    padding: 20px 0px 10px 0px;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.DeCartRigitCoursePrice {
+    padding: 20px 0px 10px 0px;
+}
+
+.DeCartRightCourseDetails p {
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #575757;
+    margin-bottom: 10;
+}
+
+.DeCartRigiBuyBtn {
+    text-align: center;
+    background: linear-gradient(122.33deg,#ffa42f 0%, #327fecbf 102.08%);
+    transition: all 350ms ease-in;
+    padding: 8px 0px;
+    border-radius: 10px;
+}
+.DeCartRigiBuyBtn a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 579px) {
+    .DeCartLeft {
+        margin-bottom: 20px;
+    }
+
+    .CartCourseInfo {
+        width: 80%;
+        padding-top: 10px;
+    }
+    .CartRemovePrice {
+        padding-top: 10px;
+        width: 20%;
+    }
+    .CartCourseInfo h2 {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-device-width: 580px) and (max-device-width: 650px) {
+    .DeCartLeft {
+        margin-bottom: 20px;
+    }
+    
+    .CoursThumnailSide img {
+        min-width: 70px;
+        min-height: 50px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .CartCourseInfo h2 {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 991px) {
+    .CartCourseInfo {
+        text-align: left;
+        padding-left: calc(1vw + 45px);
+    }
+}
+

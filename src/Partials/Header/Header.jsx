@@ -6,12 +6,11 @@ import { VscSearch } from 'react-icons/vsc';
 import logo from '../../Assets/images/logo/1Amar-Skill.png';
 import CustomCategorySection from './CustomCategorySection';
 import { Link } from 'react-router-dom';
-
-
-
+// import Cart from '../../Pages/Cart/Cart';
 
 
 const Header = () => {
+    const [isShow, setShow] = React.useState(true);
 
     return (
         <>
@@ -50,6 +49,11 @@ const Header = () => {
                                         <Link to='login'>Log in</Link>
                                         {/* <a href='#'>লগইন করুন</a> */}
                                     </div>
+                                    {/* {
+                                    isShow && <div onClick={()=>setShow(true)}>
+                                        <Cart />
+                                    </div>
+                                    } */}
                             </div>
                         </Col>
 

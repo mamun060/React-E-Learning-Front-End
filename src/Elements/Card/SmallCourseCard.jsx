@@ -1,10 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, {useCallback, useState, useEffect} from 'react';
 import styles from '../../Assets/css/Card/SmallCourseCard.module.css';
 import BigThumnail from '../../Assets/images/Course-Card/SmallCourseThumnail.jpg';
-import { BsHeartFill, BsShareFill, BsCart3} from 'react-icons/bs';
+import { BsHeartFill, BsShareFill, BsCart3, BsFillCartFill} from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import Cart from '../../Pages/Cart/Cart';
+
 
 const SmallCourseCard = ({ className }) => {
+    const [isAddToCart, setIsAddToCart] = useState(false);
+    const [ cart, setCart ] = useState(null)
+
+    const visibleCart = ()=>{
+        setIsAddToCart(true)
+    }
+
+    useEffect(()=>{
+        setCart(<Cart visible={isAddToCart} />)
+    },[isAddToCart])
+
     return (
         <>
             <div className={styles.SmallCourseCardContainer + ` ${className ?? ''} pb-2`}>
@@ -20,9 +34,12 @@ const SmallCourseCard = ({ className }) => {
                                 <h2>Maruf Hossain</h2>
                             </div>
                             <div className={styles.InstructorSocailIcon}>
-                                <a href='#'><BsHeartFill /></a>
-                                <a href='#'><BsCart3 /></a>
-                                <a href='#'><BsShareFill /></a>
+                                <Link to=''><BsHeartFill /></Link>
+                                { 
+                                !isAddToCart ? 
+                                (<Link to='' onClick={visibleCart}><BsCart3 /></Link>) : 
+                                (<Link to={''}><BsFillCartFill color='#142370'/> {cart}</Link>)}
+                                <Link to=''><BsShareFill /></Link>
                             </div>
                         </div>
 
@@ -41,7 +58,7 @@ const SmallCourseCard = ({ className }) => {
                     </div>
 
 
-</div>
+            </div>
         </>
     );
 };

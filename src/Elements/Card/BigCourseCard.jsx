@@ -3,9 +3,11 @@ import React from 'react';
 import styles from '../../Assets/css/Card/BigCourseCard.module.css';
 import BigThumnail from '../../Assets/images/Course-Card/SmallCourseThumnail.jpg';
 import { BsHeartFill, BsShareFill, BsCart3} from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 
 const BigCourseCard = () => {
+
     return (
         <>
             <div className={styles.BigCourseCardContainer}>
@@ -22,9 +24,9 @@ const BigCourseCard = () => {
                             <h2>Maruf Hossain</h2>
                         </div>
                         <div className={styles.InstructorSocailIcon}>
-                            <a href='#'><BsHeartFill /></a>
-                            <a href='#'><BsCart3 /></a>
-                            <a href='#'><BsShareFill /></a>
+                            <Link to=""><BsHeartFill /></Link>
+                            <Link to=""><BsCart3 /></Link>
+                            <Link to=""><BsShareFill /></Link>
                         </div>
                     </div>
 

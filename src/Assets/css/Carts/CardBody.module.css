@@ -1,0 +1,94 @@
+.CartBodyTopTitle {
+    font-size: 22px;
+    color: rgb(58, 58, 58);
+    font-weight: 550px;
+    text-align: left;
+}
+
+.CartBodyTopTitle span{
+    font-size: 22px;
+    color: #F5A947 !important;
+    font-weight: 550px;
+    text-align: left;
+}
+
+.CustomThead th {
+    font-size: 15px;
+    color: rgb(58, 58, 58) !important;
+    font-weight: 400px !important;
+    text-align: left;
+}
+
+.CustomTDate td {
+    font-size: 16px !important;
+    color: rgb(58, 58, 58) !important;
+    font-weight: 400px !important;
+    text-align: left;
+}
+
+.SubHeading {
+    text-align: right !important;
+}
+
+.CartCourseTitle{
+    font-size: 14px !important;
+    color: rgb(58, 58, 58) !important;
+    font-weight: 400px !important;
+    text-align: left;
+    text-decoration: none;
+}
+
+.CartCourseTitle:hover{
+    color: #F5A947 !important;
+}
+
+
+.CustomRemoveCart {
+    text-align: center;
+}
+
+.CustomRemoveCart a{
+    color: #C9302C;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.CustomRemoveCart a svg {
+    color: #C9302C !important;
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.CustomCheckoutBtnGroup {
+    display: flex;
+    align-items: center;
+}
+
+.CustomCheckoutBtnGroup a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #084496;
+    color: #fff !important;
+    margin: 0px 5px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.CustomCheckoutBtnGroup a:hover {
+    color: #a6bbc4 !important;
+}
+
+.CustomCheckoutBtnGroup .CustomCancelBtn{
+    background-color: #C9302C !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
