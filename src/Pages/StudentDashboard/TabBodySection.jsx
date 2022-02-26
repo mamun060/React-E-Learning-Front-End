@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { Tab, Row, Col, Nav, Container } from 'react-bootstrap';
 import styles from '../../Assets/css/StudentDashboard/TabBodySection.module.css';
 import '../../Assets/css/StudentDashboard/CustomStyle.css';
@@ -6,9 +6,17 @@ import UserProfile from '../../Elements/StudentDashboard/UserProfile';
 import MyCourseList from '../../Elements/StudentDashboard/MyCourseList';
 import WishList from '../../Elements/StudentDashboard/WishList';
 import PurchaseHistory from '../../Elements/StudentDashboard/PurchaseHistory';
+import { logout } from '../../Redux/AuthSlice';
+import { useDispatch } from 'react-redux';
 
 
 const TabBodySection = () => {
+
+    const dispatch = useDispatch();
+
+    const logOut = ()=>{
+        dispatch(logout())
+    }
 
     return (
         <>
@@ -36,7 +44,7 @@ const TabBodySection = () => {
                                             <Nav.Link eventKey="purchase">Purchase History</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="five">Log Out</Nav.Link>
+                                                <button className={styles.logoutBtn} onClick={logOut}>Log Out</button>
                                             </Nav.Item>
                                         </Nav>
                                     </div>
@@ -55,11 +63,6 @@ const TabBodySection = () => {
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="purchase">
                                                 <PurchaseHistory />
-                                            </Tab.Pane>
-                                            <Tab.Pane eventKey="five">
-                                                <p>
-                                                    this is logout compononent 
-                                                </p>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </div>

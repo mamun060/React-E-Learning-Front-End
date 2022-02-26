@@ -12,7 +12,7 @@ const CourseElement = () => {
     return (
         <>
            <Container className={styles.CourseElementWrapping}>
-                <Row>
+                <Row className='px-2'>
                     <Col md={4} className='d-flex align-items-center'>
                         <div className={styles.CourseThumbnail}>
                             <Link to=""><img src={thumnail} alt="" draggable="false" /></Link>

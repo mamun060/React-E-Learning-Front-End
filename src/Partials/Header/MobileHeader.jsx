@@ -5,8 +5,10 @@ import styles from '../../Assets/css/Partials/MobileHeader.module.css';
 // import { VscSearch } from 'react-icons/vsc';
 import logo from '../../Assets/images/logo/1Amar-Skill.png';
 import MobileSearchIcon from './MobileSearchIcon';
+import { Link } from 'react-router-dom';
 
 const MobileHeader = () => {
+
     return (
         <>
             <Container>
@@ -29,7 +31,7 @@ const MobileHeader = () => {
 
                         <Col md={3} xs={3}>
                             <div className={styles.MobileHeaderLogo}>
-                                <img src={logo} alt="Amar Skill" />
+                                <Link to={'/'}><img src={logo} alt="Amar Skill" /></Link>
                             </div>
                         </Col>
                     </Row>

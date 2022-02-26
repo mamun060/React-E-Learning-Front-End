@@ -345,7 +345,7 @@ body {
 
 /* Mobile Search Icon Offcanvas custom width & Height */
 .headerSearch.offcanvas.offcanvas-top {
-  width: 100%;
+  width: 100% !important;
   height: 95px;
 }
 
@@ -401,4 +401,33 @@ body {
 
 .video-react .video-react-big-play-button {
   background-color: #f59a2d !important;
+}
+
+#btnGroup {
+  width: 100%;
+}
+
+#registerForm .btn-group-lg>.btn, .btn-lg {
+  padding: 0rem 0rem !important;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  height: 35px;
+  line-height: 35px;
+}
+
+#registerForm #btnGroup .btn-check:focus+.btn-primary, .btn-primary:focus,
+#registerForm #btnGroup button:focus {
+  box-shadow: none !important;
+}
+
+#registerForm #btnGroup button:active,
+#registerForm #btnGroup button.active {
+  background-color: #f59a26 !important;
+  color: #fff;
+  border-color: #f59a26 !important;
+}
+
+
+.cartBackdrop.show {
+  display: none;
 }

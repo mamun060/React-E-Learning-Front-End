@@ -37,6 +37,17 @@
     border-radius: 10px;
 }
 
+.logoutBtn {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 18px;
+    color: #21427a !important;
+    background-color: #f2f3f7 !important;
+}
+
 
 @media only screen and (max-width: 520px) {
     .TabBodyrRightSectionWrap {

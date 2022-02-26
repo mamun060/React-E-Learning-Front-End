@@ -30,7 +30,7 @@
 
 .InstractorName h2 {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-family: var(--google-font-family, "'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -41,7 +41,7 @@
 
 .InstructorSocailIcon {
     display: flex;
-    padding-left: 5px!important;
+    padding-left: 5px !important;
 }
 
 .InstructorSocailIcon a {
@@ -57,7 +57,7 @@
 
 .SmallCardCouseTitle h4 {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-family: var(--google-font-family, "'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -66,7 +66,7 @@
 }
 
 .SmallCardBottomWrap {
-    border-top:  2px solid rgba(0, 0, 0, 0.1);
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
     margin: 5px 0px;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@
 
 .PriceStyle p {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-family: var(--google-font-family, "'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -86,12 +86,26 @@
 
 .HeaderRemoveIcon a {
     color: #F59A26;
-    padding: 8px 15px;
+    padding: 8px 5px;
     /* font-family: 'Roboto', sans-serif; */
-    font-family: var(--google-font-family,"'Roboto', sans-serif");
+    font-family: var(--google-font-family, "'Roboto', sans-serif");
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
+    text-transform: capitalize;
+}
+
+
+.BuyNowButtonWrap a {
+    background-color: #F59A26;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25), inset -2px -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #fff !important;
+    padding: 8px 15px;
+    font-family: var(--google-font-family, "'Roboto', sans-serif");
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
     text-transform: capitalize;
 }
 
@@ -117,7 +131,7 @@
 
 
     .InstructorSocailIcon {
-        padding-left: 2px!important;
+        padding-left: 2px !important;
     }
 
     .SmallCardCouseTitle h4 {
@@ -132,7 +146,7 @@
         color: #F59A26;
         padding: 8px 15px;
         /* font-family: 'Roboto', sans-serif; */
-        font-family: var(--google-font-family,"'Roboto', sans-serif");
+        font-family: var(--google-font-family, "'Roboto', sans-serif");
         font-style: normal;
         font-weight: bold;
         font-size: 18px;

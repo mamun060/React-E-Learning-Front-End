@@ -10,6 +10,7 @@
 
   scrollbar-color: #F59A26 #142370;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 
 }
 

@@ -1,0 +1,98 @@
+.CheckoutCardContainer {
+    border: 1px solid #eae8e8;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.CoursThumnailSide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.CoursThumnailSide img {
+    max-width: 120px;
+    max-height: 85px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.CheckoutCourseInfo {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.CheckoutCourseInfo h2 {
+    font-size: 14px;
+    font-weight: 550;
+    color: rgb(58, 58, 58);
+    letter-spacing: 0.4px;
+}
+
+.CheckoutCourseInfo h2 a{
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+
+.CheckoutCourseInfo h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #F5A947;
+}
+
+.CartRemovePrice {
+    text-align: right;
+}
+
+.CartRemovePrice a svg {
+    font-size: 16px;
+    color: #C9302C;
+    margin-bottom: 35px;
+}
+
+.CartRemovePrice p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(58, 58, 58);
+}
+
+@media only screen and (min-width: 280px) and (max-width: 579px) {
+    .CheckoutCourseInfo {
+        width: 80%;
+        padding-top: 10px;
+    }
+    .CheckoutCourseInfo h2 {
+        font-size: 14px !important;
+        line-height: 1.5em;
+    }
+
+    .CoursThumnailSide img {
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 70px;
+        min-height: 50px;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 580px) and (max-device-width: 650px) {
+  
+    .CoursThumnailSide img {
+        min-width: 70px;
+        min-height: 50px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .CheckoutCourseInfo h2 {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 991px) {
+    .CheckoutCourseInfo {
+        text-align: left;
+        padding-left: calc(1vw + 45px);
+    }
+}

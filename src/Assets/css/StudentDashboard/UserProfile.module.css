@@ -8,6 +8,30 @@
     border-radius: 5px;
 }
 
+.UserProfileInforDevide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.UserAboutSeciton {
+    width: 90%;
+}
+
+.UserProfileEdit {
+    width: 10%;
+}
+
+.UserProfileEdit a {
+    font-family: var(--google-font-family, "Roboto, sans-serif");
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 5px 12px;
+    text-decoration: none;
+    background: linear-gradient(122.33deg, #ffa42f 0%, #327fecbf 102.08%) !important;
+}
+
 .userInformationInfo {
     text-align: left;
 }
@@ -49,11 +73,20 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .UserAboutSeciton .UserTitle {
       padding-top: 10px;
     }
     .userInformationInfo ul {
         padding-top: 0px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .UserAboutSeciton {
+        width: 80%;
+    }
+    
+    .UserProfileEdit {
+        width: 20%;
     }
 }

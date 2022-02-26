@@ -1,4 +1,12 @@
+.buttonGroup{
 
+}
+.studentButton:focus{
+    outline: none;
+}
+.studentButton{
+    
+}
 .accountBackground{
     overflow: hidden; 
     height: 100vh !important;
@@ -67,7 +75,7 @@
     z-index: 1000 !important;
 }
 
-.formDiv{
+.formDivLogin{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -225,7 +233,6 @@
 .signUpArea{
     text-align: center;
 }
-
 .ifAccount{
     font-family: Roboto;
     font-style: normal;
@@ -239,16 +246,34 @@
 
 
 @media screen and (max-width:768px) {
-    .formDiv{
+    .formDivRegister{
+        width: 100%;
+        padding: 20px;
+    }
+    .formDivLogin{
+        width: 100%;
+        padding: 20px;
+    }
+    .formDivLogin{
         transform: translate(-50%,-50%);
     }
-
     .signUpArea h5{
         font-size: .8em;
     }
-
     .firebaseText::before,
     .firebaseText::after{
         width: calc(1vw + 40px);
     }
 }
+
+@media screen and (min-width:650px) {
+    .formDivRegister{
+        width: 320px !important;
+    }
+    .formDivLogin{
+        width: 320px !important;
+    }
+}
+
+
+

@@ -18,7 +18,7 @@ const DefaultCartBody = () => {
                                     <Link to={''}><img src={Thumnails} alt="" /></Link>
                                 </Col>
                                 <Col md={7} sm={7} className={styles.CartCourseInfo}>
-                                    <h2><Link to={''}>কন্সেপ্ট অফ জাফাস্ক্রিপ্ট কোর্স জিরো টু হিরো।</Link></h2>
+                                    <h2><Link to={'coursedetails/1'}>কন্সেপ্ট অফ জাফাস্ক্রিপ্ট কোর্স জিরো টু হিরো।</Link></h2>
                                     <h4>Md. Alauddin</h4>
                                 </Col>
                                 <Col md={2} sm={2} className={styles.CartRemovePrice}>
@@ -52,7 +52,7 @@ const DefaultCartBody = () => {
                             </div>
 
                             <div className={styles.DeCartRigiBuyBtn}>
-                                <Link to="">Buy Now</Link>
+                                <Link to="/checkout">Buy Now</Link>
                             </div>
 
                         </div>

@@ -1,10 +1,15 @@
 .CourseElementWrapping {
     /* padding: 5px;  */
-    margin: 10px 0px;
+    margin: 20px 0px;
+    margin-top: 0px;
     box-shadow: rgb(149 157 165 / 20%) 9px 8px 23px;
     padding: 20px 15px;
     border-radius: 10px;
     background-color: #fff !important;
+}
+
+.CourseElementWrapping:last-child{
+    margin-bottom: 0px;
 }
 
 .CourseTitle a {
@@ -90,12 +95,22 @@
     align-items: center;
 }
 
+
+.CourseThumbnail img {
+    min-height: 160px;
+}
+
 @media only screen and (max-width: 319px) {
 
     .CourseThumbnail,
     .CourseThumbnail img {
         width: 100% !important;
     }
+
+    .CourseThumbnail {
+        padding-left: 0px;
+    }
+
 
     .CourseElementWrapping {
         width: 100% !important;
@@ -119,12 +134,13 @@
 
     .CourseThumbnail {
         width: 100% !important;
+        padding-left: 0px !important;
     }
 
     .CourseThumbnail img {
         width: 100% !important;
         min-width: 100% !important;
-        padding-left: 0px;
+        padding-left: 0px !important;
         margin-bottom: 10px;
     }
 
@@ -138,12 +154,13 @@
 
 }
 
-@media only screen and(min-width: 670px) and (max-width: 991px) {
+@media only screen and(min-width: 670px) and (max-width: 899px) {
 
     .CourseThumbnail img {
         width: 100%;
         min-height: 100px;
     }
+
 
     .CourseTitle a {
         font-size: 18px;
@@ -155,15 +172,17 @@
 
 }
 
-@media only screen and (max-width: 61.9375rem) {
+@media only screen and (min-width:900px) and (max-width: 61.9375rem) {
 
     .CourseThumbnail {
         width: 100%;
+        padding-left: 10px;
     }
 
     .CourseThumbnail img {
         width: 100% !important;
         min-height: 100px;
+        max-height: 100px !important;
     }
 
     .CourseTitle a {

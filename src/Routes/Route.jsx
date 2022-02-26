@@ -1,15 +1,18 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import About from "../Pages/About/About";
+import ForgotPassword from "../Pages/Accounts/ForgotPassword/ForgotPassword";
 import Login from "../Pages/Accounts/Login/Login";
-import Registration from "../Pages/Accounts/Registration/Registration";
+import Registration from "../Pages/Accounts/Registration";
 import Cart from "../Pages/Cart/Cart";
 import DefaultCart from "../Pages/Cart/DefaultCart";
 import CourseDetails from "../Pages/CourseInformation/CourseDetails";
 import Home from "../Pages/Home/Home";
+import NotFound from "../Pages/NotFound/NotFound";
 import Dashboard from "../Pages/StudentDashboard/Dashboard";
 import SuccessReview from "../Pages/StudentSuccess/SuccessReview";
 import AllCourse from './../Pages/AllCourse/AllCourse';
+import Checkout from './../Pages/Checkout/Checkout';
+import allowedRoles from "./../Utilities/Roles";
 
 const routes = [
     {
@@ -18,34 +21,43 @@ const routes = [
         isPrivate: false
     },
     {
-        path: '/about',
+        path: 'about',
         element: <About />,
         isPrivate: false
     },
     {
-        path: 'all_course',
+        path: 'all-course',
         element: <AllCourse />,
         isPrivate: false
     },
     {
-        path: 'coursedetails',
+        path: 'coursedetails/:id',
         element: <CourseDetails />,
         isPrivate: false
     },
     {
-        path: 'student_dashboard',
+        path: 'student-dashboard',
         element: <Dashboard />,
-        isPrivate: false
+        isPrivate: true,
+        allowedRoles
+    },
+    {
+        path: 'register',
+        element: <Registration/>,
+        isPrivate: false,
+        isProtected: true,
     },
     {
         path: 'login',
         element: <Login/>,
-        isPrivate: false
+        isPrivate: false,
+        isProtected: true,
     },
     {
-        path: 'registation',
-        element: <Registration/>,
-        isPrivate: false
+        path: 'forgot-password',
+        element: <ForgotPassword/>,
+        isPrivate: false,
+        isProtected: true,
     },
     {
         path: 'successreview',
@@ -61,6 +73,15 @@ const routes = [
         path: 'your-cart',
         element: <DefaultCart />,
         isPrivate: false
+    },
+    {
+        path: 'checkout',
+        element: <Checkout />,
+        isPrivate: false
+    },
+    {
+        path: '*',
+        element: <NotFound />
     }
 ];
 

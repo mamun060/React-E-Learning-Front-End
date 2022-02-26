@@ -1,40 +1,24 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import { Button} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from '../../../Assets/css/Accounts/Accounts.module.css'
-import accountBg from '../../../Assets/images/Accounts/Group-245.png'
-import accountLogo from '../../../Assets/images/Accounts/download.png'
 import { FcGoogle } from 'react-icons/fc';
 import { BsFacebook } from 'react-icons/bs';
 import { IoIosLock } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { AiOutlineEye } from 'react-icons/ai';
 import { AiOutlineEyeInvisible } from 'react-icons/ai';
+import InputAnimation from '../../../Utilities/InputAnimation';
 
 const Login = () => {
 
     const [isShow, setIsShow] = useState(false);
     const togglePassword = ()=> setIsShow(!isShow);
+    const formRef = useRef(null)
 
-      
     useEffect(()=>{
-        const placeHolders = document.querySelectorAll('.formInput');
-        if(placeHolders?.length){
-
-            placeHolders.forEach(placeHolderRef => {
-                placeHolderRef.addEventListener('focus', function(){
-                    const placeText  = this.getAttribute('data-text');
-                    this.placeholder = placeText;
-                    this.placeholder = "";
-                });
-        
-                placeHolderRef.addEventListener('blur', function(){
-                    const placeText  = this.getAttribute('data-text');
-                    this.placeholder = placeText;
-                });
-            })
-        }
+        InputAnimation(formRef.current.querySelectorAll('.formInput'));
     },[])
 
     return (
@@ -49,14 +33,14 @@ const Login = () => {
                 </div>
                 
 
-                <div className={styles.formDiv}>
+                <div ref={formRef} className={styles.formDivLogin}>
                     
                     <div className={styles.loginInfo}>
                         <div className={styles.loginTitle}>
                             <p>log in and learn what you want!</p>
                         </div>
                         <div className={styles.inputField}>
-                            <MdEmail/> <input className='formInput' data-text="Email" type="text" placeholder='Email' required />
+                            <MdEmail/> <input className='formInput' data-text="Email" type="email" placeholder='Email' required />
                         </div>
 
                         <div className={styles.inputField}>
@@ -72,7 +56,7 @@ const Login = () => {
                         </div>                       
                                               
                         <div className={styles.passForgetArea}>
-                            <Link to="/" className={styles.forgetLink}>Forget Password?</Link>
+                            <Link to="/forgot-password" className={styles.forgetLink}>Forget Password?</Link>
                         </div>  
 
                         <div className={styles.firebaseArea}>
@@ -89,12 +73,12 @@ const Login = () => {
                         </div>
 
                         <div className={styles.signUpArea}>
-                            <h5 className={styles.ifAccount}> Don’t have an account? <span> <Link to="/registation">Sign up</Link></span> </h5>
+                            <h5 className={styles.ifAccount}> Don’t have an account? <span> <Link to="/register">Sign up</Link></span> </h5>
                         </div>                         
 
                     </div>
                 </div>
-{/* 
+            {/* 
                 <div className={styles.accountBgRight}>
                     <img draggable="false" src={accountBg} alt="accountBg" />
                 </div> */}

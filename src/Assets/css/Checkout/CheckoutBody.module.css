@@ -1,0 +1,137 @@
+.CheckoutBodyWrap {
+    padding: 50px 0px;
+}
+
+.CheckoutTopHeding h4 {
+    font-size: 22px;
+    font-weight: 550;
+    color: rgb(58, 58, 58);
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.CheckoutLeftSide {
+    background-color: #fff;
+    box-shadow: 0.3125rem 0.3125rem 2.5rem rgb(227 230 232);
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+
+.CheckoutRight {
+    background-color: #fff;
+    box-shadow: 0.3125rem 0.3125rem 2.5rem rgb(227 230 232);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.CheckoutContentTitle h2 {
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(58, 58, 58);
+    letter-spacing: 0.4px;
+}
+
+.CheckoutRigitPrice ,
+.CheckoutRigitCoursePrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CheckoutRigitPrice ,
+.CheckoutRigitCoursePrice p{
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #575757;
+    margin-bottom: 0;
+}
+
+.CheckoutRigitPrice {
+    padding: 10px 0px 10px 0px;
+    /* border-bottom: 1px solid #D1D1D1; */
+}
+
+.CheckoutRigitCoursePrice {
+    padding: 20px 0px 10px 0px;
+}
+
+.CheckoutDiscountSide {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0.3125rem 0.3125rem 2.5rem rgb(0 0 0 / 6%);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.CheckoutDiscountSide input::placeholder,
+.CheckoutDiscountSide input{
+    font-size: 0.9rem;
+}
+
+.CheckoutDiscountSide input
+ {
+    width: 80%;
+    min-height: 40px;
+    /* border-radius: 10px 0px 0px 10px; */
+    border: 1px solid #fce6c9 !important;
+}
+.CheckoutDiscountSide input:focus-visible {
+    outline: none !important;
+}
+
+.CheckoutDiscountSide a {
+    width: 20%;
+    text-align: center;
+    background-color: #ffa42f;
+    color: #fff;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0px 10px 10px 0px; */
+}
+
+.CheckoutBuyBtn {
+    text-align: center;
+    background: linear-gradient(122.33deg,#ffa42f 0%, #327fecbf 102.08%);
+    transition: all 350ms ease-in;
+    padding: 8px 0px;
+    border-radius: 10px;
+}
+.CheckoutBuyBtn a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+    .CheckoutDiscountSide input
+    {
+        width: 80%;
+    }
+
+    .CheckoutDiscountSide a{
+        width: 80px !important;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 579px) {
+    .DeCartLeft {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 580px) and (max-device-width: 650px) {
+    .DeCartLeft {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 991px) {
+
+}
+

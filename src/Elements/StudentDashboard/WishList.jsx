@@ -1,30 +1,22 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../../Assets/css/StudentDashboard/PurchaseList.module.css';
 import WishlistCard from '../../Elements/Card/WishlistCard';
-import { useState, useEffect } from 'react';
+import { useSelector } from "react-redux";
+import { getAllWishItems } from '../../Redux/WishSlice';
 
 const WishList = () => {
 
-    const [ wishLists , setWishLists] = useState([]);
-
-    useEffect(()=>{
-        setWishLists([
-            {id:1},
-            {id:2},
-            {id:3},
-            {id:4}
-        ])
-    },[])
+    const wish = useSelector(getAllWishItems);
 
     return (
         <>
             <Container>
                 <Row>
                     {
-                        wishLists && wishLists.map((list,i)=>(
-                            <Col md={4} className={styles.WishListCol}>
-                                <WishlistCard key={i} wishListItems={wishLists} setWishLists={setWishLists} id={list.id}/>
+                        wish && wish.wishListItems.map((list,i)=>(
+                            <Col md={4} key={i} className={styles.WishListCol}>
+                                <WishlistCard key={i} id={list.id} />
                             </Col>
                         ))
                     }
@@ -34,4 +26,4 @@ const WishList = () => {
     );
 };
 
-export default WishList;
+export default memo(WishList);

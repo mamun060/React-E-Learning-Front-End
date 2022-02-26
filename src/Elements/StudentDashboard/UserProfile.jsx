@@ -5,6 +5,7 @@ import user from '../../Assets/images/user-img/user_img.png';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonFill} from 'react-icons/bs';
 import {MdOutlinePhone, MdLocationOn} from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
     return (
@@ -19,14 +20,19 @@ const UserProfile = () => {
                         </Col>
                        
                         <Col md={10}>
-                            <div className={styles.UserAboutSeciton}>
-                                <h2 className={styles.UserTitle}>Md. Alluddin</h2>
-                                <h4 className={styles.UserSubTitle}>Web Developer</h4>
-                                <p className={styles.userInfoContent}>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                    Atque veniam voluptate autem animi molestiae, 
-                                    nihil rem repellat veritatis quidem labore.
-                                </p>
+                            <div className={styles.UserProfileInforDevide}>
+                                <div className={styles.UserAboutSeciton}>
+                                    <h2 className={styles.UserTitle}>Md. Alluddin</h2>
+                                    <h4 className={styles.UserSubTitle}>Web Developer</h4>
+                                    <p className={styles.userInfoContent}>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Atque veniam voluptate autem animi molestiae, 
+                                        nihil rem repellat veritatis quidem labore.
+                                    </p>
+                                </div>
+                                <div className={styles.UserProfileEdit}>
+                                    <Link to="/">Edit</Link>
+                                </div>
                             </div>
                         </Col>
                         <Col md={12} >

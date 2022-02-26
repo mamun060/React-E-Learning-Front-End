@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Footer from '../../Partials/Footer/Footer';
 import Header from './../../Partials/Header/Header';
 import MobileHeader from './../../Partials/Header/MobileHeader';
@@ -7,25 +8,20 @@ import CourseDetailsBody from './CourseDetailsBody';
 
 const CourseDetails = () => {
 
-    const [isScriptLoad, setIsScriptLoad] = useState(true);
+    const param = useParams();
+
+    const removefirstCart = () => {
+        return localStorage.removeItem('isFirstCart');
+    }
+
 
     useEffect(() => {
-        // loadScript(`${__dirname}yt-plyrio.js`);        
-        // loadScript('https://cdn.plyr.io/3.6.3/demo.js');        
+        removefirstCart()
+        console.log(param.id);      
     },[]);
 
 
-    function loadScript(src) {
-        let 
-        playerScriptElem        = document.getElementById("playerScript");
-        playerScriptElem.src    = src;
-        // videoScript.src     = `${__dirname}yt-plyrio.js`;
-        playerScriptElem.onload = () => {
-            setIsScriptLoad(true)
-        }
-    }
-    
-    const detailsLayout = isScriptLoad ? (
+    return (
         <>
             <div className="Desktop">
                 <Header />
@@ -44,12 +40,6 @@ const CourseDetails = () => {
             <CourseDetailsBody />
             <Footer />
         </>
-    ) : (
-        null
-    )
-
-    return (
-        detailsLayout
     );
 };
 
