@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:wght@400;600;700&display=swap');
+
+.notFoundWrapper {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100vw;
+ height: 100vh;
+ font-family: 'Lalezar', cursive;
+}
+
+.notFoundContent{
+    margin-top: -110px;
+}
+
+.notFoundText h2{
+    font-size: 5em;
+    font-weight: bold;
+    color: #ce0a0a;
+    filter: drop-shadow(2px 4px 6px #b5b3b2);
+    margin-bottom: 0px;
+}
+
+.notFoundText h5{
+    font-weight: 400 !important;
+    color: #6c6c6c;
+}
+
+.notFoundText h5 span{
+    color: #ff6060;
+}
+.notFoundText a{
+ background-color: rgb(255, 159, 80);
+ color: #fff;
+}
+
+.notFoundText a:hover{
+    background-color: rgb(255, 159, 80);
+    color: #fff;
+}
+
+.notFoundImg img{
+    width: 400px;
+    margin-left: -40px;
+    margin-bottom: -50px;
+}
+
+@media screen and (max-width:768px) {
+    .notFoundWrapper {
+        padding: 20px 20px !important;
+    }
+
+    .notFoundImg img{
+        margin-left: -10px;
+    }
+}

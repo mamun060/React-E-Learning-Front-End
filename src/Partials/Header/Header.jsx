@@ -10,7 +10,6 @@ import { useSelector } from 'react-redux';
 import { getAllCartItems } from '../../Redux/CartSlice';
 import { useAuth } from '../../Routes/AuthenticableRoutes';
 import {FaShoppingCart} from 'react-icons/fa';
-import userImg from '../../Assets/images/Students/student.jpg';
 
 
 const Header = () => {
@@ -57,23 +56,17 @@ const Header = () => {
                                     !authUser?.auth ? (
                                         <>
                                             <div className={styles.LeftSignInButton}>
-                                                <Link to={`register`}>Create an Account</Link>
+                                                <Link to={`/register`}>Create an Account</Link>
                                             </div>
                                             <div className={styles.RightLogInButton}>
-                                                <Link to={'login'}>Log in</Link>
+                                                <Link to={'/login'}>Log in</Link>
                                             </div>
                                         </>
                                     ): (
                                         <>
                                         <div className={styles.ProfileImageSection}>
-                                            <Link to={'student-dashboard'}>
-                                                
+                                            <Link to={'/student-dashboard'}>
                                                 <img src={authUser.user.image} alt="A" />
-                                                
-                                                
-                                            {/* {
-                                                authUser.user.name ?? ''
-                                            } */}
                                             </Link>
                                         </div>
                                         </>

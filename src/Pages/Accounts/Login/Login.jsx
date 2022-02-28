@@ -59,7 +59,7 @@ const Login = () => {
                             <Link to="/forgot-password" className={styles.forgetLink}>Forget Password?</Link>
                         </div>  
 
-                        <div className={styles.firebaseArea}>
+                        {/* <div className={styles.firebaseArea}>
                             <h5 className={styles.firebaseText}> Or Log in with </h5>
                         </div> 
 
@@ -70,7 +70,7 @@ const Login = () => {
                             <div className={styles.facebookFirebaseLogin}>
                                 <button> <BsFacebook/> Facebook </button>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className={styles.signUpArea}>
                             <h5 className={styles.ifAccount}> Don’t have an account? <span> <Link to="/register">Sign up</Link></span> </h5>

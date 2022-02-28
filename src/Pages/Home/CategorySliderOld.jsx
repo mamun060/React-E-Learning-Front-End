@@ -52,7 +52,7 @@ const CategorySlider = () => {
     };
 
     return (
-        <div>
+        <>
             <Container fluid={true}>
                 <div className={styles.CategorySliderContainer}>
                     <Container>
@@ -163,9 +163,9 @@ const CategorySlider = () => {
                                         <Row>
                                             <Col>
                                                 <div className={styles.LoadMoreButtonPosition}>
-                                                    <LoadMoreButton
-                                                        btn_name="Load More"
-                                                        btn_link="#"
+                                                    <LoadMoreButton 
+                                                    btn_link='/'
+                                                    btn_name='Load More'
                                                     />
                                                 </div>
                                             </Col>
@@ -180,7 +180,7 @@ const CategorySlider = () => {
                     </Container>
                 </div>
             </Container>
-        </div>
+        </>
     );
 };
 

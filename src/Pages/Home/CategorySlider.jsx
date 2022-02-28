@@ -9,6 +9,7 @@ import two from '../../Assets/images/Category-Slider/Amar-Skill-Icon2 1.png';
 import three from '../../Assets/images/Category-Slider/Amar-Skill-Icon3 1.png';
 import four from '../../Assets/images/Category-Slider/Amar-Skill-Icon4 1.png';
 import SmallCourseCard from '../../Elements/Card/SmallCourseCard';
+import LoadMoreButton from '../../Elements/Button/LoadMoreButton';
 
 // import LoadMoreButton from '../../Elements/Button/LoadMoreButton';
 
@@ -162,18 +163,6 @@ const CategorySlider = () => {
 
                                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
                                     {/* <Col md={6} className={styles.first}>
                                         <div className={styles.bigCard}>
                                             <BigCourseCard />
@@ -212,9 +201,19 @@ const CategorySlider = () => {
                                         </Row>
                                     </Col>
                                      */}
+                                    <Row>
+                                        <Col>
+                                            <div className={styles.LoadMoreButtonPosition}>
+                                                <LoadMoreButton
+                                                    btn_name="Load More"
+                                                    btn_link="/all-course"
+                                                />
+                                            </div>
+                                        </Col>
+                                    </Row>
                             </div>
                         </Row>
-                        {/** Category Course Section End */}
+                    {/** Category Course Section End */}
 
                     </Container>
                 </div>

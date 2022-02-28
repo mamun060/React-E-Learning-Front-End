@@ -1,38 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect, useRef} from 'react';
-import Plyr from "plyr"
+import { VideoPlyrConfig } from '../../Utilities/VideoConfig';
 
 const CustomTYPlayer = ({ isScriptLoad, videoId, videoType, src}) => {
 
+    const [isReady, setIsReady] = useState({isScriptLoad})
+
     useEffect(()=>{
-
-        const pt = new Plyr('#player', {
-            // source: `https://www.youtube.com/embed/${videoId}?showinfo=0&modestbranding=1&autoplay=1`
-            sources: [{
-                src: videoId,
-                type: "youtube",
-                title: "video_title",
-            }],
-            src: videoId,
-        }).on('ready',function(e){
-            // e.detail.plyr.autoplay = true
-            // console.log(e.detail.plyr.play());
-        });
-        
-    })
-
-    //https://codepen.io/onigetoc/pen/veWNbP
+        VideoPlyrConfig({ video_id: videoId, type: videoType, title: "video_title" })
+    },[])
 
     return (
         <>
-            {/*
-            https://npm.io/package/plyr
-             <Plyr
-                type={videoType} // or "vimeo"
-                videoId={videoId}
-            /> */}
             {
-                isScriptLoad ?  
+                isReady ?  
                 (   /(youtube)/im.test(videoType) ? (
 
                         <div className="plyr__video-embed youtube-container" id="player">

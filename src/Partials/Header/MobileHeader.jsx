@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import MobileMenuPopupBtn from './MobileMenuPopupBtn';
 import styles from '../../Assets/css/Partials/MobileHeader.module.css';
@@ -6,8 +6,18 @@ import styles from '../../Assets/css/Partials/MobileHeader.module.css';
 import logo from '../../Assets/images/logo/1Amar-Skill.png';
 import MobileSearchIcon from './MobileSearchIcon';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
+import { getAllCartItems } from '../../Redux/CartSlice';
+import { useAuth } from '../../Routes/AuthenticableRoutes';
 
 const MobileHeader = () => {
+    const cart      = useSelector(getAllCartItems);
+    const authUser  = useAuth();
+
+    useCallback(()=>{
+        console.log(authUser.auth);
+    }, [authUser])
 
     return (
         <>
@@ -24,9 +34,16 @@ const MobileHeader = () => {
                             {/* <div className={styles.MobileHeaderSearchBar}>
                                 <input type="text" /><VscSearch />
                             </div> */}
-                            <div className={styles.MobileSearchIConDiv}>
-                             <MobileSearchIcon />
-                            </div>
+                           <div className={styles.CartSearchWrapping}>
+                               <div className={styles.HeaderTopCartIcon}>
+                                    <Link to="/your-cart"><FaShoppingCart /><span className={styles.HeaderTopCartValue}>{cart.courses.length}</span></Link>
+                                </div>
+                                
+                                <div className={styles.MobileSearchIConDiv}>
+                                    <MobileSearchIcon />
+                                </div>
+                           </div>
+                           
                         </Col>
 
                         <Col md={3} xs={3}>

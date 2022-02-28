@@ -1,9 +1,7 @@
 import React , { useState, useRef, useEffect } from 'react';
-import { Button, Tab, Tabs} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from '../../../Assets/css/Accounts/Accounts.module.css'
-import { FcGoogle } from 'react-icons/fc';
-import { BsFacebook } from 'react-icons/bs';
 import { IoIosLock } from 'react-icons/io';
 import { MdEmail, MdPhoneInTalk } from 'react-icons/md';
 import { RiShieldUserLine } from 'react-icons/ri';

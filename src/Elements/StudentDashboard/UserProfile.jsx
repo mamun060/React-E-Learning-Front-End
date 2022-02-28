@@ -5,7 +5,10 @@ import user from '../../Assets/images/user-img/user_img.png';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonFill} from 'react-icons/bs';
 import {MdOutlinePhone, MdLocationOn} from 'react-icons/md';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { FaEdit } from 'react-icons/fa';
+import UserProfileEdit from './UserProfileEdit';
+
 
 const UserProfile = () => {
     return (
@@ -31,7 +34,10 @@ const UserProfile = () => {
                                     </p>
                                 </div>
                                 <div className={styles.UserProfileEdit}>
-                                    <Link to="/">Edit</Link>
+                                    <span type="button">
+                                        <UserProfileEdit />
+                                        {/* <FaEdit /> */}
+                                    </span>
                                 </div>
                             </div>
                         </Col>

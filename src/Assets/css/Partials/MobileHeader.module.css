@@ -20,6 +20,7 @@
     box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px;
     /* margin-top: 8px; */
 }
+
 .PopupMobileMenuIcon svg {
     width: 22px;
     height: 22px;
@@ -82,6 +83,38 @@
     color: white;
 }
 
+
+.CartSearchWrapping {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Mobile cart are styling */
+.HeaderTopCartIcon {
+    position: relative;
+    margin-right: 18px;
+}
+
+.HeaderTopCartIcon svg {
+    font-size: 24px;
+    color: #084496;
+}
+
+.HeaderTopCartValue {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #F59A26;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -8px;
+    margin-left: -7px;
+    padding-top: 2px;
+}
 
 /* Mobile header menu icon */
 .MobileHeaderMenuIcon {
@@ -200,6 +233,42 @@
     outline: none;
 }
 
+.greetingValidUser img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: 1px solid #F59A26;
+    margin-left: 10px;
+}
+
+.greetingValidUser h6{
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #577bad;
+    color: #FF9209;
+    font-size: 1.1em;
+}
+
+.greetingValidUser p{
+    display: flex;
+    align-items: center;
+    color: #094496;
+    padding: 0px;
+    margin-bottom: 0px !important;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+/* 
+.greetingValidUser p{
+    font-size: 14px;
+    color: #000;
+    padding: 1px 0px !important;
+    margin-bottom: 0px !important;
+} */
+
+
+
+
 @media screen and (min-width:280px) and (max-width:768px) {
     .dialogDrawer {
         width: 300px!important;
@@ -252,7 +321,8 @@
     }
 
     .mobileSearchIconBar {
-        margin-right: 0px;
+        margin-right: -5px;
+        margin-left: 5px;
     }
 }
 

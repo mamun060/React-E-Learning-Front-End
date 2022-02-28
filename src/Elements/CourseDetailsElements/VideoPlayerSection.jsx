@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React , { useState, useLayoutEffect} from 'react';
+import React, { useState, useLayoutEffect, useRef} from 'react';
 import styles from '../../Assets/css/CourseDetails/VideoPlayer.module.css';
 import "./../../Assets/css/CourseDetails/yt-plyrio.css";
 import { Player, BigPlayButton, ControlBar, ReplayControl, VolumeMenuButton, PlaybackRateMenuButton, ClosedCaptionButton } from 'video-react';
@@ -8,43 +8,51 @@ import { Button } from 'react-bootstrap';
 import { BiSkipNext, BiSkipPrevious } from 'react-icons/bi';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
 import CustomTYPlayer from './CustomYTPlayer';
-
+import { videoHtml, VideoPlyrConfig } from '../../Utilities/VideoConfig';
 
 const VideoPlayerSection = () => {
 
-    const [isScriptLoad, setIsScriptLoad] = useState(false);
+    const [isScriptLoad, setIsScriptLoad] = useState(true);
     const [videoType, setVideoType] = useState('youtube');
     const [videoId, setVideoId]     = useState('hEqJJjKNpas');
+    const videoParentRef = useRef(null)
+    let video_id = null;
 
     const previousVideo = ()=>{
-        setVideoId('hEqJJjKNpas');
-        console.log('prev');
+        video_id = 'hEqJJjKNpas';
+        setVideoId(video_id);
+        videoParentRef.current.innerHTML = videoHtml(video_id);
+        VideoPlyrConfig({ video_id, type: videoType, title:"video_title" })
     }
+
 
     const nextVideo = ()=>{
-        console.log('next');
-        setVideoId('Z-hACIsjv4E');
+        video_id = 'Z-hACIsjv4E';
+        setVideoId(video_id);
+        videoParentRef.current.innerHTML = videoHtml(video_id);
+        VideoPlyrConfig({ video_id, type: videoType, title: "video_title" })
     }
 
+
     useLayoutEffect(()=>{
-        console.log(videoId);
+
         loadScript('https://cdn.plyr.io/3.6.3/demo.js', () => {
             setIsScriptLoad(true);
         }); 
 
-    }, [videoId])
+    })
 
     function loadScript(src, callback) {
         let
-            existingScript = document.getElementById("playerScript");
+        existingScript = document.getElementById("playerScript");
 
         if (!existingScript) {
 
-            let playerScript = document.createElement('script');
-            playerScript.src = src;
-            playerScript.type = "text/javascript";
-            playerScript.async = false;
-            playerScript.id = 'playerScript';
+            let playerScript    = document.createElement('script');
+            playerScript.src    = src;
+            playerScript.type   = "text/javascript";
+            playerScript.async  = false;
+            playerScript.id     = 'playerScript';
             // document.getElementsByTagName("head")[0].appendChild(playerScript);
             document.body.appendChild(playerScript);
 
@@ -64,7 +72,9 @@ const VideoPlayerSection = () => {
                 <div className={styles.VideoPlayerWrap}>
                     {
                         /youtube|vimeo/im.test(videoType) ? (
-                            <CustomTYPlayer isScriptLoad={isScriptLoad} videoId={videoId} videoType={videoType} src={`https://www.youtube.com/embed/${videoId}?showinfo=0&modestbranding=1&autoplay=1`}/>
+                            <div ref={videoParentRef}>
+                                <CustomTYPlayer isScriptLoad={isScriptLoad} videoId={videoId} videoType={videoType} src={`https://www.youtube.com/embed/${videoId}?showinfo=0&modestbranding=1&autoplay=1`} />
+                            </div>
                         ) :
                         (<Player
                             autoPlay

@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import styles from '../../Assets/css/Card/CheckoutCard.module.css';
 import Thumnails from '../../Assets/images/Course-Card/SmallCourseThumnail.jpg';
 
 const CheckoutCard = () => {
+
+    useEffect(()=>{
+        removefirstCart();
+    },[])
+    
+    const removefirstCart = () => {
+        return localStorage.removeItem('isFirstCart');
+    }
+
     return (
         <>
             <Container className={styles.CheckoutCardContainer}>

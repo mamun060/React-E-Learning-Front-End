@@ -11,14 +11,15 @@
 .UserProfileInforDevide {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .UserAboutSeciton {
-    width: 90%;
+    width: 80%;
 }
 
-.UserProfileEdit {
-    width: 10%;
+/* .UserProfileEdit {
+    width: 15%;
 }
 
 .UserProfileEdit a {
@@ -30,7 +31,16 @@
     padding: 5px 12px;
     text-decoration: none;
     background: linear-gradient(122.33deg, #ffa42f 0%, #327fecbf 102.08%) !important;
+} */
+
+.UserProfileEdit a {
+    cursor: pointer;
 }
+
+/* .UserProfileEdit svg {
+    font-size: 24px;
+    color: #F59A26;
+} */
 
 .userInformationInfo {
     text-align: left;
@@ -73,7 +83,7 @@
 }
 
 
-@media screen and (max-width: 767px){
+@media only screen and (max-width: 280px) and(max-width: 767px){
     .UserAboutSeciton .UserTitle {
       padding-top: 10px;
     }

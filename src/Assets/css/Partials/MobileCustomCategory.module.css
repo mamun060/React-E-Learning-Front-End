@@ -1,0 +1,9 @@
+.MobileCustomCategoryWrap {
+    padding-top: 10px;
+    margin-left: -3px;
+}
+
+.MobileCategoryInnerWrap {
+    max-height: 220px;
+    overflow-y: auto;
+}

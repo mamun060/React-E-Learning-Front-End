@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import styles from '../../Assets/css/Partials/MobileHeader.module.css';
 import logo from '../../Assets/images/logo/Amar-Skill.png';
 import { useAuth } from '../../Routes/AuthenticableRoutes';
+import MobileCustomCategory from './MobileCustomCategory';
+
 
 const MobileMenuPopupBtn = () => {
 
@@ -13,6 +15,7 @@ const MobileMenuPopupBtn = () => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
+    
     const handleShow = () => setShow(true);
 
 
@@ -31,12 +34,14 @@ const MobileMenuPopupBtn = () => {
                 <Offcanvas.Header closeButton style={{zIndex:'1001'}}>
                 <Offcanvas.Title>
                     <div className={styles.MobileMenuPopupMenu}>
-                        <Link to={'/'}><img src={logo} alt="Amar Skill" /></Link>
+                        <Link to="/"><img src={logo} alt="Amar Skill" /></Link>
                     </div>
                 </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                   
+                   <div className={styles.MobileHeaderCategories}>
+                       <MobileCustomCategory />
+                   </div>
                     <div className={styles.NavButtonArea}>
                         {
                             !authUser?.auth ? (
@@ -49,9 +54,11 @@ const MobileMenuPopupBtn = () => {
                                     </div>
                                 </>
                             ) : (
-                                <div className={styles.greeting}>
-                                    <h2>{authUser?.user?.name ?? ''}</h2>
-                                    <h4>Welcome To AmarSkill</h4>
+                                <div className={styles.greetingValidUser}>
+                                    <h6>Profile</h6>
+                                    <Link to="/student-dashboard"><img src={authUser.user.image} alt="" /></Link>
+                                    <p>{authUser?.user?.name ?? ''}</p>
+                                    {/* <p>{authUser.user.email}</p> */}
                                 </div>
                             )
                         }

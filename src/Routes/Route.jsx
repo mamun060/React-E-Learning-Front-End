@@ -8,6 +8,7 @@ import DefaultCart from "../Pages/Cart/DefaultCart";
 import CourseDetails from "../Pages/CourseInformation/CourseDetails";
 import Home from "../Pages/Home/Home";
 import NotFound from "../Pages/NotFound/NotFound";
+import Search from "../Pages/Search/Search";
 import Dashboard from "../Pages/StudentDashboard/Dashboard";
 import SuccessReview from "../Pages/StudentSuccess/SuccessReview";
 import AllCourse from './../Pages/AllCourse/AllCourse';
@@ -60,7 +61,7 @@ const routes = [
         isProtected: true,
     },
     {
-        path: 'successreview',
+        path: 'success-review',
         element: <SuccessReview />,
         isPrivate: false
     },
@@ -82,6 +83,11 @@ const routes = [
     {
         path: '*',
         element: <NotFound />
+    },
+    {
+        path: 'search-result',
+        element: <Search />,
+        isPrivate: false
     }
 ];
 

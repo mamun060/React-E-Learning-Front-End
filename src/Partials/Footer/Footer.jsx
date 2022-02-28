@@ -8,6 +8,7 @@ import logo from '../../Assets/images/logo/white Amar-Skill.png';
 import { BsTwitter, BsInstagram} from 'react-icons/bs';
 import {FaLinkedinIn, FaFacebookF} from 'react-icons/fa';
 import PaymentImg from '../../Assets/images/Footer-Images/Screenshot_1 1.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -19,11 +20,11 @@ const Footer = () => {
                         <Col md={8}>
                             <div className={styles.FooterTopMenu}>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Refund Return Policy</a></li>
+                                    <li><Link to="#">About Us</Link></li>
+                                    <li><Link to="#">Contact Us</Link></li>
+                                    <li><Link to="#">Terms and Conditions</Link></li>
+                                    <li><Link to="#">Privacy Policy</Link></li>
+                                    <li><Link to="#">Refund Return Policy</Link></li>
                                 </ul>
                             </div>
                         </Col>
@@ -61,12 +62,12 @@ const Footer = () => {
                             </div>
                             <div className={styles.UseFullLinkListing}>
                                 <ul>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Our Instructor</a></li>
-                                    <li><a href="#">Become an Online Teacher</a></li>
-                                    <li><a href="#">How It Works</a></li>
-                                    <li><a href="#">Course Category</a></li>
-                                    <li><a href="#">Create an Account</a></li>
+                                    <li><Link to="#">Blog</Link></li>
+                                    <li><Link to="#">Our Instructor</Link></li>
+                                    <li><Link to="#">Become an Online Teacher</Link></li>
+                                    <li><Link to="#">How It Works</Link></li>
+                                    <li><Link to="#">Course Category</Link></li>
+                                    <li><Link to="#">Create an Account</Link></li>
                                 </ul>
                             </div>
                             <div className={styles.MobileFooterMenuLinks}>
@@ -74,12 +75,12 @@ const Footer = () => {
                                     <h2>Our Menu</h2>
                                 </div>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Refund Return Policy
-                                    </a></li>
+                                    <li><Link to="#">About Us</Link></li>
+                                    <li><Link to="#">Contact Us</Link></li>
+                                    <li><Link to="#">Terms and Conditions</Link></li>
+                                    <li><Link to="#">Privacy Policy</Link></li>
+                                    <li><Link to="#">Refund Return Policy
+                                    </Link></li>
                                 </ul>
                             </div>
                         </Col>
@@ -90,10 +91,10 @@ const Footer = () => {
                                 <h2>Follow us</h2>
                                 <div className={styles.FooterSocialIcon}>
                                     <ul>
-                                        <li className={styles.IconFacebook}><a href="#"><FaFacebookF /></a></li>
-                                        <li className={styles.IconLinkedin}><a href="#"><FaLinkedinIn /></a></li>
-                                        <li className={styles.IconTwitter}><a href="#"><BsTwitter /></a></li>
-                                        <li className={styles.IconInstagram}><a href="#"><BsInstagram/></a></li>
+                                        <li className={styles.IconFacebook}><Link to="#"><FaFacebookF /></Link></li>
+                                        <li className={styles.IconLinkedin}><Link to="#"><FaLinkedinIn /></Link></li>
+                                        <li className={styles.IconTwitter}><Link to="#"><BsTwitter /></Link></li>
+                                        <li className={styles.IconInstagram}><Link to="#"><BsInstagram/></Link></li>
                                     </ul>
                                  </div>
                             </div>

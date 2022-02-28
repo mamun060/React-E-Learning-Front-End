@@ -40,7 +40,7 @@ const CartBody = () => {
                     cart.courses.map((course, index) =>(
                       <tr className={styles.CustomTDate} key={index}>
                         <td>{++index}</td>
-                        <td><Link to={'coursedetails/1'} className={styles.CartCourseTitle}>{course.courseName ?? ''}</Link></td>
+                        <td><Link to={'/coursedetails/1'} className={styles.CartCourseTitle}>{course.courseName ?? ''}</Link></td>
                         <td>{course.price ?? 0}</td>
                         <td>
                           <div className={styles.CustomRemoveCart}>
@@ -69,7 +69,7 @@ const CartBody = () => {
                   <tr>
                       <td colSpan={4}> 
                         <div className={styles.CustomCheckoutBtnGroup}>
-                            <Link to="">Checkout</Link>
+                            <Link to="/checkout">Checkout</Link>
                             <Link to="" onClick={resetCartItems} className={styles.CustomCancelBtn}>Cancel</Link>
                         </div>
                       </td>

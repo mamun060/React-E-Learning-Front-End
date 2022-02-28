@@ -2,12 +2,13 @@
 import React from 'react';
 import styles from '../../Assets/css/Button/Button.module.css';
 import {MdOutlineDoubleArrow} from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 const LoadMoreButton = ({btn_name, btn_link}) => {
     return (
         <>
             <div className={styles.LoadMoreButtonWrap}>
-               <a href={btn_link}>{btn_name}<MdOutlineDoubleArrow /></a>
+               <Link to={btn_link}>{btn_name}<MdOutlineDoubleArrow /></Link>
             </div> 
         </>
     );

@@ -38,7 +38,7 @@ background-color: #f2f9ffd4;
 /* Load More button position */
 
 .LoadMoreButtonPosition {
-    padding: 40px 0px;
+    padding: 30px 0px;
     text-align: right;
 }
 
@@ -55,6 +55,7 @@ background-color: #f2f9ffd4;
     } */
     .LoadMoreButtonPosition {
         padding: 20px;
+        text-align: center;
     }
 
     .CategoryCourseWrappingBG{

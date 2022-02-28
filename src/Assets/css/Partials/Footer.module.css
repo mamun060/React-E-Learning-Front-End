@@ -241,8 +241,13 @@
     color: #FFFFFF;
 }
 
+@media only screen and (min-width: 100px) and (max-width: 279px){
+    .FooterTopMenu {
+        display: none;
+    }
+}
 
-@media only screen and (min-device-width: 280px) and (max-device-width: 667px) {
+@media only screen and (min-width: 280px) and (max-width: 667px) {
 
     .FooterContainerTop {
         margin-bottom: 20px;

@@ -81,7 +81,7 @@
     }
 
     .CertificateButtonWrap a{
-        padding: 10px 16px !important;
+        padding: 10px 4px !important;
     }
 
 
@@ -145,6 +145,17 @@
     line-height: 23px;
     text-transform: capitalize;
     color: #FFFFFF;
+}
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px){
+    .LoadMoreButtonWrap a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    
+    .LoadMoreButtonWrap a svg {
+        font-size: 14px;
+    }
 }
 
 /* See More Button wrap */
