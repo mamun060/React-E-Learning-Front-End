@@ -55,7 +55,7 @@
     color: #142370;
 }
 
-.SmallCardCouseTitle h4 {
+.SmallCardCouseTitle h4 a{
     /* font-family: 'Roboto', sans-serif; */
     font-family: var(--google-font-family,"'Roboto', sans-serif");
     font-style: normal;

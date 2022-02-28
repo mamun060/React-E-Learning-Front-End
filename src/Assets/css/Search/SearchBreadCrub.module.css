@@ -1,0 +1,89 @@
+.SearchBreadcrubWrap {
+    background-image: url('../../images/page-header/Page-hero.png');
+    background-size: cover;
+}
+
+.SearchBgWrap {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0px;
+    position: relative;
+}
+
+.PageTitle {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.PageTitle h2 {
+    color: #2569c9;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.PageTitle span {
+    color: #F59A26;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.PageBreadCrubs {
+    text-align: left;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.PageBreadCrubs p {
+    font-size: 16px;
+}
+
+.PageBreadCrubs a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+    .PageTitle {
+        text-align: center;
+    }
+
+    .PageTitle h2 {
+        font-size: 20px !important;
+    }
+    
+    .PageTitle span {
+        font-size: 20px !important;
+    }
+
+    .PageBreadCrubs {
+        text-align: center;
+    }
+
+    .PageBreadCrubs p {
+        font-size: 14px !important;
+    }
+    
+    .PageBreadCrubs a {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 61.93rem) {
+    .PageTitle h2 {
+        font-size: 28px;
+    }
+    
+    .PageTitle span {
+        font-size: 28px;
+    }
+
+    .PageBreadCrubs p {
+        font-size: 16px;
+    }
+    
+    .PageBreadCrubs a {
+        font-size: 16px;
+    }
+}

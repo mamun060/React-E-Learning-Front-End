@@ -88,9 +88,9 @@ const SmallCourseCard = ({ className }) => {
                             <Link to=''><BsShareFill /></Link>
                         </div>
                     </div>
-
+                    
                     <div className={styles.SmallCardCouseTitle}>
-                        <h4>React Master course Zero to Hero</h4>
+                        <h4><Link to={'coursedetails/:1'}>React Master course Zero to Hero</Link></h4>
                     </div>
 
                     <div className={styles.SmallCardBottomWrap +' cardBottomWrapper'}>
@@ -98,7 +98,7 @@ const SmallCourseCard = ({ className }) => {
                             <p className='coursePrice'>Tk.2000.00</p>
                         </div>
                         <div className={styles.BuyNowButtonWrap}>
-                            <Link to={''} className='courseBigBuyNow'>Buy Now</Link>
+                            <Link to={'/checkout'} className='courseBigBuyNow'>Buy Now</Link>
                         </div>
                     </div>
                 </div>

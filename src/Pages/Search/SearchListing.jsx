@@ -6,8 +6,10 @@ import ButtonFilters from '../../Elements/FilterCard/ButtonFilters';
 import CourseFiltersList from '../../Elements/FilterCard/CourseFiltersList';
 import TagSearchFilter from '../../Elements/FilterCard/TagSearchFilter';
 import styles from '../../Assets/css/Search/SearchListing.module.css';
+import SearchNotFound from './SearchNotFound';
 
 const SearchListing = () => {
+    
     return (
         <>
             <Container className={styles.CourseListContainer}>
@@ -21,6 +23,9 @@ const SearchListing = () => {
                     </Col>
                     <Col xl={9} md={9}>
                         <div className={styles.AllCourseRightWrap}>
+                            {/* <div>
+                                <SearchNotFound />
+                            </div> */}
                             <Row>
                                 <Col md={4} sm={6} xs={12} className={styles.colMargin}>
                                     <div className={styles.AllCourseComponentWrap}>
