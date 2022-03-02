@@ -3,9 +3,9 @@ import Footer from '../../Partials/Footer/Footer';
 import Header from '../../Partials/Header/Header';
 import MobileHeader from '../../Partials/Header/MobileHeader';
 import OtherHeroSection from '../../Partials/OtherPageHero/OtherHeroSection';
-import AboutBody from './AboutBody';
+import RefundReturnPolicyBody from './RefundReturnPolicyBody';
 
-const About = () => {
+const RefundReturnPolicy = () => {
     return (
         <>
             <div className="Desktop">
@@ -15,17 +15,17 @@ const About = () => {
                 <MobileHeader />
             </div>
             <OtherHeroSection
-                firstTitle="About"
-                secondTitle="Us"
+                firstTitle="Refund Return"
+                secondTitle="Policy"
                 BackPageName="Home"
-                CurrentPageName="About"
+                CurrentPageName="Refund Return Policy"
             />
 
-            <AboutBody />
+            <RefundReturnPolicyBody />
 
             <Footer />
         </>
     );
 };
 
-export default About;
+export default RefundReturnPolicy;

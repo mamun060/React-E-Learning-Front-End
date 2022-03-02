@@ -1,31 +1,30 @@
 import React from 'react';
 import Footer from '../../Partials/Footer/Footer';
 import Header from '../../Partials/Header/Header';
-import MobileHeader from '../../Partials/Header/MobileHeader';
-import OtherHeroSection from '../../Partials/OtherPageHero/OtherHeroSection';
-import AboutBody from './AboutBody';
+import MobileHeader from './../../Partials/Header/MobileHeader';
+import OtherHeroSection from './../../Partials/OtherPageHero/OtherHeroSection';
+import ContactBody from './ContactBody';
 
-const About = () => {
+const Contact = () => {
     return (
         <>
-            <div className="Desktop">
+           <div className="Desktop">
                 <Header />
             </div>
             <div className="Mobile">
                 <MobileHeader />
             </div>
             <OtherHeroSection
-                firstTitle="About"
+                firstTitle="Contact"
                 secondTitle="Us"
                 BackPageName="Home"
-                CurrentPageName="About"
+                CurrentPageName="Contact"
             />
 
-            <AboutBody />
-
+            <ContactBody />
             <Footer />
         </>
     );
 };
 
-export default About;
+export default Contact;

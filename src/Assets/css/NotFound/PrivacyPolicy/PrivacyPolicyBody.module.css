@@ -1,0 +1,34 @@
+.TermsBodyWrap {
+    padding: 20px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.TermsTitle h2 {
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.TermsSubContentWrap h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.TermsSubContentWrap p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 667px) {
+    .TermsBodyWrap {
+        padding: 20px 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .TermsTitle h2 {
+        font-size: 24px;
+        font-weight: 550;
+    }
+}

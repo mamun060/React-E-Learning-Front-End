@@ -9,6 +9,7 @@ import { BsTwitter, BsInstagram} from 'react-icons/bs';
 import {FaLinkedinIn, FaFacebookF} from 'react-icons/fa';
 import PaymentImg from '../../Assets/images/Footer-Images/Screenshot_1 1.png';
 import { Link } from 'react-router-dom';
+import CertificationValidationModal from './CertificationValidationModal';
 
 const Footer = () => {
     return (
@@ -20,21 +21,22 @@ const Footer = () => {
                         <Col md={8}>
                             <div className={styles.FooterTopMenu}>
                                 <ul>
-                                    <li><Link to="#">About Us</Link></li>
-                                    <li><Link to="#">Contact Us</Link></li>
-                                    <li><Link to="#">Terms and Conditions</Link></li>
-                                    <li><Link to="#">Privacy Policy</Link></li>
-                                    <li><Link to="#">Refund Return Policy</Link></li>
+                                    <li><Link to="/about">About Us</Link></li>
+                                    <li><Link to="/contact-us">Contact Us</Link></li>
+                                    <li><Link to="/terms-and-condition">Terms and Conditions</Link></li>
+                                    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                                    <li><Link to="/refund-return-policy">Refund Return Policy</Link></li>
                                 </ul>
                             </div>
                         </Col>
 
                         <Col md={4}>
                             <div className={styles.CertifcateButton}>
-                                <CertificateButton 
+                                {/* <CertificateButton 
                                 name="Certificated Validation"
                                 link="#"
-                                />
+                                /> */}
+                                <CertificationValidationModal />
                             </div>
                         </Col>
 
@@ -62,12 +64,11 @@ const Footer = () => {
                             </div>
                             <div className={styles.UseFullLinkListing}>
                                 <ul>
-                                    <li><Link to="#">Blog</Link></li>
                                     <li><Link to="#">Our Instructor</Link></li>
-                                    <li><Link to="#">Become an Online Teacher</Link></li>
-                                    <li><Link to="#">How It Works</Link></li>
+                                    <li><Link to="/success-review">Our Success History</Link></li>
                                     <li><Link to="#">Course Category</Link></li>
-                                    <li><Link to="#">Create an Account</Link></li>
+                                    <li><Link to="/register?state=teacher">Become an Online Teacher</Link></li>
+                                    <li><Link to="/register?state=student">Create an Account</Link></li>
                                 </ul>
                             </div>
                             <div className={styles.MobileFooterMenuLinks}>
@@ -75,11 +76,11 @@ const Footer = () => {
                                     <h2>Our Menu</h2>
                                 </div>
                                 <ul>
-                                    <li><Link to="#">About Us</Link></li>
-                                    <li><Link to="#">Contact Us</Link></li>
-                                    <li><Link to="#">Terms and Conditions</Link></li>
-                                    <li><Link to="#">Privacy Policy</Link></li>
-                                    <li><Link to="#">Refund Return Policy
+                                    <li><Link to="/about">About Us</Link></li>
+                                    <li><Link to="/contact-us">Contact Us</Link></li>
+                                    <li><Link to="/terms-and-condition">Terms and Conditions</Link></li>
+                                    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                                    <li><Link to="/refund-return-policy">Refund Return Policy
                                     </Link></li>
                                 </ul>
                             </div>

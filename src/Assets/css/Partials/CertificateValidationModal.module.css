@@ -1,0 +1,38 @@
+.CertificateValidateInput {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CertificateValidateInput input {
+    width: 70%;
+    border: 1px solid gold;
+    height: 40px;
+    border-radius: 5px;
+    color: #000;
+    padding-left: 5px;
+}
+
+.CertificateValidateInput input::placeholder {
+    color: rgba(0, 0, 0, 0.61);
+    padding-left: 5px;
+}
+
+.CertificateValidateInput input:focus {
+    outline: none;
+}
+
+.CertificateValidateInput button {
+    width: 28%;
+    background-color: #F49B27;
+    color: #fff;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.CertificateValidateInput b
+.ValidationAleart {
+    padding: 20px 0px;
+}

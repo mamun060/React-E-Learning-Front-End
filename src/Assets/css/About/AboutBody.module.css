@@ -1,0 +1,41 @@
+.AboutBodyContainer {
+    padding: 30px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.AboutLeftContent {
+   padding: 30px 10px;
+   background-color: #fff;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   margin-bottom: 10px;
+}
+
+.AboutLeftContent h4 {
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+
+.AboutLeftContent p {
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.AboutRightImg {
+    padding: 20px 10px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 667px){
+    .AboutBodyRowContainer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

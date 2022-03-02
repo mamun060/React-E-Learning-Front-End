@@ -3,9 +3,9 @@ import Footer from '../../Partials/Footer/Footer';
 import Header from '../../Partials/Header/Header';
 import MobileHeader from '../../Partials/Header/MobileHeader';
 import OtherHeroSection from '../../Partials/OtherPageHero/OtherHeroSection';
-import AboutBody from './AboutBody';
+import PrivacyPolicyBody from './PrivacyPolicyBody';
 
-const About = () => {
+const PrivacyPolicy = () => {
     return (
         <>
             <div className="Desktop">
@@ -15,17 +15,17 @@ const About = () => {
                 <MobileHeader />
             </div>
             <OtherHeroSection
-                firstTitle="About"
-                secondTitle="Us"
+                firstTitle="Privacy"
+                secondTitle="Policy"
                 BackPageName="Home"
-                CurrentPageName="About"
+                CurrentPageName="Privacy Policy"
             />
 
-            <AboutBody />
+            <PrivacyPolicyBody />
 
             <Footer />
         </>
     );
 };
 
-export default About;
+export default PrivacyPolicy;
